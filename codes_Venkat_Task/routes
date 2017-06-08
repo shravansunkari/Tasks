@@ -1,0 +1,36 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+
+GET              /                          @controllers.com.vassarlabs.play.controllers.BasicController.index(any = "none")
+
+
+
+#user
+POST        /api/login                      @controllers.com.vassarlabs.play.controllers.AppController.getlogin()
+POST        /api/elogin                     @controllers.com.vassarlabs.play.controllers.AppController.getelogin()
+
+
+# MI Tank Dahboard
+POST 	/api/mitank/main/table			@controllers.com.vassarlabs.play.controllers.MITankController.getMiTankTableData()
+POST 	/api/mitank/main/mitankdesc		@controllers.com.vassarlabs.play.controllers.MITankController.getMiTankDetails()
+POST 	/api/mitank/main/mitanksTransaction	@controllers.com.vassarlabs.play.controllers.MITankController.getTransactionData()
+POST 	/api/mitank/main/map			@controllers.com.vassarlabs.play.controllers.MITankController.getMainDashboardMapForCapacity()
+POST 	/api/mitank/main/map2			@controllers.com.vassarlabs.play.controllers.MITankController.getMainDashboardMapForPercentage()
+POST 	/api/mitank/main/list			@controllers.com.vassarlabs.play.controllers.MITankController.getAllMiTanksOfUser()
+POST	/api/mitank/main/ntmitank		@controllers.com.vassarlabs.play.controllers.MITankController.notMiTankService()
+POST 	/api/mitank/main/lhd			@controllers.com.vassarlabs.play.controllers.MITankController.getHierarchyOfLocations()
+POST 	/api/mitank/main/image			@controllers.com.vassarlabs.play.controllers.MITankController.fileDownload()
+POST 	/api/mitank/main/search			@controllers.com.vassarlabs.play.controllers.MITankController.searchMITank()
+POST 	/api/mitank/main/report			@controllers.com.vassarlabs.play.controllers.MITankController.getReports()
+POST	/api/mitank/admin/addoreditproject	@controllers.com.vassarlabs.play.controllers.MITankController.insertOrEditAProject()
+POST	/api/mitank/admin/addoredituser		@controllers.com.vassarlabs.play.controllers.MITankController.insertOrEditAUser()
+POST	/api/mitank/admin/assigntank		@controllers.com.vassarlabs.play.controllers.MITankController.assignOrReassignProjects()
+POST	/api/mitank/admin/deletetank		@controllers.com.vassarlabs.play.controllers.MITankController.deleteProjects()
+POST	/api/mitank/admin/users			@controllers.com.vassarlabs.play.controllers.MITankController.getAllUsers()
+POST	/api/mitank/admin/designation		@controllers.com.vassarlabs.play.controllers.MITankController.getUsersDesignations()
+POST	/api/mitank/admin/tlh			@controllers.com.vassarlabs.play.controllers.MITankController.getTanksListInaHierarchy()
+POST	/api/mitank/admin/uh			@controllers.com.vassarlabs.play.controllers.MITankController.getUsersInaHierarchy()
+POST 	/api/mitank/admin/report		@controllers.com.vassarlabs.play.controllers.MITankController.getAdminReports()
+POST	/api/mitank/basinlevel/table		@controllers.com.vassarlabs.play.controllers.MITankController.getMiTankBasinLevelData()

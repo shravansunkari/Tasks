@@ -1,0 +1,93 @@
+shravansunkari
+shravan@vassarlabs.com
+
+************************************************************************************************************
+create a new repository on the command line
+
+echo "# Tasks" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/shravansunkari/Tasks.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/shravansunkari/Tasks.git
+git push -u origin master
+************************************************************************************************************
+
+git checkout dev-cssm-branch
+git pull origin dev-cssm-branch
+
+//commit
+git add "specific file"
+git commit -m "description"
+git push origin dev-cssm-farm-branch
+
+
+//stash with a comment
+git stash save doing crazy thing
+
+
+If you don't care about any local changes and just want a copy from the repo:
+
+git reset --hard HEAD
+git clean -f
+git pull
+
+
+git init
+git stash -f
+git reset --hard    to remove all changes
+git branch
+git checkout dev-cssm-faram-branch
+git stash list
+
+
+Create directory
+go to directory
+git clone url
+
+
+
+
+//merge local with remote
+git stash //will save local changes
+git pull //get new code
+git stash apply //merge old code with new one
+
+
+
+Case 1: Don’t care about local changes
+
+    Solution 1: Get the latest code and reset the code
+
+    git fetch origin
+    git reset --hard origin/[tag/branch/commit-id usually: master]
+
+    Solution 2: Delete the folder and clone again :D
+
+    rm -rf [project_folder]
+    git clone [remote_repo]
+
+Case 2: Care about local changes
+
+    Solution 1: no conflicts with new-online version
+
+    git fetch origin
+    git status
+
+    will report something like:
+
+    Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+
+    Then get the latest version
+
+    git pull
+
+    Solution 2: conflicts with new-online version
+
+    git fetch origin
+    git status
+
