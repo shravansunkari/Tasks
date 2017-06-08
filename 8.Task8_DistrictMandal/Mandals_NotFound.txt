@@ -1,0 +1,75 @@
+File = /home/srikanth/Desktop/mandal/check_dam.csv line = Madanapalle,81,0.028593
+File = /home/srikanth/Desktop/mandal/check_dam.csv line = S.a.k.n. mandal,144,0.050832
+File = /home/srikanth/Desktop/mandal/check_dam.csv line = Vayalpad,55,0.019415
+
+
+
+File = /home/srikanth/Desktop/mandal/farm_pond.csv line = K.gangavaram,1,0.0000071
+File = /home/srikanth/Desktop/mandal/farm_pond.csv line = Madanapalle,199,0.0014129
+File = /home/srikanth/Desktop/mandal/farm_pond.csv line = S.a.k.n. mandal,838,0.0059498
+File = /home/srikanth/Desktop/mandal/farm_pond.csv line = U.kothapalli,163,0.0011573
+File = /home/srikanth/Desktop/mandal/farm_pond.csv line = Vayalpad,456,0.0032376
+
+
+
+File = /home/srikanth/Desktop/mandal/perculation_tank.csv line = Madanapalle,63,0.022239
+File = /home/srikanth/Desktop/mandal/perculation_tank.csv line = S.a.k.n. mandal,29,0.010237
+File = /home/srikanth/Desktop/mandal/perculation_tank.csv line = Vayalpad,48,0.016944
+
+
+
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Atchampet,8,0.092629098
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = B n kandriga,84,0.377201828
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = B.mattam,26,0.184178668
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Bheemili,22,0.095013885
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Bramhasamudram,12,0.369257607
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = C.k. palli,13,0.586445974
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = D.hirehal,5,0.13089533
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = G.sigadam,411,0.642166903
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Gudupalli,144,0.1470132748
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Itchapuram,141,0.19646749
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Jaggaiahpeta,8,0.138122195
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = K.k.mitta,34,0.485603568
+Error in1 Kadapa,7,0.027485038null
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Kotturu,414,0.931014678
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = L.n.peta,180,0.44032382
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = L.r.palli,221,0.6083955382
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Madanapalle,135,0.4405673615
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Nellore ( r),38,0.107418622
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Nujendla,13,0.074727034
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = P.c.palli,36,0.35101126
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Peapully,37,0.160082354
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Peddaraveedu,32,0.322792596
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Ponnalur,23,0.323913676
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Rajahamundry (rural),40,0.002776577
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Rayachoty,77,0.299252906
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Routhalapudi,26,0.059796214
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Sadum,295,0.2726753648
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Sathyavedu,121,0.6518407107
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Sirivella,4,0.132896899
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Tadipatri,7,0.246281253
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = V.n.palli,4,0.034892914
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = V.v.palem,43,0.382016386
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Vajrapukotturu,174,0.197113626
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Velugodu,8,0.18996928
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Vrpuram,14,0
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Yatapaka,27,0
+
+
+
+File = /home/srikanth/Desktop/mandal/others.csv line = Madanapalle,45,0.015885
+File = /home/srikanth/Desktop/mandal/others.csv line = S.a.k.n. mandal,9,0.003177
+File = /home/srikanth/Desktop/mandal/others.csv line = Vayalpad,45,0.015885
+
+
+
+File = /home/srikanth/Desktop/mandal/check_dam_proposed.csv line = D.HIREHAL,39,0.013767
+Error in1 KADAPA,2,0.000706null
+File = /home/srikanth/Desktop/mandal/check_dam_proposed.csv line = MADANAPALLE,31,0.010943
+File = /home/srikanth/Desktop/mandal/check_dam_proposed.csv line = SRI AVADHUTHA KASINAYANA,77,0.027181
+File = /home/srikanth/Desktop/mandal/check_dam_proposed.csv line = VISAKHAPATNAM,6,0.002118
+
+
+
+Not found count =53
+Done writing

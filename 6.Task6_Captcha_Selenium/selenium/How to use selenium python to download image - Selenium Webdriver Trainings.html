@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://seleniumwebdrivertrainings.com/xmlrpc.php">
+<title>How to use selenium python to download image - Selenium Webdriver Trainings</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v4.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to use selenium python to download image - Selenium Webdriver Trainings">
+<meta property="og:description" content="I need get captcha image from browser. I’ve got a uniform resource locator of this image, but this image transforms each upgraded period (uniform resource locator is continuous). Is there any option to get an image from the&nbsp;browser (like ‘save image as’ switch)? In the other palm, I believe it needs to be work: get...">
+<meta property="og:url" content="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/">
+<meta property="og:site_name" content="Selenium Webdriver Trainings">
+<meta property="article:tag" content="Selenium Webdriver">
+<meta property="article:section" content="Selenium Webdriver">
+<meta property="article:published_time" content="2016-05-20T05:50:16+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="I need get captcha image from browser. I’ve got a uniform resource locator of this image, but this image transforms each upgraded period (uniform resource locator is continuous). Is there any option to get an image from the&nbsp;browser (like ‘save image as’ switch)? In the other palm, I believe it needs to be work: get...">
+<meta name="twitter:title" content="How to use selenium python to download image - Selenium Webdriver Trainings">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Selenium Webdriver Trainings » Feed" href="http://seleniumwebdrivertrainings.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Selenium Webdriver Trainings » Comments Feed" href="http://seleniumwebdrivertrainings.com/comments/feed/">
+
+
+<!-- WS Google Webmaster Tools v2.1 - https://wordpress.org/plugins/ws-google-webmaster-tools/ -->
+<!-- Website - http://www.webshouter.net/ -->
+<meta name="google-site-verification" content="hzaU2ex-97O5EMBqe_4gvL2UqGsYUGCfGAAxNyWPuuM">
+<script async="" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/analytics.js"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74684102-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- / WS Google Webmaster Tools plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Selenium Webdriver Trainings » How to use selenium python to download image Comments Feed" href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/seleniumwebdrivertrainings.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp_macchiato_responsive-css" href="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/responsive.css" type="text/css" media="screen">
+<link rel="stylesheet" id="wp_macchiato_font_awesome-css" href="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp_macchiato_style-css" href="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp_macchiato_googleFonts-css" href="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="overlay_settings_style-css" href="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/frontend.css" type="text/css" media="all">
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/jquery.js"></script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/responsive.js"></script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/navigation.js"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://seleniumwebdrivertrainings.com/wp-content/themes/wp-macchiato/js/html5shiv.js?ver=4.7.3'></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://seleniumwebdrivertrainings.com/wp-content/themes/wp-macchiato/js/ie-responsive.js?ver=4.7.3'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="http://seleniumwebdrivertrainings.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://seleniumwebdrivertrainings.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://seleniumwebdrivertrainings.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.7.3">
+<link rel="shortlink" href="http://seleniumwebdrivertrainings.com/?p=747">
+<link rel="alternate" type="application/json+oembed" href="http://seleniumwebdrivertrainings.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fseleniumwebdrivertrainings.com%2Fhow-to-use-selenium-python-to-download-image%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://seleniumwebdrivertrainings.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fseleniumwebdrivertrainings.com%2Fhow-to-use-selenium-python-to-download-image%2F&amp;format=xml">
+	<style id="color-settings">
+		.navbar-default .navbar-collapse, .dropdown-menu >li, .pagination .fa, .navbar-default .navbar-toggle, #respond #submit, .post-content form input[type=submit], .post-content form input[type=button], .main-navigation ul ul a, .tagcloud a, #footer .widget_calendar thead tr, .archive #read-more{
+		background:#2276bf;
+		}
+		#top-bar, #top-bar .dropdown-menu >li, aside ul li a, .widget-container, h2.comments-title{border-color:#2276bf;}
+		aside.widget_recent_comments ul li:before, aside.widget_archive ul li:before, aside.widget_categories ul li:before, aside.widget_meta ul li:before{
+			border-color:transparent transparent transparent #2276bf;
+			}
+		#top-nav .main-navigation ul.sub-menu > li, section.no-results{border-color:#2276bf;}
+		.widget_calendar td a, h1.entry-title a:hover, cite.fn, cite.fn a, a.comment-reply-link, aside ul li:before, #top-nav .current_page_item > a, #top-nav .current-menu-item > a, #top-nav .current_page_ancestor > a, #top-bar .navbar-nav > li > a:hover, aside ul li a:hover, .meta-info a:hover, #copyright a:hover, h1.title a:hover, h2.title a, a{color:#2276bf;}
+	
+		</style>
+	<style type="text/css">
+.details-container{background:#fff none repeat scroll 0 0;margin:0;}h1.title{font-size:24px;text-align:left;margin-bottom:18px;}#featured-post .entry-meta,.type-post .entry-meta{text-align:left;margin-bottom:18px;}#read-more{margin-top:20px;}#read-more > a{border:1px solid;border-radius:10px;color:#222;padding:8px;}p{color:#000;}#read-more > a:hover{background:#2276bf none repeat scroll 0 0;color:#fff;}#copyright{display:none;}#footer .col-md-3{background:#333333 none repeat scroll 0 0;font-size:20px;text-align:center;width:100%;color:#fff;}#footer #text-2{background:#333 none repeat scroll 0 0;color:#fff !important;padding:15px 0 0;}footer .textwidget{color:#fff;}.featured-category .meta-info > li:first-child{display:none;}.main-navigation .current_page_item > a,.main-navigation .current-menu-item > a,.main-navigation .current_page_ancestor > a{color:#840500;}.navbar-default.main-navigation:first-child{display:none;}.site-title > a { display: block;line-height: 52px;width: 479px; color:#2276bf; font-weight:600; text-decoration:none; } .main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a {color: #ff8000;}#footer a {color: #fff;}.main-navigation ul > li:last-child {
+ border-right: medium none; display: none;}@media screen and(minwidth:768px{.sitetitle>a{width:478px!important;}}
+.main-navigation .current_page_item > a, .main-navigation .current-menu-item > a, .main-navigation .current_page_ancestor > a, .main-navigation .current_page_ancestor > a:focus{color:rgba(218, 234, 197,1)!important;}
+</style><script type="text/javascript">
+jQuery(document).ready(function(){
+
+
+
+
+jQuery('#top-widget').hide();
+jQuery('#right-widget').hide();
+//var contBanner = jQuery('#top-widget').html();
+var contBanner = '<img src="http://seleniumwebdrivertrainings.com/wp-content/uploads/2016/08/banner.png" />';
+//alert(contBanner );
+jQuery("<div><a href='http://itelearn.com' title='Click here to go to iTeLearn' target='_blank'>"+contBanner+"</a> </div>").insertAfter('#main-navigation');
+
+
+});
+</script><style type="text/css">
+.entry-content > p {
+  display: block!important;
+}
+</style><style type="text/css" media="all">.optinchat-mobile-messenger-active {overflow: hidden;height: 100%;width: 100%;position: fixed;}</style></head>
+<body class="post-template-default single single-post postid-747 single-format-standard">
+	<div id="top-bar">
+    	<div class="container">
+            <div id="top-nav" class="row">
+                <div class="navbar-default main-navigation">                             
+                    <!-- Home and toggle get grouped for better mobile display -->                
+                    <div class="navbar-header">                
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">                        
+                            <span class="sr-only">Top navigation</span>                        
+                            <span class="icon-bar"></span>                        
+                            <span class="icon-bar"></span>                        
+                            <span class="icon-bar"></span>                        
+                        </button>                
+                    </div>          
+                    <!-- Collect the nav links, forms, and other content for toggling -->                    
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">                    
+                            
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap">
+    	<div id="main-container" class="container">
+        	<header id="masthead" class="header" role="banner">
+            	<div class="row">
+                	<div class="col-md-12">
+                    	<div class="logo site-branding">
+                        									
+                            <div id="site-logo"><a href="http://seleniumwebdrivertrainings.com/" title="Selenium Webdriver Trainings" rel="home"><img src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/selenium-webdriver-training.png" alt="Selenium Webdriver Trainings"></a></div>
+							                        </div>      
+                                
+                   	</div>
+                </div>	
+            </header>
+			<nav id="main-navigation" class="navbar navbar-default main-navigation" role="navigation">
+                  <div class="container-fluid">
+                    <!-- Home and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>               
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                      <ul id="menu-menu-1" class="menu"><li id="menu-item-107" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-107"><a href="http://seleniumwebdrivertrainings.com/">Home</a></li>
+<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="http://seleniumwebdrivertrainings.com/about/">About</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="http://seleniumwebdrivertrainings.com/selenium-training-with-java/">Selenium Online Training</a></li>
+<li id="menu-item-109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109"><a href="http://seleniumwebdrivertrainings.com/contact/">Contact</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="http://seleniumwebdrivertrainings.com/privacy/">Privacy</a></li>
+</ul>                  
+                    </div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav><div><a href="http://itelearn.com/" title="Click here to go to iTeLearn" target="_blank"><img src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/banner.png"></a> </div><div class="row">
+	<div id="primary" class="content-area col-lg-9">
+		<main id="main" class="site-main" role="main">
+					<article id="post-747" class="post-747 post type-post status-publish format-standard hentry category-selenium-webdriver tag-selenium-webdriver">
+	<div class="image-container-responsive">
+        <a href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/" title="How to use selenium python to download image"></a>
+    </div>
+    <div class="details-container">
+    	<h1 class="title"><a href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/" title="How to use selenium python to download image">How to use selenium python to download image</a></h1>
+        <div class="entry-meta">
+            <div class="featured-category">
+                <ul class="meta-info">
+                    <li><i class="fa fa-user"></i><a href="http://seleniumwebdrivertrainings.com/author/blogadmin/" title="Posts by Madhuri Rachel" rel="author">Madhuri Rachel</a></li>
+                    <li><i class="fa fa-clock-o"></i>May 20, 2016</li>
+                    <li><i class="fa fa-comments"></i><a href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/#respond" class="meta-comment">0 comment</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+	<div class="entry-content">
+		<p>I need get captcha image from browser. I’ve got a uniform resource 
+locator of this image, but this image transforms each upgraded period 
+(uniform resource locator is continuous).</p>
+<p>Is there any option to get an image from the&nbsp;browser (like ‘save image as’ switch)?<span id="more-747"></span></p>
+<p><strong>In the other palm, I believe it needs to be work:</strong></p>
+<p>get a&nbsp;screen shot of the browser<br>
+get location of image<br>
+Harvest captcha from screen capture utilizing OpenCV<br>
+Hyperlink of the powerful captcha – link</p>
+<p><strong>The issue was solved via screen capture:</strong></p>
+<p>browser.save_screenshot(‘screenshot.png’)<br>
+img = browser.find_element_by_xpath(‘//*[@id=”cryptogram”]’)<br>
+loc = img.location</p>
+<p>image = cv.LoadImage(‘screenshot.png’, True)<br>
+out = cv.CreateImage((150,60), image.depth, 3)<br>
+cv.SetImageROI(image, (loc[‘x’],loc[‘y’],150,60))<br>
+cv.Resize(image, out)<br>
+cv.SaveImage(‘out.jpg’, out)</p>
+<p><strong>Here is an entire instance (utilizing yahoo’s recaptcha as a target):</strong></p>
+<p>import urllib<br>
+from selenium import webdriver</p>
+<p>driver = webdriver.Firefox()<br>
+driver.get(‘http://www.google.com/recaptcha/demo/recaptcha’)</p>
+<p># get the image source<br>
+img = driver.find_element_by_xpath(‘//div[@id=”recaptcha_image”]/img’)<br>
+src = img.get_attribute(‘src’)</p>
+<p># download the image<br>
+urllib.urlretrieve(src, “captcha.png”)</p>
+<p>driver.close()</p>
+<p><strong>UPGRADE:</strong></p>
+<p>The trouble with&nbsp;dynamic created pictures is there is a fresh 
+picture created each time you obtain it. If so, you’ve got a few 
+choices:</p>
+<p><strong>Shoot a screenshot</strong></p>
+<p>from selenium import webdriver</p>
+<p>driver = webdriver.Firefox()<br>
+driver.get(‘https://moscowsg.megafon.ru/ps/scc/php/cryptographp.php?PHPSESSID=mfc540jkbeme81qjvh5t0v0bnjdr7oc6&amp;ref=114&amp;w=150’)</p>
+<p>driver.save_screenshot(“screenshot.png”)</p>
+<p>driver.close()</p>
+<p>Model right-click “Conserve As”. See this thread to find out more.<br>
+Hope that assists.</p>
+<p><strong>Using Urllib</strong><strong>:</strong></p>
+<p>import urllib<br>
+urllib.urlretrieve(“http://example.com/captcha.png”, “captcha.png”)</p>
+        			</div><!-- .entry-content -->
+    	<nav class="navigation post-navigation" role="navigation">
+		<div class="nav-links">
+			<div class="nav-previous"><a href="http://seleniumwebdrivertrainings.com/how-can-we-use-the-htmlunit-driver-with-selenium-from-python/" rel="prev"><span class="meta-nav">←</span>&nbsp;How can we use the HTMLUnit driver with Selenium from Python?</a></div><div class="nav-next"><a href="http://seleniumwebdrivertrainings.com/the-way-to-handle-the-new-window/" rel="next">The way to handle the new window?&nbsp;<span class="meta-nav">→</span></a></div>		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	    <div id="comments" class="comments-area">
+					<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://seleniumwebdrivertrainings.com/how-to-use-selenium-python-to-download-image/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://seleniumwebdrivertrainings.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" size="30" maxlength="245" aria-required="true" required="required" type="text"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required" type="text"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" size="30" maxlength="200" type="text"></p>
+<p class="form-submit"><input name="submit" id="submit" class="submit" value="Post Comment" type="submit"> <input name="comment_post_ID" value="747" id="comment_post_ID" type="hidden">
+<input name="comment_parent" id="comment_parent" value="0" type="hidden">
+</p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+</article><!-- #post-## -->
+
+			
+				</main><!-- #main -->
+	</div><!-- #primary -->
+	<div class="col-md-3 ">
+        <aside id="right-widget" class="widget-container" style="display: none;">
+            
+        </aside>
+    </div>
+</div>	
+		</div> <!--end main-container-->
+    </div><!-- end main-wrap -->  
+    <footer id="footer" class="container">
+        <div class="row">
+            <div class="col-md-3">
+                            </div>
+            <div class="col-md-3">
+                            </div>
+            <div class="col-md-3">
+                            </div>
+            <div class="col-md-3">
+                            </div>
+        </div>
+        <div id="copyright">
+            <div class="row">
+                <div class="col-md-12">
+					© Selenium Webdriver Trainings						                </div>
+            </div>
+        </div>
+    </footer>
+<script async="true" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/optinchat.js" id="oc_script" convid="xGJis9l2zHVwYbPdoipZP2ocjmJ2"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var settings_obj = 
+{"ajax_url":"http:\/\/seleniumwebdrivertrainings.com\/wp-admin\/admin-ajax.php","nonce":"dd1d6334db","confirm":"Are
+ you sure to delete item?"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/frontend.js"></script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/wp-embed.js"></script>
+<script type="text/javascript" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/comment-reply.js"></script>
+
+
+
+
+<div id="container-talkform" style="z-index:5000000000;position: fixed;margin: 0px;overflow: auto;bottom: 0px;right: 0px;width: 370px;height: 100px;display: block;"><div class="wrap-p-talkform" style="display: block; position: relative; height: 100%; width: 100%; top: 0%; left: 0px;"><iframe id="oc_iframe" src="How%20to%20use%20selenium%20python%20to%20download%20image%20-%20Selenium%20Webdriver%20Trainings_files/a.html" title="" style="z-index: 100001; position: absolute; padding: 0px; margin: 0px; width: 100%; height: 100%; border: none; border-radius: 6px !important;right:0px"></iframe></div></div></body></html>

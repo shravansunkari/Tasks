@@ -1,0 +1,8 @@
+File = /home/srikanth/Desktop/data/fp.csv line = NELLORE,11254,0.078778,,AKIVIDU,1,0.000007,,5.Lakshmambapuram,2,0.000014,,8,2039,0.014273,,7,828,0.005796,,108,39,0.000273
+
+
+File = /home/srikanth/Desktop/mandal/mi_tank.csv line = Yatapaka,27,0
+
+Not found count =2
+Done writing
+728

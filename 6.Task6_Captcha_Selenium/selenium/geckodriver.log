@@ -1,0 +1,346 @@
+1491808568555	geckodriver	INFO	Listening on 127.0.0.1:48104
+1491808569637	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.2fEGWF1iVUx7
+1491808569637	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491808569639	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35880
+1491808570850	Marionette	INFO	Listening on port 35880
+1491808572353	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 75: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 75: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 75: TypeError: this._recipeManager is null
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+1491808715306	geckodriver	INFO	Listening on 127.0.0.1:37659
+1491808716389	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.4pijNpaiByYB
+1491808716389	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491808716391	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38192
+1491808717444	Marionette	INFO	Listening on port 38192
+1491808718885	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/Login.do, line 918: SyntaxError: missing } after function body
+1491808863230	geckodriver	INFO	Listening on 127.0.0.1:35955
+1491808864312	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.lI4sYQBxQjwK
+1491808864312	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491808864314	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44648
+1491808865352	Marionette	INFO	Listening on port 44648
+1491808867084	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/Login.do, line 918: SyntaxError: missing } after function body
+1491809226215	geckodriver	INFO	Listening on 127.0.0.1:36939
+1491809227298	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.T7yUckJN5Kmg
+1491809227299	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491809227301	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39528
+1491809228332	Marionette	INFO	Listening on port 39528
+1491809229816	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AE,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+1491809372472	geckodriver	INFO	Listening on 127.0.0.1:34119
+1491809373555	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.IIVJG4JkzbdM
+1491809373556	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491809373558	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43607
+1491809374564	Marionette	INFO	Listening on port 43607
+1491809375882	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 22710] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 22710] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+1491809495478	geckodriver	INFO	Listening on 127.0.0.1:35324
+1491809496560	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.i2DrZfomGKMn
+1491809496561	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491809496562	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39125
+1491809497634	Marionette	INFO	Listening on port 39125
+1491809499023	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+1491809563784	geckodriver	INFO	Listening on 127.0.0.1:58727
+1491809564866	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qT5ABvuPRrwo
+1491809564867	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491809564869	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34708
+1491809565876	Marionette	INFO	Listening on port 34708
+1491809567312	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0085,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+1491809633472	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1491809674512	geckodriver	INFO	Listening on 127.0.0.1:38946
+1491809675591	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.PDenzavCzdeo
+1491809675592	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491809675594	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41943
+1491809676599	Marionette	INFO	Listening on port 41943
+1491809678050	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 1960] WARNING: pipe error (54): Connection reset by peer: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+1491810629624	geckodriver	INFO	Listening on 127.0.0.1:47176
+1491810630706	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.khED8FocefTN
+1491810630707	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491810630709	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44246
+1491810631677	Marionette	INFO	Listening on port 44246
+1491810633071	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 367: NS_ERROR_NOT_INITIALIZED: 
+1491810700919	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 4638] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0001,name=PCrashReporter::Msg_AnnotateCrashReport) Channel error: cannot send/recv
+
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=67.2273) 
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600D5,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1491810703648	geckodriver	INFO	Listening on 127.0.0.1:38964
+1491810704727	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.koeoSqiWH2Yv
+1491810704728	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491810704730	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43395
+1491810705777	Marionette	INFO	Listening on port 43395
+1491810707147	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 7868] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 7868] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+1491810759773	geckodriver	INFO	Listening on 127.0.0.1:47345
+1491810760852	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ttzKxFLh3O1N
+1491810760852	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491810760854	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44164
+1491810761880	Marionette	INFO	Listening on port 44164
+1491810763340	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+1491810969548	geckodriver	INFO	Listening on 127.0.0.1:51334
+1491810970605	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.84NwwnSU2qLu
+1491810970606	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491810970608	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46227
+1491810971595	Marionette	INFO	Listening on port 46227
+1491810972919	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+[Child 17418] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+[Child 17418] ###!!! ABORT: Aborting on channel error.: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/glue/MessageChannel.cpp, line 2143
+1491811002877	geckodriver	INFO	Listening on 127.0.0.1:42987
+1491811003962	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.LvVcIPAIwuXp
+1491811003963	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491811003965	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41661
+1491811004970	Marionette	INFO	Listening on port 41661
+1491811006775	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491811059708	geckodriver	INFO	Listening on 127.0.0.1:54970
+1491811060785	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qHZRUd1p0oTX
+1491811060786	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491811060788	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39415
+1491811063303	geckodriver	INFO	Listening on 127.0.0.1:56736
+1491811064392	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.3TQzJetWRrVs
+1491811064393	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491811064395	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38983
+1491811065452	Marionette	INFO	Listening on port 38983
+1491811066893	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491811251696	geckodriver	INFO	Listening on 127.0.0.1:47533
+1491811252779	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.88AsLvlccha0
+1491811252780	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491811252782	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33969
+1491811253778	Marionette	INFO	Listening on port 33969
+1491811255176	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491811378934	geckodriver	INFO	Listening on 127.0.0.1:60652
+1491811379993	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qYy1ABAQwxv6
+1491811379994	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491811379996	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36932
+1491811381059	Marionette	INFO	Listening on port 36932
+1491811382526	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 1: ReferenceError: upperOnly is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 32227] WARNING: pipe error (55): Connection reset by peer: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+1491816613913	geckodriver	INFO	Listening on 127.0.0.1:42035
+1491816614999	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.dlXzSHNDsEeJ
+1491816614999	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491816615001	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37957
+1491816616057	Marionette	INFO	Listening on port 37957
+1491816617292	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491816664551	geckodriver	INFO	Listening on 127.0.0.1:58841
+1491816665606	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.CbvQZYH9itfv
+1491816665606	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491816665608	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44280
+1491816666568	Marionette	INFO	Listening on port 44280
+1491816667985	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x46010A,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x46010A,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: chrome://global/content/process-content.js, line 71: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIMessageSender.sendAsyncMessage]
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1491817395512	geckodriver	INFO	Listening on 127.0.0.1:53876
+1491817396598	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.aujiBlPqpzI0
+1491817396599	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817396601	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37792
+1491817397583	Marionette	INFO	Listening on port 37792
+1491817399493	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817422210	geckodriver	INFO	Listening on 127.0.0.1:36509
+1491817423280	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.DF6o7jjkpV8S
+1491817423281	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817423283	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36034
+1491817424329	Marionette	INFO	Listening on port 36034
+1491817425730	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817463981	geckodriver	INFO	Listening on 127.0.0.1:44911
+1491817465112	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.KcLI6HUXBPqP
+1491817465112	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817465114	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40187
+1491817466381	Marionette	INFO	Listening on port 40187
+1491817467899	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817585804	geckodriver	INFO	Listening on 127.0.0.1:57373
+1491817586859	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.aNH4adHe2NSN
+1491817586860	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817586862	geckodriver::marionette	INFO	Connecting to Marionette on localhost:33831
+1491817587831	Marionette	INFO	Listening on port 33831
+1491817589217	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817658772	geckodriver	INFO	Listening on 127.0.0.1:36287
+1491817659863	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.hTdpLYQ1UWxy
+1491817659865	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817659869	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38256
+1491817660915	Marionette	INFO	Listening on port 38256
+1491817662319	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817711731	geckodriver	INFO	Listening on 127.0.0.1:41649
+1491817712810	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.SjdujtlmgG7i
+1491817712811	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817712813	geckodriver::marionette	INFO	Connecting to Marionette on localhost:36343
+1491817713828	Marionette	INFO	Listening on port 36343
+1491817715071	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AE,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AE,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+
+1491817764804	geckodriver	INFO	Listening on 127.0.0.1:33354
+1491817765887	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qCpXRmPIbAw3
+1491817765888	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817765890	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37481
+1491817766924	Marionette	INFO	Listening on port 37481
+1491817768286	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817823256	geckodriver	INFO	Listening on 127.0.0.1:44650
+1491817824316	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.DI72SLMoMu3R
+1491817824317	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817824319	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43572
+1491817825370	Marionette	INFO	Listening on port 43572
+1491817826771	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817953583	geckodriver	INFO	Listening on 127.0.0.1:60548
+1491817954701	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.np0VWzXhTvNF
+1491817954702	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817954704	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35814
+1491817955704	Marionette	INFO	Listening on port 35814
+1491817957118	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+1491817974684	geckodriver	INFO	Listening on 127.0.0.1:45083
+1491817975762	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.8DY6Wa2pH0UI
+1491817975762	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491817975764	geckodriver::marionette	INFO	Connecting to Marionette on localhost:42462
+1491817976761	Marionette	INFO	Listening on port 42462
+1491817978153	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+[Parent 8768] WARNING: pipe error (53): Connection reset by peer: file /build/firefox-ZWwcnj/firefox-52.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 322
+1491818281287	geckodriver	INFO	Listening on 127.0.0.1:51210
+1491818282365	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.1uxWFLwpIZVb
+1491818282365	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args []
+1491818282367	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38295
+1491818283641	Marionette	INFO	Listening on port 38295
+1491818285093	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://rwss.ap.nic.in/pred/resources/javascript/jquery-1.4.2.js, line 3672: unreachable code after return statement
+JavaScript error: http://rwss.ap.nic.in/pred/rws_login_frm.jsp, line 918: SyntaxError: missing } after function body
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2C0048,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4600AE,name=PContent::Msg_ConsoleMessage) Channel closing: too late to send/recv, messages will be lost
+

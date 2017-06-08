@@ -1,0 +1,1 @@
+java.exe -cp "captcha-solver.jar;lib/*" -Djava.util.logging.config.file=logging.properties pro.scraping.captcha.solve.CaptchaSolver

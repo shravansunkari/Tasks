@@ -1,0 +1,5 @@
+http://localhost:9000/api/soilmoisture/stress/linechart/ANANTAPUR/AGALI/AKKAGALADEVARAHALLI/20160601/20170314
+
+http://localhost:9000/api/soilmoisture/rainfall/linechart/ANANTAPUR/AGALI/KODIHALLI/20160601/20170314
+
+http://localhost:9000/api/soilmoisture/rainfall/linechart/GUNTUR/BAPATLA/ETHERU/20160601/20170314

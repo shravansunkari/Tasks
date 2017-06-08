@@ -1,0 +1,13 @@
+
+Get actual data if the date is in the past (i.e., if
+actual rainfall is available)
+
+if(rainfallForecastDSP.isWaterQuantityExist(date))
+{
+            return rainfallForecastDSP.getRFData(date);
+}
+I have created a service which will check if given date is in the past and call service.
+What attributes should I return in rainfallForecastDSP.getRFData(date) service?
+
+
+select * from water_quantity_rf where location_id=2025 order by update_ts desc limit 1;

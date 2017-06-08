@@ -1,0 +1,717 @@
+<style type="text/css">
+    .multiselect-parent {
+        width: 290px !important;
+    }
+    .multiselect-parent .dropdown-toggle {
+        overflow: hidden;
+        width: 290px !important;
+    }
+    .ws_even .stress-affected {
+        background-color: #f86363 !important;
+    }
+    .ws_odd .stress-affected {
+        background-color: #f86363 !important;
+    }
+    .fullscreen > #sm_switch {
+        height: 5%
+    }
+    .td_color1 {
+      background-color:#f3e496!important;
+    }
+    .td_color2 {
+      background-color: #fbe4d5!important;
+    }
+    .td_color3 {
+      background-color: #e2efd9!important;
+    }
+    .td_color4 {
+      background-color: #ececec!important;
+    }
+</style>
+<div class="wrapper">
+    <section class="panel panel-default dashboard-template">
+        <ol class="breadcrumb no-m hidden-xs">
+            <li><a href="index">Home</a></li>
+            <li>Soil Moisture & Rainfall Stress</li>
+        </ol>
+        <div class="panel-body">
+            <div class="col-md-12 dashboard-maincontent no-p">
+                <div class="row">
+                    <!--- <h2 class="m20">400 T.M.C. Water Available In Andhrapradesh </h2> -->
+                    <div class="jumbotron p20 m15">
+                        <h1 style="font-size:2.1em">
+                            <center>
+                                Soil Moisture & Rainfall Stress <!--as of {{vm.lastKnownValueDate}}-->
+                            </center>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row mt25">
+                    <div class="col-md-12 col-sm-12 mb25 grid-block">
+                        <div class="bi-map-block" ngsf-fullscreen>
+                            <div id="sm_switch" class="center-block analysis-switch clearfix mt20 pr20">
+                                <div class="switch  pull-right no-m">
+                                    <input type="radio" class="switch-input" name="view2" ng-model="vm.comparisionType"
+                                           ng-click="vm.setSmType(vm.comparisionType)" value="RootZone" id="RZ">
+                                    <label for="RZ" class="switch-label switch-label-off" style="width:200px">Root Zone (30 cms)</label>
+                                    <input type="radio" class="switch-input" name="view2" ng-model="vm.comparisionType"
+                                           ng-click="vm.setSmType(vm.comparisionType)" value="15M" id="15M">
+                                    <label for="15M" class="switch-label switch-label-on">1.5 meters</label>
+                                    <span class="switch-selection"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-p">
+                                <vassar-map class="no-p" id="sm1" throbber="vm.sm_nrd_map"
+                                            displayoptions="vm.displayOptions" data="vm.mapData1" animationtime=5000
+                                            nodataimage="img/NoDataImages/Gw/smallMapNoData.png">
+                                </vassar-map>
+                            </div>
+                            <div class="col-md-6 col-sm-12 no-p">
+                                <vassar-map class="no-p" id="sm2" throbber="vm.sm_map"
+                                            displayoptions="vm.displayOptions" data="vm.mapData" animationtime=5000
+                                            nodataimage="img/NoDataImages/Gw/smallMapNoData.png">
+                                </vassar-map>
+                            </div>
+                            <a href="#" class="biblock-expand-btn hidden-xs" ngsf-toggle-fullscreen
+                               ng-click="vm.enterFullScreen()">
+                                <img src="css/Editing-Expand-icon.png"/>Click to Expand View
+                            </a>
+                            <a href="#" class="biblock-collapse-btn" ngsf-toggle-fullscreen
+                               ng-click="vm.exitFullScreen()">
+                                <img src="css/Editing-Collapse-icon.png"/>Click to Collapse View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mt5 mb20 no-p text-right">
+                        <div class="col-md-5 pull-right">
+                            <form class="form-inline" role="form">
+                                <div class="form-group mr10">
+                                    <label class="control-label no-p pull-left mr15 mt10" style="font-size: 18px;">Crop </label>
+                                    <select ng-model="vm.selection.CROPNAME" class="form-control" style="width:210px; height: 44px">
+                                        <OPTION value="GROUNDNUT" selected>GROUNDNUT</OPTION>
+                                        <!--
+                                        <OPTION value="BLACKGRAM" disabled>BLACKGRAM</OPTION>
+                                        <OPTION value="HORSEGRAM" disabled>HORSEGRAM</OPTION>
+                                        <OPTION value="SOYABEAN" disabled>SOYABEAN</OPTION>
+                                        <OPTION value="CASTOR" disabled>CASTOR</OPTION>
+                                        <OPTION value="SUNFLOWER" disabled>SUNFLOWER</OPTION>
+                                        <OPTION value="SESAME" disabled>SESAME</OPTION> -->
+                                        <OPTION value="COTTON" >COTTON</OPTION>
+                                        <OPTION value="PADDY" disabled>PADDY</OPTION>
+                                        <OPTION value="PULSES" disabled>PULSES</OPTION>
+                                        <OPTION value="MILLETS" disabled>MILLETS</OPTION>
+                                        <OPTION value="CHILLIES" disabled>CHILLIES</OPTION>
+                                        <OPTION value="GREENGRAM">GREENGRAM</OPTION>
+                                        <OPTION value="REDGRAM">REDGRAM</OPTION>
+                                        <OPTION value="BENGALGRAM">BENGALGRAM</OPTION>
+                                        <OPTION value="JOWAR">JOWAR</OPTION>
+                                        <OPTION value="RAAGI">RAAGI</OPTION>
+                                        <OPTION value="BAJRA">BAJRA</OPTION>
+                                        <OPTION value="MAIZE">MAIZE</OPTION>
+                                        <OPTION value="FOXTAIL">FOXTAIL</OPTION>
+                                    </select>
+                                </div>
+                                <div class="form-group no-p pull-right">
+                                    <label class="control-label no-p pull-left mr15 mt10" style="font-size: 18px;">Rainfall Stress
+                                        Indicator</label>
+                                    <input type="number" min="0" max="600" class="pull-left form-control mr5 mt2 col-md-7"
+                                           style="height: 44px" ng-model="vm.selection.NoRainDays">
+                                    <!--<label class="control-label mb5"> days </label>-->
+                                    <button type="submit" ng-click="vm.updateStressIndicationData()"class="btn btn-primary">Go</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="grid-block col-md-12 bi-map-block-bdr sm_no_p no-p">
+                    <section class="panel">
+                        <div class="panel-body sm_no_p no-p bal_d no-m-xs">
+                            <header class="col-md-12 h4 no-m  no-p grid-block">
+                                <div class="col-sm-12 pl0 mb10"><strong class="no-m" style="text-transform:none;">{{vm.locType}}
+                                    Level Soil Moisture Stress </strong>
+                                </div>
+                            </header>
+                            <ol class="breadcrumb mi-breadcum mb10 col-md-12" style="text-align:left">
+                                <li ng-repeat="line in vm.breadCumb track by $index" ng-class="{'active':$last}">
+							<span ng-if="$index!==vm.breadCumb.length-1" style="font-size:15px;">
+							{{line.displayname}} : <a href='#' ng-click="vm.getDataByHeader(line)"> {{line.value}} </a>
+							</span>
+                                    <span ng-if="$index===vm.breadCumb.length-1" style="font-size:15px;">
+							{{line.displayname}} : <b> {{line.value}} </b>
+							</span>
+                                </li>
+                            </ol>
+                            <div class="col-sm-12 no-p">
+                                <div class="table-responsive ng-scope" style="border: 0px solid #c5c5c5;">
+                                    <table class="table table-striped table-bordered responsive no-m" ts-wrapper>
+                                        <thead>
+                                        <tr>
+                                            <th rowspan="2" style="vertical-align:middle;text-align: center;" class="td_color1">S.No</th>
+                                            <th rowspan="2" style="vertical-align:middle;text-align: center;" class="td_color1"
+                                                ng-show="vm.locType=='District' " ts-criteria="sortOrder | parseInt"
+                                                ts-default>
+                                                <span class="arw"> {{vm.tableColumnHeader1}}</span>
+                                            </th>
+                                            <th rowspan="2" style="vertical-align:middle;text-align: center;" class="td_color1"
+                                                ng-show="vm.locType!='District' && vm.locType != 'Farm'" ts-criteria="locationName | lowercase"
+                                                ts-default>
+                                                <span class="arw"> {{vm.tableColumnHeader1}}</span>
+                                            </th>
+                                            <th rowspan="2" style="vertical-align:middle;text-align: center;" class="td_color1"
+                                                ng-show="vm.locType==='Farm' " ts-criteria="farmName | lowercase"
+                                                ts-default>
+                                                <span class="arw">Farm / Survey No. / Khata No.</span>
+                                            </th>
+                                            <th ng-if = "vm.locType != 'Farm'" rowspan="2" style="vertical-align:middle;text-align: center;" class="td_color1">
+                                              Total No. of
+                                              <span ng-if="vm.locType !='Village'">Villages in Key Stage </span>
+                                              <span ng-if="vm.locType ==='Village'">Farms in Key Stage</span>
+                                            </th>
+                                            <th rowspan="2" ng-if ="vm.locType === 'Farm'">
+                                              Age of Crops in Days
+                                            </th>
+
+                                            <th colspan="2" class="td_color2" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'">Soil Moisture Stress<sup>(1)</sup></th>
+
+                                            <th colspan="2" class="td_color2" ng-show="vm.locType === 'Village' && vm.locType != 'Farm'">Soil Moisture Stress<sup>(1)</sup></th>
+
+                                            <!-- <th rowspan="2" ng-show="vm.locType === 'Village'" style="vertical-align:middle;text-align: center">Village in Critical Stage</th> -->
+                                            <th rowspan="2" class="td_color2" ng-show = "vm.locType != 'Farm' || !vm.isFarmDataLoaded">Pest and Disease alerts <sup>(1)</sup></th>
+                                            <th colspan="3" class="td_color3" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'">Root zone(30cm) ASM <sup>(1)</sup><sup>(2)</sup>
+                                               <!-- as of {{vm.lastKnownValueDate}} -->
+                                             </th>
+                                             <th colspan="2" class="td_color4" ng-show="vm.locType === 'Farm'">Crop Stress </th>
+                                             <th colspan="3" class="td_color3" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">Water Available - Next 7 days</th>
+                                             <th colspan="4" class="td_color4" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'">Rainfall </th>
+                                             <th colspan="2" class="td_color4" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">Water Required - Next 7 Days </th>
+                                             <th colspan="2" class="td_color4" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">Water Deficit - Next 7 Days</th>
+                                        </tr>
+                                        <tr>
+                                            <!--<th style="vertical-align:middle;"
+                                                ts-criteria="residualSM | parseFloat">
+                                                <span class="arw">Residual Soil Moisture (T.M.C)
+                                                (*)</span>
+                                                </th>-->
+                                            <th ng-if="vm.locType != 'Farm'" style="vertical-align:middle;text-align:center;border-left:1px solid #c5c5c5;"  class="td_color2" ts-criteria="noOfCriticalCropStressVillages | parseInt"> Critical</th>
+                                            <th ng-if="vm.locType != 'Farm'" style="vertical-align:middle;text-align:center;border-left:1px solid #c5c5c5;"  class="td_color2" ts-criteria="noOfModerateCropStressVillages | parseInt"> Moderate</th>
+
+                                            <th ng-if="vm.locType === 'Farm'" style="vertical-align:middle;text-align:center;border-left:1px solid #c5c5c5;"  class="td_color2" > Soil Moisture</th>
+                                            <th  ng-if="vm.locType === 'Farm'" style="vertical-align:middle;text-align:center;border-left:1px solid #c5c5c5;"  class="td_color2" > Pest </th>
+                                            <!-- <th style="vertical-align:middle;text-align:center;border-left:1px solid #c5c5c5"  ts-criteria="averageSMRootZone | parseFloat">
+                                                    <span class="arw">Avg. ASM % upto 30cms (Root Zone)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" ts-criteria="averageSM15m | parseFloat">
+                                                <span class="arw">Avg. ASM % upto 1.5m</span>
+                                            </th> -->
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" ts-criteria="childRanges[2] | parseInt">
+                                                <!-- <span ng-if="vm.locType !=='Village'">
+                                                No. of
+                                                    <span ng-if="vm.locType ==='District'">Mandals</span>
+                                                    <span ng-if="vm.locType ==='Mandal'">Villages</span>
+                                                with
+                                                </span> -->
+                                                <span class="arw">ASM > {{vm.LIMITS.HIGH.MIN}}%</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" ts-criteria="childRanges[1] | parseInt">
+                                                <!-- <span ng-if="vm.locType !=='Village'">
+                                                    No. of
+                                                    <span ng-if="vm.locType ==='District'">Mandals</span>
+                                                    <span ng-if="vm.locType ==='Mandal'">Villages</span>
+                                                with
+                                                </span> -->
+                                                <span class="arw">{{vm.LIMITS.MID.MAX}}%> ASM >{{vm.LIMITS.MID.MIN}}%</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" ts-criteria="childRanges[0] | parseInt">
+											<!-- <span ng-if="vm.locType !=='Village'"> -->
+                                            <!-- No. of
+                                                <span ng-if="vm.locType ==='District'">Mandals</span>
+                                                <span ng-if="vm.locType ==='Mandal'">Villages</span>
+											with
+                                            </span> -->
+                                                <span class="arw">{{vm.LIMITS.LOW.MAX}}%>ASM</span>
+                                            </th>
+
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">
+
+                                                <span class="arw">ASM - Today</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">
+
+                                                <span class="arw">Rainfall - Next 7 Day</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" class="td_color3" ng-show="vm.locType === 'Village' || vm.locType === 'Farm'">
+
+                                                <span class="arw">Total Water Available</span>
+                                            </th>
+
+
+
+
+
+                                            <!-- <th style="vertical-align:middle;" ng-if="vm.locType!=='District'" ts-criteria="noOfNonRainyDays | parseFloat">
+                                                <span ng-if="vm.locType!='Village'">Avg.</span>
+                                                <span class="arw"> No. of Continuous non-rainy days (*)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;" ng-if="vm.locType==='District'" ts-criteria="childNonRainyDaysCount | parseInt">
+                                                <span class="arw">
+                                                No. of Mandals under Rainfall Stress (***)
+                                                </span>
+                                            </th>
+                                            <th style="vertical-align:middle;"  ts-criteria="noOfVillagesInStress | parseInt" ng-show="vm.locType==='District'">
+                                                <span class="arw">No. of Villages under Rainfall Stress</span>
+                                            </th>
+                                            <th style="vertical-align:middle;"  ts-criteria="childNonRainyDaysCount | parseInt" ng-show="vm.locType==='Mandal'">
+                                                <span class="arw">No. of Villages under Rainfall Stress</span>
+                                            </th>
+                                            <th style="vertical-align:middle; text-align: center"  ts-criteria="last7DaysCumulative | parseFloat">
+                                                <span class="arw">Last 7 days rainfall (mm)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center"  ts-criteria="yesterdayActual | parseFloat">
+                                                <span class="arw">Yesterday's rainfall (mm)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center"  ts-criteria="todayActual | parseFloat">
+                                                <span class="arw">Today's rainfall (from 8:30 am, {{vm.rFlastKnownValueDate}}) &nbsp(mm)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center">
+                                                Forecast for {{vm.Forecast24hrsDate}}
+                                                24hrs forecast (mm)
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center">
+                                                Forecast for {{vm.Forecast48Date}}
+                                                48hrs forecast (mm)
+                                            </th> -->
+                                            <th style="vertical-align:middle;"  class="td_color4" ts-criteria="noOfVillagesInStress | parseInt" ng-show="vm.locType==='District'">
+                                                <span class="arw">Rainfall Stress <sup>(1)</sup><sup>(3)</sup></span>
+                                            </th>
+                                            <th style="vertical-align:middle;"  class="td_color4" ts-criteria="childNonRainyDaysCount | parseInt" ng-show="vm.locType==='Mandal'">
+                                                <span class="arw">Rainfall Stress <sup>(1)</sup><sup>(3)</sup></span>
+                                            </th>
+                                            <!-- <th style="vertical-align:middle;"  ng-show="vm.locType==='Village'">
+                                                <span class="arw">Since Sowing</span>
+                                            </th> -->
+
+                                            <th style="vertical-align:middle; text-align: center;"  class="td_color4" ng-show="vm.locType !== 'Village' && vm.locType !='Farm'" >
+                                                <span class="arw">Last 10 days rainfall(mm)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center;"  class="td_color4" ng-show="vm.locType !== 'Village' && vm.locType !='Farm'" >
+                                                <span class="arw">Next 7 Days rainfall (mm)</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center;"  class="td_color4" ng-show="vm.locType !== 'Village' && vm.locType !='Farm'" >
+                                                <span class="arw">Since Yesterday (from 8:30 am, {{vm.rFlastKnownValueYestDate}}) &nbsp(mm)</span>
+                                            </th>
+
+                                            <th style="vertical-align:middle; text-align: center;"  class="td_color4" ng-show="vm.locType === 'Village' || vm.locType ==='Farm'" >
+                                                <span class="arw">Productive</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center;"  class="td_color4" ng-show="vm.locType === 'Village' || vm.locType ==='Farm'" >
+                                                <span class="arw">Protective</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center;"  class="td_color4" ng-show="vm.locType === 'Village' || vm.locType ==='Farm'" >
+                                                <span class="arw">Productive</span>
+                                            </th>
+                                            <th style="vertical-align:middle;text-align: center;"  class="td_color4" ng-show="vm.locType === 'Village' || vm.locType ==='Farm'" >
+                                                <span class="arw">Protective</span>
+                                            </th>
+
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <div class="three-quarters-loader" ng-show="vm.waThrobDistricts">
+                                        </div>
+
+                                        <!-- Added ng-if condition while displaying farm data
+                                        to avoid showing empty rows in table while fetching farmData from DB.-->
+
+                                        <tr ng-if= "(vm.locType==='Farm' && vm.isFarmDataLoaded) || vm.locType != 'Farm'" class="ng-scope" ng-class-odd="'ws_odd'" ng-class-even="'ws_even'"
+                                            ng-repeat="(key,value) in vm.availableData track by $index " ts-repeat
+                                            ts-hide-no-data>
+                                            <!--S.No-->
+                                            <td class="ng-binding">{{$index + 1}}</td>
+                                            <!--Location Name -->
+                                            <td style="text-align:left;" class="ng-binding">
+                                                <span ng-if="vm.locType !== 'Village' && vm.locType !=='Farm'"
+                                                        ng-click="!vm.isRowClickable || vm.getChildData(value.locationName)">
+                                                        <a href="#" ng-class="{ 'disable-click' : !vm.isRowClickable }">
+                                                            {{value.locationName}}
+                                                        </a>
+                                                </span>
+
+                                                <span ng-if="vm.locType === 'Farm'">
+                                                            {{value.farmName}}
+                                                </span>
+
+                                                <span ng-if="vm.locType === 'Village'">
+                                                        <span ng-click="vm.getFarmData(value.locationName)">{{value.locationName}}</span>
+                                                        <a target="_blank" ng-click="vm.openAnalysisPage(value.locationName)">
+												<i class="fa fa-cogs pull-right" style="cursor:pointer" aria-hidden="true"></i>
+                                                        </a>
+                                                    <sup ng-if="value.cropTag">
+                                                      ({{value.cropTag}})
+                                                    </sup>
+                                                </span>
+                                            </td>
+                                            <!--no Of CriticalStageVillages-->
+                                            <td class="ng-binding" ng-if="vm.locType != 'Farm'">
+                                            {{(value.noOfCriticalStageVillages > 0)?value.noOfCriticalStageVillages:null}}
+                                            </td>
+                                            <td ng-if="vm.locType ==='Farm'">
+                                              {{value.ageInDays}}
+                                            </td>
+                                            <!--Critical-->
+                                            <td style="color:#f70000;background-color: #fbe4d5!important" class="td_color2">
+                                                <span ng-if="vm.locType != 'Farm'">{{(value.noOfCriticalCropStressVillages > 0)?value.noOfCriticalCropStressVillages:null}}</span>
+                                                <span ng-if="vm.locType === 'Farm' && value.isInCriticalStress">
+                                                  Critical
+                                                </span>
+                                                <span style="color:#b79301;background-color: #fbe4d5!important; font-weight: 600;" ng-if="vm.locType === 'Farm' && !value.isInCriticalStress && value.isInModerateStress">
+                                                  Moderate
+                                                </span>
+                                                <!--<span ng-show="vm.locType !== 'Village'"  >{{value.noOfCriticalCropStressVillages}}</span>
+                                                <span ng-show="vm.locType === 'Village'" >{{value.noOfCriticalCropStressVillages}}</span>-->
+                                            </td>
+                                            <!--Moderate-->
+                                            <td style="color:#b79301;background-color: #fbe4d5!important" class="td_color2">
+                                                <span ng-if="vm.locType != 'Farm'">{{(value.noOfModerateCropStressVillages > 0)? value.noOfModerateCropStressVillages:null}}</span>
+
+                                                <span ng-if="vm.locType === 'Farm'">
+                                                  <span ng-repeat="pest in value.pestNames"> {{pest | uppercase}}{{$last ? '' : ', '}}</span>
+                                                    <!-- {{ (value.pestNames != null) ? value.pestNames : '' }}</span> -->
+                                                <!--<span ng-show="vm.locType !== 'Village'" >{{value.noOfModerateCropStressVillages}}</span>
+                                                <span ng-show="vm.locType === 'Village'" >{{value.noOfModerateCropStressVillages}}</span>-->
+                                            </td>
+                                            <!--pest Alert-->
+                                            <td ng-if="vm.locType != 'Farm' ||  !vm.isFarmDataLoaded" class="ng-binding" class="td_color2" style="background-color: #fbe4d5!important">
+                                            {{(value.pestAlert > 0)?value.pestAlert:null}}
+                                            </td>
+
+                                            <!-- <td>
+                                                {{value.averageSMRootZone | number:2}}
+                                                <span>{{value.averageSMRootZone !== vm.ValueConstant.NO_DATA ? (value.averageSMRootZone | number :2) :"-"}}</span>
+                                            </td>
+                                            <td>
+                                                {{value.averageSM15m | number:2}}
+                                                <span>{{value.averageSM15m !== vm.ValueConstant.NO_DATA ? (value.averageSM15m | number :2) :"-"}}</span>
+                                            </td> -->
+                                            <!--Next 3 columns Represent, onto which range does the SM of the Location Fall
+                                                For villages access field averageSMRootZone
+                                            -->
+
+                                            <td class="td_color3" style="background-color: #e2efd9!important">
+                                                <!-- {{value.childRanges[2]}} -->
+                                                <span ng-if=" vm.locType!='Village' && vm.locType != 'Farm'">
+                                                    <span>{{(value.childRanges[2]>0) ? value.childRanges[2] : '-' }}</span>
+                                                    <!--<span ng-if="value.childRanges[2]>0">{{value.childRanges[2]}}</span>
+                                                    <span ng-if="value.childRanges[2]<=0">-</span>-->
+                                                </span>
+                                                <span ng-if=" vm.locType==='Village' || vm.locType === 'Farm'">
+                                                     <span ng-if=" vm.locType==='Farm'">{{ (value.availableSMInMM >=0) ? (value.availableSMInMM |number:2) : "-" }}</span>
+                                                     <span ng-if=" vm.locType==='Village'">{{ (value.availableSoilMoistureInMM >= 0) ? (value.availableSoilMoistureInMM | number:2) : "-"}}</span>
+                                                    <!-- <span>{{(value.averageSMRootZone>=vm.LIMITS.HIGH.MIN && value.averageSMRootZone < vm.LIMITS.HIGH.MAX) ? '1' : '-' }}</span> -->
+                                                    <!--<span ng-if="value.averageSMRootZone>40 && value.averageSMRootZone<=100">1</span>
+                                                    <span ng-if="!(value.averageSMRootZone>40 && value.averageSMRootZone<=100)">-</span>-->
+                                                </span>
+                                            </td>
+                                            <td  class="td_color3" style="background-color: #e2efd9!important">
+                                                <!-- {{value.childRanges[1]}} -->
+                                                <span ng-if=" vm.locType!='Village' && vm.locType != 'Farm'" >
+                                                    <span>{{(value.childRanges[1]>0) ? value.childRanges[1] : '-' }}</span>
+                                                    <!--<span ng-if="value.childRanges[1]>0">{{value.childRanges[1]}}</span>
+                                                    <span ng-if="value.childRanges[1]<=0">-</span>-->
+											                          </span>
+                                                <span ng-if=" vm.locType==='Village' || vm.locType === 'Farm'">
+                                                  <span ng-if=" vm.locType==='Farm'">{{value.next7DaysForecast >= 0 ? (value.next7DaysForecast | number :2) :"-"}}</span>
+                                                  <span ng-if=" vm.locType==='Village'">{{value.next7DaysForecastCumulative >= 0 ? (value.next7DaysForecastCumulative | number :2) :"-"}}</span>
+                                                     <!-- <span>{{(value.averageSMRootZone>=vm.LIMITS.MID.MIN && value.averageSMRootZone < vm.LIMITS.MID.MAX) ? '1' : '-' }}</span> -->
+                                                    <!--<span ng-if="value.averageSMRootZone>20 && value.averageSMRootZone<=40">1</span>
+                                                    <span ng-if="!(value.averageSMRootZone>20 && value.averageSMRootZone<=40)">-</span>-->
+											    </span>
+                                            </td>
+                                            <td class="td_color3" style="background-color: #e2efd9!important">
+                                                <!-- {{value.childRanges[0]}} -->
+                                                <span ng-if=" vm.locType!='Village' && vm.locType != 'Farm'">
+                                                     <span>{{(value.childRanges[0]>0) ? value.childRanges[0] : '-' }}</span>
+                                                    <!--<span ng-if="value.childRanges[0]>0">{{value.childRanges[0]}}</span>
+                                                    <span ng-if="value.childRanges[0]<=0">-</span>-->
+                          </span>
+                                                <span ng-if=" vm.locType==='Village' || vm.locType === 'Farm'">
+                                                  <!-- <span>{{vm.getTotalAvailWater(value) !== vm.ValueConstant.NO_DATA ? (vm.getTotalAvailWater(value) | number :2):"-"}}</span> -->
+                                                    <span ng-if="vm.locType === 'Farm'">{{value.waterAvailableNext7Days >= 0 ? (value.waterAvailableNext7Days | number :2):"-"}}</span>
+                                                      <span ng-if="vm.locType === 'Village'">
+                                                        <span ng-if="value.next7DaysForecastCumulative >=0 ">{{(value.availableSoilMoistureInMM >=0) ? ((value.next7DaysForecastCumulative + value.availableSoilMoistureInMM) | number :2) : (value.next7DaysForecastCumulative | number :2)}}</span>
+                                                        <span ng-if="value.next7DaysForecastCumulative < 0 || value.next7DaysForecastCumulative == undefined"> {{(value.availableSoilMoistureInMM >= 0) ? (value.availableSoilMoistureInMM | number:2) : "-"}}</span>
+                                                      </span>
+                                                    <!-- <span>{{(value.averageSMRootZone>=vm.LIMITS.LOW.MIN && value.averageSMRootZone < vm.LIMITS.LOW.MAX) ? '1' : '-' }}</span> -->
+                                                    <!--<span ng-if="value.averageSMRootZone>=vm.LIMITS.LOW.MIN && value.averageSMRootZone < vm.LIMITS.LOW.MAX">1</span>
+                                                    <span ng-if="!(value.averageSMRootZone>=0 && value.averageSMRootZone <=20)">-</span>-->
+                          </span>
+                                            </td>
+
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span ng-if=" vm.locType === 'Farm'">
+                                                  <span ng-if="value.waterReqProductiveNext7Days >= 0">{{value.waterReqProductiveNext7Days | number:2}}</span>
+                                                  <span ng-if="value.waterReqProductiveNext7Days < 0">0.00</span>
+                                                  </span>
+
+                                                <span ng-if=" vm.locType === 'Village'">
+                                                  <span ng-if="value.waterReqProd >= 0">{{value.waterReqProd | number:2}}</span>
+                                                  <span ng-if="value.waterReqProd < 0">0.00</span>
+                                                </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span ng-if=" vm.locType === 'Farm'" >
+                                                  <span ng-if="value.waterReqProtectiveNext7Days >= 0">{{value.waterReqProtectiveNext7Days | number:2}}</span>
+                                                  <span ng-if="value.waterReqProtectiveNext7Days < 0">0.00</span>
+                                                </span>
+                                                <span ng-if=" vm.locType === 'Village'">
+                                                  <span ng-if=" value.waterReqProt >= 0">{{value.waterReqProt | number:2}}</span>
+                                                  <span ng-if=" value.waterReqProt < 0">0.00</span>
+                                                </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span ng-if=" vm.locType === 'Farm'">
+                                                  <span ng-if="(value.waterReqProductiveNext7Days - value.waterAvailableNext7Days) >= 0" >{{(value.waterReqProductiveNext7Days - value.waterAvailableNext7Days)| number:2}}</span>
+                                                  <span ng-if="(value.waterReqProductiveNext7Days - value.waterAvailableNext7Days)  < 0" >0.00</span>
+                                                  </span>
+                                                <span ng-if=" vm.locType === 'Village'">
+                                                  <span ng-if=" value.waterDefProd >= 0">{{value.waterDefProd | number:2}}</span>
+                                                  <span ng-if=" value.waterDefProd < 0">0.00</span>
+                                                </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span ng-if=" vm.locType === 'Farm'">
+                                                  <span ng-if="(value.waterReqProtectiveNext7Days - value.waterAvailableNext7Days) >= 0" >{{(value.waterReqProtectiveNext7Days - value.waterAvailableNext7Days) | number:2}}</span>
+                                                  <span ng-if="(value.waterReqProtectiveNext7Days - value.waterAvailableNext7Days) < 0" >0.00</span>
+                                                </span>
+                                                <span ng-if=" vm.locType === 'Village'">
+                                                  <span ng-if=" value.waterDefProt >= 0">{{value.waterDefProt | number:2}}</span>
+                                                  <span ng-if=" value.waterDefProt < 0">0.00</span>
+                                                </span>
+                                            </td>
+
+
+                                            <!--For District non-rainy days are computed on backend and are in feild childNonRainyDaysCount
+                                                For Mandal non- rainy days are computed on UI and appended in field noOfNonRainyDays
+                                                For Village we get directly from backend
+                                            -->
+                                            <!-- <td ng-if="vm.locType==='District' ">
+                                                <span>{{value.childNonRainyDaysCount > 0 ? value.childNonRainyDaysCount:"-"}}</span>
+                                            </td>
+                                            <td ng-if="vm.locType!=='District' "
+                                                ng-class="{ 'stress-affected' : vm.isRainfallStressAffected(value) }">
+											    <span>{{value.noOfNonRainyDays > 0 ? value.noOfNonRainyDays:"-"}}</span>
+                                            </td> -->
+                                            <!--Non Village Non Rainy Days-->
+                                            <td ng-show="vm.locType!=='Village' && vm.locType !='Farm'" class="td_color4" style="background-color: #ececec!important;">
+											<span ng-show="vm.locType==='District'" ng-if="vm.selection.DistrictFilterNoRainDays>=0">
+											{{value.noOfVillagesInStress}}
+											</span>
+                                            <span ng-show="vm.locType==='Mandal'" class="td_color4" style="background-color: #ececec!important;">
+											      <span>{{value.childNonRainyDaysCount > 0 ? value.childNonRainyDaysCount:"-"}}</span>
+											</span>
+                                            </td>
+                                            <!--Rainfall Columns-->
+                                            <!-- <td>
+                                                <span>{{value.last7DaysCumulative !== vm.ValueConstant.NO_DATA ? (value.last7DaysCumulative | number :2) :"-"}}</span>
+                                            </td>
+                                            <td>
+
+                                                <span>{{value.yesterdayActual !== vm.ValueConstant.NO_DATA ? (value.yesterdayActual | number :2) :"-"}}</span>
+                                            </td>
+                                            <td>
+                                                <span>{{value.todayActual !== vm.ValueConstant.NO_DATA ? (value.todayActual | number :2) :"-"}}</span>
+                                            </td> -->
+                                            <td ng-show="vm.locType!=='Village' && vm.locType !='Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span>{{value.last10DaysCumulative !== vm.ValueConstant.NO_DATA ? (value.last10DaysCumulative | number :2) :"-"}}</span>
+                                            </td>
+                                            <td ng-show="vm.locType!=='Village' && vm.locType !='Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span>{{value.next7DaysForecastCumulative !== vm.ValueConstant.NO_DATA ? (value.next7DaysForecastCumulative | number :2) :"-"}}</span>
+                                            </td>
+                                            <td ng-show="vm.locType!=='Village' && vm.locType !='Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span>{{value.rainfallSinceYesterday !== vm.ValueConstant.NO_DATA ? (value.rainfallSinceYesterday | number :2) :"-"}}</span>
+                                            </td>
+                                            <!-- <td>{{vm.LEGEND_DATA[value.next24HrLegendRange].name }}</td>
+                                            <td>{{vm.LEGEND_DATA[value.next48HrLegendRange].name }}</td> -->
+                                            <!--
+                                                <td ng-if="value.childSMPercentList[0] === null"> - </td>
+                                                <td ng-if="value.Current1 != null">{{value.Current1 | number:2}}</td>
+                                                <td ng-if="value.Current2 == null"> - </td>
+                                                <td ng-if="value.Current2 != null">{{value.Current2 | number:2}}</td>
+                                                <td ng-if="value.Current3 == null"> - </td>
+                                                <td ng-if="value.Current3 != null">{{value.Current3 | number:2}}</td>-->
+                                        </tr>
+                                        <tr ng-if="vm.total.isDataAvailable===true">
+                                            <td colspan="2" style="text-align: center">Summary</td>
+                                            <td >
+                                                <span ng-if="vm.locType != 'Farm'" ng-show="vm.total.noOfCriticalStageVillages > 0">{{vm.total.noOfCriticalStageVillages}}</span>
+                                                <span ng-if="vm.locType === 'Farm'">{{''}}</span>
+                                            </td>
+
+                                            <td style="color:#f70000;background-color: #fbe4d5!important" class="td_color2">
+                                                <span ng-if="vm.locType != 'Farm'" ng-show="vm.total.noOfCriticalCropStressVillages > 0">{{vm.total.noOfCriticalCropStressVillages }}</span>
+                                                <span ng-if="vm.locType === 'Farm'">{{''}}</span>
+                                            </td>
+                                            <td style="color:#b79301;background-color: #fbe4d5!important" class="td_color2">
+                                                <span ng-if="vm.locType != 'Farm'" ng-show="vm.total.noOfModerateCropStressVillages > 0">{{vm.total.noOfModerateCropStressVillages }}</span>
+                                                <span ng-if="vm.locType === 'Farm'">{{''}}</span>
+                                            </td>
+                                            <td ng-if= "vm.locType != 'Farm' "class="td_color2;"style="background-color: #fbe4d5!important">
+                                                <span  ng-show="vm.total.pestAlert > 0">{{vm.total.pestAlert}}</span>
+
+                                            </td>
+                                            <!-- <td>{{vm.total.averageSMRootZone | number:2}}</td>
+                                            <td>{{vm.total.averageSM15m | number:2}}</td> -->
+                                            <!-- <td>{{vm.total.childRanges[0]}}</td>
+                                                <td>{{vm.total.childRanges[1]}}</td> -->
+                                            <td class="td_color3" style="background-color: #e2efd9!important">
+                                              <span ng-if=" vm.locType!='Village' && vm.locType != 'Farm'">
+                                                    <span>{{(vm.total.childRanges[2]>0) ? vm.total.childRanges[2] : '-' }}</span>
+                                                <!--<span ng-if="vm.total.childRanges[0]>0">{{vm.total.childRanges[0]}}</span>
+                                                <span ng-if="vm.total.childRanges[0]<=0">-</span>-->
+											                        </span>
+                                              <span ng-if="vm.locType === 'Farm'">
+                                                <span>{{(vm.total.totalAvailableSoilMoistureInMM >= 0) ? (vm.total.totalAvailableSoilMoistureInMM | number :2) : '-' }}</span>
+
+                                                     <!-- <span>{{(vm.total.averageSMRootZone >= vm.LIMITS.LOW.MIN && vm.total.averageSMRootZone < vm.LIMITS.LOW.MAX) ? '1' : '-' }}</span> -->
+                                                    <!--<span ng-if="vm.total.averageSMRootZone>0 && vm.total.averageSMRootZone<=20">1</span>
+                                                    <span ng-if="!vm.total.averageSMRootZone>0 && !vm.total.averageSMRootZone<=20">-</span>-->
+											                        </span>
+                                              <span ng-if=" vm.locType==='Village'">
+                                                <span>{{(vm.total.totalAvailableSoilMoistureInMMVillage >= 0) ? (vm.total.totalAvailableSoilMoistureInMMVillage | number :2) : '-' }}</span>
+                                              </span>
+
+                                            </td>
+                                            <td class="td_color3" style="background-color: #e2efd9!important">
+											                        <span ng-if=" vm.locType!='Village' && vm.locType != 'Farm'">
+                                                <span>{{(vm.total.childRanges[1]>0) ? vm.total.childRanges[1] : '-' }}</span>
+											<!--<span ng-if="vm.total.childRanges[1]>0">{{vm.total.childRanges[1]}}</span>
+											<span ng-if="vm.total.childRanges[1]<=0">-</span>-->
+											    </span>
+                                                <span ng-if=" vm.locType==='Village' || vm.locType === 'Farm'">
+                                                  <span ng-if="vm.locType ==='Farm'">{{(vm.total.next7DaysForecast>=0) ? (vm.total.next7DaysForecast | number:2) : '-' }}</span>
+                                                  <span ng-if="vm.locType ==='Village'">{{(vm.total.next7DaysForecastCumulative >=0 ) ? (vm.total.next7DaysForecastCumulative | number:2) : '-'}}</span>
+                                                    <!-- <span>{{(vm.total.averageSMRootZone >= vm.LIMITS.MID.MIN && vm.total.averageSMRootZone < vm.LIMITS.MID.MAX) ? '1' : '-' }}</span> -->
+											<!--<span ng-if="vm.total.averageSMRootZone>20 && vm.total.averageSMRootZone<=40">1</span><span
+                                                        ng-if="!vm.total.averageSMRootZone>20 && !vm.total.averageSMRootZone<=40">-</span>-->
+											    </span>
+                                            </td>
+                                            <td class="td_color3" style="background-color: #e2efd9!important">
+											<span ng-if=" vm.locType!='Village'  && vm.locType != 'Farm'">
+                                                <span>{{(vm.total.childRanges[0]>0) ? vm.total.childRanges[0] : '-' }}</span>
+											<!--<span ng-if="vm.total.childRanges[2]>0">{{vm.total.childRanges[2]}}</span>
+											<span ng-if="vm.total.childRanges[2]<=0">-</span>-->
+											    </span>
+                                                <span ng-if=" vm.locType === 'Farm'">
+                                                  <span>{{(vm.total.totalWaterAvailableNext7Days >= 0 ) ? (vm.total.totalWaterAvailableNext7Days | number :2) : '-' }}</span>
+                                                    <!-- <span>{{(vm.total.averageSMRootZone >= vm.LIMITS.HIGH.MIN && vm.total.averageSMRootZone < vm.LIMITS.HIGH.MAX) ? '1' : '-' }}</span> -->
+											<!--<span ng-if="vm.total.averageSMRootZone>40 && vm.total.averageSMRootZone<=100">1</span><span
+                                                        ng-if="!vm.total.averageSMRootZone>40 && !vm.total.averageSMRootZone<=100">-</span>-->
+											    </span>
+                        </span>
+                                              <span ng-if=" vm.locType==='Village'">
+
+                                                <span ng-if = "vm.total.next7DaysForecastCumulative >= 0">{{ (vm.total.totalAvailableSoilMoistureInMMVillage >=0) ? (vm.total.next7DaysForecastCumulative + vm.total.totalAvailableSoilMoistureInMMVillage | number :2) : vm.total.next7DaysForecastCumulative | number:2}}</span>
+                                                <span ng-if = "vm.total.next7DaysForecastCumulative < 0 || vm.total.next7DaysForecastCumulative == undefined">{{ (vm.total.totalAvailableSoilMoistureInMMVillage >=0) ? (vm.total.totalAvailableSoilMoistureInMMVillage | number :2) : '-' }}</span>
+                        </span>
+                                            </td>
+
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                              <span>
+                                                  <span>{{(vm.total.waterReqInfoCount[0]!=0) ? (vm.total.waterReqInfo[0]/vm.total.waterReqInfoCount[0] | number :2) : '-' }}</span>
+                                              </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                              <span>
+                                                  <span>{{(vm.total.waterReqInfoCount[1]!=0) ? (vm.total.waterReqInfo[1]/vm.total.waterReqInfoCount[1] | number :2) : '-' }}</span>
+                                              </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                              <span>
+                                                  <span>{{(vm.total.waterReqInfoCount[2]>0) ? ( (vm.total.waterReqInfo[2] >= 0 ? vm.total.waterReqInfo[2]/vm.total.waterReqInfoCount[2] : 0.0) | number :2) : '-' }}</span>
+                                              </span>
+                                            </td>
+                                            <td ng-if=" vm.locType==='Village' || vm.locType === 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                              <span>
+                                                  <span>{{(vm.total.waterReqInfoCount[3]>0) ? ((vm.total.waterReqInfo[3] >= 0 ? vm.total.waterReqInfo[3]/vm.total.waterReqInfoCount[3] : 0.0)| number :2) : '-' }}</span>
+                                              </span>
+                                            </td>
+
+                                            <!--Village Non Rainy-->
+                                            <td ng-show="vm.locType !== 'Village' && vm.locType !== 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                <span ng-if="vm.locType==='Mandal'">
+                                                    <span>{{ vm.total.childNonRainyDays > 0 ? ( vm.total.childNonRainyDays | number:0):"-"}}</span>
+                                                    <!--<span ng-if=" vm.total.childNonRainyDaysCount>0">{{vm.total.childNonRainyDaysCount | number:0}}</span>
+                                                    <span ng-if=" vm.total.childNonRainyDaysCount<0">-</span>-->
+                                                </span>
+                                                <span ng-if="vm.locType==='District'">
+                                                    <span>{{ vm.total.grandChildrenNonRainyDays > 0 ? ( vm.total.grandChildrenNonRainyDays | number:0):"-"}}</span>
+                                                    <!--<span ng-if=" vm.total.grandChildrenNonRainyDayscount>0">{{vm.total.grandChildrenNonRainyDayscount}}</span>
+                                                    <span ng-if=" vm.total.grandChildrenNonRainyDayscount<0">-</span>-->
+                                                </span>
+                                            </td>
+                                            <!-- <td>
+                                                {{vm.total.last7DaysCumulative | number:2}}
+                                            </td>
+                                            <td>
+                                                {{vm.total.yesterdayActual | number:2}}
+                                            </td>
+                                            <td>
+                                                {{vm.total.todayActual | number:2}}
+                                            </td> -->
+                                            <td ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                {{vm.total.last10DaysCumulative | number:2}}
+                                            </td>
+                                            <td ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                {{vm.total.next7DaysForecastCumulative | number:2}}
+                                            </td>
+                                            <td ng-show="vm.locType !== 'Village' && vm.locType != 'Farm'" class="td_color4" style="background-color: #ececec!important;">
+                                                {{vm.total.rainfallSinceYesterday | number:2}}
+                                            </td>
+                                            <!-- <td colspan="3"></td> -->
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                    <div class="col-md-8" ng-show="vm.component != null">
+                        <span ng-repeat="(key,value) in vm.LEGEND_DATA">{{value.name}} (<span ng-if="value.max === vm.NUMBER_MAX_VALUE"> &gt </span>{{value.min}}  <span ng-if="value.max != vm.NUMBER_MAX_VALUE"> - {{value.max}}</span>),  &nbsp</span><br>
+                        <!-- <span class="pull-left">{{vm.descriptionText}}</span></br>
+                        <span class="pull-left">{{vm.descriptionText1}}</span></br>
+                        <span class="pull-left">{{vm.descriptionText2}}</span></br> -->
+                        <span class="pull-left">{{vm.descriptionText3}}</span></br>
+                    </div>
+                    <div class="col-md-8">
+                        <span class="pull-left">(1) Expressed as no. of
+                          <span ng-show="vm.locType !== 'Village'">villages</span>
+                          <span ng-show="vm.locType === 'Village'">Farms</span>
+                        with the mentioned condition.</span></br>
+                    </div>
+                    <div class="col-md-8" ng-show="vm.locType !== 'Village'">
+                        <span class="pull-left">(2) ASM: Available Soil Moisture value is expressed in % of Water Holding Capacity.</span></br>
+                    </div>
+                    <div class="col-md-8" ng-show="vm.locType !== 'Village'">
+                        <span class="pull-left">(3) Rainfall stress is defined as dry period of more than 21 days of continuous non rainy days.</span></br>
+                    </div>
+                    <div class="col-sm-3 pull-right">
+                        <a href="/soilmoisture/analysis">
+                            <button type="button" class="btn btn-block btn-primary">Analysis</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".chv_wb").click(function () {
+                $('html,body').animate({
+                            scrollTop: $(".chv_data").offset().top
+                        },
+                        'slow');
+            });
+        </script>

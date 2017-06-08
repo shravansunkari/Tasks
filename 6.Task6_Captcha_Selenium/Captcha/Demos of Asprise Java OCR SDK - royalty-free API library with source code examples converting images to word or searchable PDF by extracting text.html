@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+    .video-js {
+      width: 300px;
+      height: 150px;
+    }
+
+    .vjs-fluid {
+      padding-top: 56.25%
+    }
+  </style><style class="vjs-styles-dimensions">
+      .demo_video-dimensions {
+        width: 1280px;
+        height: 720px;
+      }
+
+      .demo_video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demos of Asprise Java OCR SDK - royalty-free API library with
+ source code examples converting images to word or searchable PDF by 
+extracting text</title>
+    <meta name="description" content="Asprise Java OCR library offers a royalty-free API that converts images (in formats like JPEG, PNG, TIFF, PDF, etc.)
+        into editable document formats Word, XML, searchable PDF, etc.) by extracting text and barcode information.
+        With our scanning component, you can perform direct scanner to editable document transformation.">
+    <meta name="keywords" content="Java OCR API library; Java extract text from image; PDF to word/text ocr; scanner document to searchable pdf or editable text word; pdf to word converter; royalty-free with source code open; OCR source code example;">
+
+    <link rel="shortcut icon" href="http://asprise.com/res/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://asprise.com/res/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://asprise.com/res/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://asprise.com/res/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://asprise.com/res/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://asprise.com/res/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://asprise.com/res/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://asprise.com/res/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://asprise.com/res/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="http://asprise.com/res/img/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="http://asprise.com/res/img/favicon/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="http://asprise.com/res/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://asprise.com/res/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://asprise.com/res/img/favicon/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/res/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/res/img/favicon/browserconfig.xml">
+
+    <link rel="stylesheet" href="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/a2.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>-->
+
+    <script async="" src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/analytics.js"></script><script src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/jquery.js"></script>
+    <script src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/jquery_002.js"></script>
+    <script src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/asprise.js"></script>
+
+    <!--<script src="http://use.typekit.net/gis6vng.js"></script>-->
+    <script>
+
+    $(function() {
+        $('#topstrip').css('z-index','999');
+        $('#topstrip').find('*').css('z-index','999');
+
+        $('#primarynav > li').mouseover(function() {
+            if($(this).find('ul.dropdown').length == 0) {
+                return;
+            }
+
+            $(this).addClass('over');
+            var top = $('#bodycontainer').position().top;
+            if(! (top > 0)) {
+                top = 0;
+            }
+            $('#overlay').css('top', top);
+            $('#overlay').width($(document).width());
+            $('#overlay').height($(document).height() - top);
+            $('#overlay').stop(true, true)
+            $('#overlay').fadeIn(0);
+        });
+
+        $('#primarynav > li').mouseout(function() {
+            $(this).removeClass('over');
+            //if($(this).find('ul').css('display') == 'none' || !$(this).find('ul').is(':hover')) {
+                $('#overlay').stop(true, true);
+                $('#overlay').fadeOut(300);
+              //  alert('done');
+            //}
+        });
+
+        $('a.grayscale').mouseover(function() {
+            $(this).removeClass('grayscale');
+        }).mouseout(function() {
+            $(this).addClass('grayscale');
+        });
+
+        $("div#main a[href^='http']").attr("target","_blank"); // open absolute url in new window
+    });
+
+    // auto table of content
+    autoToc();
+
+    </script>        <link rel="stylesheet" href="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/magnific-popup.css" type="text/css" media="screen">
+        <script type="text/javascript" src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/jquery_003.js"></script>
+        <script>
+            $(function() {
+                $(".popup").magnificPopup({
+                    type: 'inline',
+                    midClick: true
+                });
+                
+                if ($(".popup-open").length ) {
+                    $(".popup-open").magnificPopup({
+                        type: 'inline',
+                        midClick: true
+                    }).magnificPopup('open');
+                }
+            });
+
+        </script>        <link rel="stylesheet" href="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/jquery.css" type="text/css" media="screen">
+        <script type="text/javascript" src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/jquery_004.js"></script>
+        <script>
+            $(function() {
+                $(".fancybox").fancybox({
+                    afterLoad: function() {
+                        this.title += ' · <a href="' + this.href + '" target=_blank>View raw image</a> ';
+                    },
+                    padding : 0
+                });
+            });
+
+        </script>        <link href="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/video-js.css" rel="stylesheet">
+        <script type="text/javascript" src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/video.js"></script>        <script>
+
+            $(function() {
+                $(".popupV").magnificPopup({
+                    type: 'inline',
+                    midClick: true,
+                    showCloseBtn: true
+                });
+            });
+</script>
+<style type="text/css">.fancybox-margin{margin-right:10px;}</style></head><body class="asprise"><div id="topstrip" style="z-index: 999;">
+    <div id="header" style="height: 100%; position: relative; z-index: 999;">
+
+        <a href="http://asprise.com/" style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/logo.png" style="position: absolute; bottom: 20px; left: 0px; z-index: 999;"></a>
+
+            <ul id="primarynav" style="position: absolute; bottom: 0px; left: 264px; width: 800px; z-index: 999;">
+
+                <li id="nav-ocr" class="selected" style="z-index: 999;"><a href="http://asprise.com/royalty-free-library/ocr-api-for-java-csharp-vb.net.html" style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/n1.png" style="z-index: 999;" border="0"></a>
+                    <ul class="dropdown" style="width: 390px; z-index: 999;">
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/java-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-java-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">Java OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/c%23-sharp.net-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-net-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">C# .NET OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/vb.net-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-net-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">VB.NET OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/python-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-python-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">Python OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/c-c++-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-others-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">C/C++ OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+                        <li style="border: 0px solid cyan; width: 100%; margin-bottom: 0px; z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/royalty-free-library/delphi-pascal-ocr-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-delphi-36.png" style="z-index: 999;" align="middle" width="24"></div>
+                                <div class="text" style="z-index: 999;">Delphi Pascal OCR &amp; Barcode Recognition SDK</div></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li id="nav-scan" class="" style="z-index: 999;"><a href="http://asprise.com/document-scanning-library/imaging-api-for-java.net.html" style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/n2.png" style="z-index: 999;" border="0"></a>
+                    <ul class="dropdown" style="width: 340px; z-index: 999;">
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/document-scan-upload-image-browser/direct-to-server-php-asp.net-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-browser2-36.png" style="z-index: 999;" align="middle" width="32"></div>
+                                <div class="text" style="line-height: 1; z-index: 999;">Scanner.js - Javascript Browser Scan
+                                <br style="z-index: 999;"><span class="small" style="z-index: 999;">Scan &amp; upload: Chrome, Firefox, Edge, IE ...</span></div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/document-scanner-image-pdf/java-scanning-api-overview.html" style="z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-java-36.png" style="z-index: 999;" align="middle" width="32"></div>
+                                <div class="text" style="line-height: 1; z-index: 999;">Java Scanning and Imaging SDK
+                                <br style="z-index: 999;"><span class="small" style="z-index: 999;">Scan to Swing &amp; JavaFX on 32bit/64bit JVM</span></div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/c%23-vb.net-scanner-api/twain-wia-scan-pdf-library-overview.html" style="margin-bottom: 20px; z-index: 999;">
+                                <div style="z-index: 999;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/lang-net-36.png" style="z-index: 999;" align="middle" width="32"></div>
+                                <div class="text" style="line-height: 1; z-index: 999;">C# VB.NET Scanning &amp; Imaging SDK
+                                <br style="z-index: 999;"><span class="small" style="z-index: 999;">Scan to 64bit and 32bit WinForms/WPF Apps</span></div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/document-scanning-library/java-image-scanner-api-overview.html" style="z-index: 999;">
+                                <div style="display: inline-block; width: 32px; z-index: 999;"></div>
+                                <div class="text" style="line-height: 1; z-index: 999;">Java Scanning &amp; Image Capture SDK
+                                <br style="z-index: 999;"><span class="small" style="z-index: 999;">for 32-bit and 64-bit Java on Windows &amp; Mac</span></div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/product/jtwain/index.php" style="z-index: 999;">
+                                <div style="display: inline-block; width: 32px; z-index: 999;"></div>
+                                <div class="text" style="z-index: 999;">JTwain <span class="small" style="z-index: 999;">for 32-bit Java on Windows</span></div></a>
+                        </li>
+                                                <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/product/jsane/index.php" style="z-index: 999;">
+                                <div style="display: inline-block; width: 32px; z-index: 999;"></div>
+                                <div class="text" style="z-index: 999;">JSane <span class="small" style="z-index: 999;">Scanning on Linux, Unix and Mac</span></div></a>
+                        </li>
+                                                <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/product/javatiff/index.php" style="z-index: 999;">
+                                <div style="display: inline-block; width: 32px; z-index: 999;"></div>
+                                <div class="text" style="z-index: 999;">Java TIFF Library</div></a>
+                        </li>
+                                                                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/product/javapdf/index.php" style="z-index: 999;">
+                                <div style="display: inline-block; width: 32px; z-index: 999;"></div>
+                                <div class="text" style="z-index: 999;">Java PDF Library</div></a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li id="nav-about" class="" style="z-index: 999;"><a href="http://asprise.com/ocr-document-scanning-java.net/library-api-about.html" style="z-index: 999;">
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/nav-about.png" style="z-index: 999;" border="0"></a>
+                    <ul class="dropdown" style="width: 240px; z-index: 999;">
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/ocr-document-scanning-java.net/library-api-about.html" style="z-index: 999;">
+                                <div class="text" style="line-height: 1; z-index: 999;">About Asprise
+                                <br style="z-index: 999;"><span class="small" style="z-index: 999;">imaging &amp; OCR leader since 1998</span></div></a>
+                        </li>
+                        <li style="z-index: 999;">
+                            <a class="grayscale" href="http://asprise.com/ocr-document-scanning-java.net/library-api-partner.html" style="z-index: 999;">
+                                <div class="text" style="z-index: 999;">Partner with Asprise <span class="small" style="z-index: 999;"></span></div></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li id="nav-careers" class="" style="z-index: 999;"><a href="http://asprise.com/ocr-document-scanning-java.net/library-api-careers.html" style="z-index: 999;">
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/nav-careers.png" style="z-index: 999;" border="0"></a>
+                    <!--ul style="width: 300px; height: 250px; right: 0px; left: auto;">
+                    </ul-->
+                </li>
+
+                <li id="nav-contact" class="" style="z-index: 999;"><a href="http://asprise.com/ocr-document-scanning-java.net/library-api-contact.html" style="z-index: 999;">
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/nav-contact.png" style="z-index: 999;" border="0"></a>
+                    <!--ul style="width: 300px; height: 250px; right: 0px; left: auto;">
+                    </ul-->
+                </li>
+
+                <!--                <li class="right"><a href="/home/mirrors.php">-->
+                <!--                        Mirrors-->
+                <!--                    </a></li>-->
+            </ul>
+    </div> <!-- header -->
+</div> <!-- topstrip --><div id="bodycontainer_outer">
+<div id="bodycontainer" style="">
+    <div id="contentcontainer">
+        <div id="content">            <div id="top" style="border: solid 0px red; clear: both; position: relative; margin-bottom: 20px;"><div id="title" style="clear: both; width: 100%; height: 100px; border-bottom: solid 1px #aaa; margin-top: 20px;">
+                     <div style="display: inline-block;">
+                         <h1 class="title">Java OCR <span class="smaller">and Barcode Recognition</span></h1>
+                         <h2 class="subtitle">High performance, royalty-free Java OCR and barcode recognition on Windows, Linux, Mac OS and Unix </h2>
+                     </div>
+                    <div id="title_pic" style="position: absolute; right: 0px; top: 0px; border: solid 0px green;">
+                        <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/ocr.png" style="" width="100">
+                    </div>
+                </div>            </div> <!-- end top -->            <div id="wrapper_right_main_outer_left_on" style="clear: both;">
+                <div id="wrapper_right_main_inner_left_on">
+                    <!--<div id="content_header" style="margin: 0; padding: 0; border: solid 1px blueviolet;"> &lt;!&ndash; header start &ndash;&gt;-->
+                    <!--</div>-->
+
+                    <!--<div id="right" style="border: solid 1px green;">-->
+                    <!--</div>-->
+                    <!-- start right main left wrapper -->
+                    <div id="main" class="" style="border: solid 0px blue;"> <!-- main body start -->
+                        <div style="padding-right: 0px;">        <h2 style="margin-top: 4px; font-size: 26px; color: #666;">Java OCR Demos</h2>
+
+        <a href="#popup-video" class="popupV" title="Video demo"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/video-demo-small.jpg" style="border: 0px;" align="right" hspace="6"></a>
+        <ul id="toc"><li><a id="link0" href="#toc-title-0" title="undefined">Basics</a></li><li><a id="link1" href="#toc-title-1" title="undefined">Extract Text and Barcodes in Plain Text Format</a></li><li><a id="link2" href="#toc-title-2" title="undefined">XML Format Provides Information Like Confidence and Coordinates &amp; Tables</a></li><li><a id="link3" href="#toc-title-3" title="undefined">Searchable PDF Combines Original Image and Recognized Text Perfectly</a></li><li><a id="link4" href="#toc-title-4" title="undefined">User Editable Rich Text Format (RTF)</a></li></ul>
+        <h3 id="toc-title-0">Basics</h3>
+                            <p>
+                                Programming with Asprise OCR is very straightforward.
+                                Below is the typical source code sample in Java to recognize images:
+                            </p>
+
+                            <pre>import com.asprise.ocr.Ocr
+...
+
+Ocr.setUp(); // one time setup
+Ocr ocr = new Ocr(); // create a new OCR engine
+ocr.startEngine("eng", Ocr.SPEED_FASTEST); // English
+String s = <b>ocr.recognize(new File[] {new File("test.png")},
+  Ocr.RECOGNIZE_TYPE_ALL, Ocr.OUTPUT_FORMAT_PLAINTEXT);</b> // PLAINTEXT | XML | PDF | RTF
+System.out.println("Result: " + s);
+ocr.stopEngine();</pre>
+
+
+                            <p>With the below sample input image:
+                            <a href="http://asprise.com/ocr/img/demo/test-image.png" class="fancybox" title="Sample input image (80 KB)" target="_blank">
+                                </a></p><figure><a href="http://asprise.com/ocr/img/demo/test-image.png" class="fancybox" title="Sample input image (80 KB)" target="_blank">
+                                <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/test-image.png" class="bordered" width="160">
+
+                                    </a></figure><a href="http://asprise.com/ocr/img/demo/test-image.png" class="fancybox" title="Sample input image (80 KB)" target="_blank">
+                            </a>
+                            <h3 id="toc-title-1">Extract Text and Barcodes in Plain Text Format</h3>
+                            <p></p><pre>Asprise OCR and Barcode Recognition
+
+High performance, royalty-free OCR and barcode recognition on Windows,
+...
+ISBN-l3, Interleaved 2 of 5, Code 39, Code 128, PDF417, and QR Code.
+
+[[QR-Code: www.asprise.com]]
+[[CODE-128: Asprise]].</pre>
+                            <p></p>
+<a name="xml"></a>
+                            <h3 id="toc-title-2">XML Format Provides Information Like Confidence and Coordinates &amp; Tables</h3>
+                            <p>If you need additional information like accuracy confidence and text coordinates,
+                            you can select XML as the output format. Additionally, table information like rows and cells
+                            are also available in XML.
+                            </p>
+
+                            <p></p><pre>&lt;?xml version="1.0"?&gt;
+&lt;asprise-ocr input="test-image.png"&gt;
+  &lt;page no="1" width="2400" height="3200" words="124" confidence="92"&gt;
+    &lt;block type="text" <b> x="320" y="248" width="1176" height="63" words="5" confidence="88"</b>&gt;
+Asprise OCR and Barcode Recognition
+    &lt;/block&gt;
+...
+    &lt;block type="barcode" subtype="QR-Code" x="1397" y="1647" width="441" height="441"&gt;www.asprise.com&lt;/block&gt;
+    &lt;block type="barcode" subtype="CODE-128" x="348" y="1651" width="583" height="147"&gt;Asprise&lt;/block&gt;
+  &lt;/page&gt;
+&lt;/asprise-ocr&gt;</pre>
+                            <p></p>
+
+<p><a href="http://asprise.com/ocr/img/demo/ocr-result.xml" target="_blank"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/thumb-xml.png" class="bordered" height="200"></a>
+<br><a href="http://asprise.com/ocr/img/demo/ocr-result.xml" target="_blank">Click here to view the actual XML</a>
+</p>
+
+<a name="pdf"></a>
+                            <h3 id="toc-title-3">Searchable PDF Combines Original Image and Recognized Text Perfectly</h3>
+                            <p>Asprise OCR supports generating searchable PDF:
+                            </p>
+
+<table style="margin-top: 0; margin-bottom: 0;">
+<tbody><tr>
+<td>
+        <p>
+        <a href="http://asprise.com/ocr/img/demo/ocr-result-highlighted.pdf" target="_blank">
+        <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/thumb-pdf-highlighted.png" class="bordered" height="200"></a>
+        <br><a href="http://asprise.com/ocr/img/demo/ocr-result-highlighted.pdf" target="_blank">
+        PDF output with recognized text highlighted</a>
+        </p>
+</td>
+
+<td style="padding-left: 20px;">
+        <p>
+        <a href="http://asprise.com/ocr/img/demo/ocr-result-transparent.pdf" target="_blank">
+        <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/thumb-pdf-transparent.png" class="bordered" height="200"></a>
+        <br><a href="http://asprise.com/ocr/img/demo/ocr-result-transparent.pdf" target="_blank">
+        PDF output with transparent text</a>
+        </p>
+</td>
+</tr>
+</tbody></table>
+
+
+                            <p>
+                            Asprise OCR offer property for you to configure whether text should be highlighted or
+                            transparent. Please refer to the
+   <a href="http://asprise.com/ocr/docs/html/asprise-ocr-sdk.html" target="_blank">developer's guide</a> for details.
+                            </p>
+
+                            <h3 id="toc-title-4">User Editable Rich Text Format (RTF)</h3>
+                            <p>Choose RTF format if the user needs to further edit the recognition result in a word processor.
+                            </p>
+
+        <p>
+        <a href="http://asprise.com/ocr/img/demo/ocr-result.rtf" target="_blank">
+        <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/thumb-rtf.png" class="bordered" height="200"></a>
+        <br><a href="http://asprise.com/ocr/img/demo/ocr-result.rtf" target="_blank">
+        RTF output</a>
+        </p>
+
+                            <br>
+<div id="popup-video" class="white-popup mfp-hide" width="1280" height="760" style="max-width: 1280px; padding: 0px;">
+    <div data-setup="{&quot;example_option&quot;:true}" poster="/ocr/video/thumbnail.jpg" preload="auto" class="video-js vjs-default-skin vjs-big-play-centered vjs-paused demo_video-dimensions vjs-controls-enabled vjs-user-inactive" id="demo_video"><video id="demo_video_html5_api" class="vjs-tech" preload="auto" poster="/ocr/video/thumbnail.jpg" data-setup="{&quot;example_option&quot;:true}" src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/AspriseOcrDemo.mp4">
+     <source src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/AspriseOcrDemo.mp4" type="video/mp4">
+     <source src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/AspriseOcrDemo.webm" type="video/webm">
+     <source src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/AspriseOcrDemo.ogg" type="video/ogg">
+     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+    </video><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(&quot;/ocr/video/thumbnail.jpg&quot;);"></div><div class="vjs-text-track-display"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner"></div><button class="vjs-big-play-button" tabindex="0" role="button" type="button" aria-live="polite"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar"><button class="vjs-play-control vjs-control vjs-button " tabindex="0" role="button" type="button" aria-live="polite"><span class="vjs-control-text">Play</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button vjs-volume-menu-button-horizontal vjs-vol-3" tabindex="0" role="button" type="button" aria-live="polite" aria-haspopup="true"><span class="vjs-control-text">Mute</span><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 3:31</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" aria-label="video progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 99.4077%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-mouse-display" style="left: 0px;" data-current-time="0:00"></div><div class="vjs-play-progress vjs-slider-bar" data-current-time="0:00"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="button" type="button" aria-live="polite" aria-haspopup="true"><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1</div><div class="vjs-menu"><ul class="vjs-menu-content"></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="button" type="button" aria-live="polite" aria-haspopup="true" aria-label="Chapters Menu"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="button" type="button" aria-live="polite" aria-haspopup="true" aria-label="Subtitles Menu"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" tabindex="0" role="button" aria-live="polite" aria-selected="true" type="button">subtitles off<span class="vjs-control-text"></span></li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="button" type="button" aria-live="polite" aria-haspopup="true" aria-label="Captions Menu"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="0" role="button" aria-live="polite" aria-selected="false" type="button">captions settings<span class="vjs-control-text"></span></li><li class="vjs-menu-item vjs-selected" tabindex="0" role="button" aria-live="polite" aria-selected="true" type="button">captions off<span class="vjs-control-text"></span></li></ul></div></div><button class="vjs-fullscreen-control vjs-control vjs-button " tabindex="0" role="button" type="button" aria-live="polite"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="demo_video_component_298_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="demo_video_component_298_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden"><div class="vjs-tracksettings">
+      <div class="vjs-tracksettings-colors">
+        <div class="vjs-fg-color vjs-tracksetting">
+            <label class="vjs-label">Foreground</label>
+            <select>
+              <option value="" selected="selected">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-text-opacity vjs-opacity">
+              <select>
+                <option value="" selected="selected">---</option>
+                <option value="1">Opaque</option>
+                <option value="0.5">Semi-Opaque</option>
+              </select>
+            </span>
+        </div> <!-- vjs-fg-color -->
+        <div class="vjs-bg-color vjs-tracksetting">
+            <label class="vjs-label">Background</label>
+            <select>
+              <option value="" selected="selected">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-bg-opacity vjs-opacity">
+                <select>
+                  <option value="" selected="selected">---</option>
+                  <option value="1">Opaque</option>
+                  <option value="0.5">Semi-Transparent</option>
+                  <option value="0">Transparent</option>
+                </select>
+            </span>
+        </div> <!-- vjs-bg-color -->
+        <div class="window-color vjs-tracksetting">
+            <label class="vjs-label">Window</label>
+            <select>
+              <option value="" selected="selected">---</option>
+              <option value="#FFF">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-window-opacity vjs-opacity">
+                <select>
+                  <option value="" selected="selected">---</option>
+                  <option value="1">Opaque</option>
+                  <option value="0.5">Semi-Transparent</option>
+                  <option value="0">Transparent</option>
+                </select>
+            </span>
+        </div> <!-- vjs-window-color -->
+      </div> <!-- vjs-tracksettings -->
+      <div class="vjs-tracksettings-font">
+        <div class="vjs-font-percent vjs-tracksetting">
+          <label class="vjs-label">Font Size</label>
+          <select>
+            <option value="0.50">50%</option>
+            <option value="0.75">75%</option>
+            <option value="1.00" selected="selected">100%</option>
+            <option value="1.25">125%</option>
+            <option value="1.50">150%</option>
+            <option value="1.75">175%</option>
+            <option value="2.00">200%</option>
+            <option value="3.00">300%</option>
+            <option value="4.00">400%</option>
+          </select>
+        </div> <!-- vjs-font-percent -->
+        <div class="vjs-edge-style vjs-tracksetting">
+          <label class="vjs-label">Text Edge Style</label>
+          <select>
+            <option value="none" selected="selected">None</option>
+            <option value="raised">Raised</option>
+            <option value="depressed">Depressed</option>
+            <option value="uniform">Uniform</option>
+            <option value="dropshadow">Dropshadow</option>
+          </select>
+        </div> <!-- vjs-edge-style -->
+        <div class="vjs-font-family vjs-tracksetting">
+          <label class="vjs-label">Font Family</label>
+          <select>
+            <option value="" selected="selected">Default</option>
+            <option value="monospaceSerif">Monospace Serif</option>
+            <option value="proportionalSerif">Proportional Serif</option>
+            <option value="monospaceSansSerif">Monospace Sans-Serif</option>
+            <option value="proportionalSansSerif">Proportional Sans-Serif</option>
+            <option value="casual">Casual</option>
+            <option value="script">Script</option>
+            <option value="small-caps">Small Caps</option>
+          </select>
+        </div> <!-- vjs-font-family -->
+      </div>
+    </div>
+    <div class="vjs-tracksettings-controls">
+      <button class="vjs-default-button">Defaults</button>
+      <button class="vjs-done-button">Done</button>
+    </div></div></div>
+</div>
+                            <a class="awesome" href="http://asprise.com/ocr/docs/html/?src=Java" target="_blank">Read the developer's guide for more details<img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/icon-arrow.png" class="icon-arrow"></a>
+
+ </div>
+
+                    </div> <!-- main end -->
+                </div> <!-- wrapper inner -->
+            </div> <!-- wrapper outer --><div id="left" style="border: solid 0px cyan;"> <!-- left start --><div id="list-menu">
+<ul class="L1  selected">
+  <li class="L1 selected first"><a href="http://asprise.com/royalty-free-library/java-ocr-api-overview.html" class="L1 selected ">Java OCR SDK</a>
+    <ul class="L2  selected">
+      <li class="L2 first"><a href="http://asprise.com/royalty-free-library/java-ocr-api-overview.html" class="L2 ">Overview</a>
+      </li>
+      <li class="L2 selected "><a href="http://asprise.com/royalty-free-library/java-ocr-source-code-examples-demos.html" class="L2 selected ">Demos</a>
+      </li>
+      <li class="L2 "><a href="http://asprise.com/royalty-free-library/java-ocr-barcode-reader-sdk-samples-docs.html" class="L2 ">Developer's Guide</a>
+      </li>
+      <li class="L2 "><a href="http://asprise.com/royalty-free-library/java-ocr-read-text-from-images-pdf-resources.html" class="L2 ">Resources</a>
+      </li>
+      <li class="L2 "><a href="http://asprise.com/royalty-free-library/java-ocr-for-windows-mac-linux-download.html" class="L2 ">Download Free Trial</a>
+      </li>
+      <li class="L2 "><a href="http://asprise.com/royalty-free-library/java-ocr-source-code-open-order.html" class="L2 ">Pricing / Order</a>
+      </li>
+      <li class="L2 last"><a href="http://asprise.com/royalty-free-library/java-ocr-sdk-component-support.html" class="L2 ">Support</a>
+      </li>
+    </ul>
+  </li>
+  <li class="L1 "><a href="http://asprise.com/royalty-free-library/c%23-sharp.net-ocr-api-overview.html" class="L1 ">C# .NET OCR SDK</a>
+  </li>
+  <li class="L1 "><a href="http://asprise.com/royalty-free-library/vb.net-ocr-api-overview.html" class="L1 ">VB .NET OCR SDK</a>
+  </li>
+  <li class="L1 "><a href="http://asprise.com/royalty-free-library/python-ocr-api-overview.html" class="L1 ">Python OCR SDK</a>
+  </li>
+  <li class="L1 "><a href="http://asprise.com/royalty-free-library/c-c++-ocr-api-overview.html" class="L1 ">C/C++ OCR SDK</a>
+  </li>
+  <li class="L1 last"><a href="http://asprise.com/royalty-free-library/delphi-pascal-ocr-api-overview.html" class="L1 ">Delphi Pascal OCR SDK</a>
+  </li>
+</ul></div>                <br><br>
+
+                <h3 style="font-family: 'proxima_nova_rgregular'; font-size: 20px;
+                color: #999;
+                margin: 0px 2px 8px 4px;
+                ">Featured Clients</h3>
+
+
+                <div style="width: 230px; height: 121px; background-image: url('/res/img/brand-slideshow.fw.png');">
+                    <div style="width: 180px; height: 80px;
+                    position: relative;
+                    left: 23px; top: 20px;
+                    border: solid 0px red;">
+                        <div class="brandslideshow" style="width: 180px; height: 80px; position: relative;"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-02.png" style="display: block; position: static; top: 0px; left: 0px; z-index: 100; opacity: 1; visibility: hidden;" class="cycle-slide cycle-sentinel" height="80" width="180">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 92; opacity: 0; visibility: hidden;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 91; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 90; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 89; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 88; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 87; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 86; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 85; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 84; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 83; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 82; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 81; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 80; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 79; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-01.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 78; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 77; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-02.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 76; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-03.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 75; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 74; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 73; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 72; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 71; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 70; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 69; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 68; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 67; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 66; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 65; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 64; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 63; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 62; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-06.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 61; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 60; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 59; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-05.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 58; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-edu-04.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 57; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-09.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 56; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-08.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 55; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-07.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 54; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-07.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 53; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-09.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 52; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-07.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 51; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-08.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 50; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-07.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 49; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-08.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 48; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-08.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 47; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-08.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 46; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-09.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 45; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-09.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 44; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-09.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 43; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-07.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 42; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-11.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 41; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-11.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 40; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-11.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 39; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-10.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 38; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-10.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 37; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-fi-11.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 36; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-12.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 35; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-hc-10.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 34; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-id-10.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 33; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-10.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 32; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-11.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 100; visibility: visible; opacity: 1;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-12.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 99; visibility: visible; opacity: 0;" class="cycle-slide cycle-slide-active" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-gov-12.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 97; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-13.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 96; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-14.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 95; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-15.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 94; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"><img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/brand-it-16.png" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 93; visibility: hidden; opacity: 0;" class="cycle-slide" height="80" width="180"></div>
+                    </div>
+                </div>
+
+                <script>
+                    //document.write(getBrandsRandomized());
+                    startBrandSlideshow();
+                </script>
+
+                <p class="brand-cat" style="">Sectors:
+                    <a href="javascript:startBrandSlideshow('fi');">Finance</a> •
+                    <a href="javascript:startBrandSlideshow('it');">Information Technoloy</a> •
+                    <a href="javascript:startBrandSlideshow('gov');">Government</a> •
+                    <a href="javascript:startBrandSlideshow('hc');">Healthcare</a> •
+                    <a href="javascript:startBrandSlideshow('id');">Industries</a> •
+                    <a href="javascript:startBrandSlideshow('edu');">Education</a> •
+                    <a href="javascript:startBrandSlideshow();">(show all)</a>
+                </p>
+            <!-- -- left end ---->
+            </div>        <div class="clearing" style=""></div> <!-- a must! -->
+        </div> <!-- end content -->
+    </div> <!-- contentcontainer -->
+</div> <!-- bodycontainer -->
+</div> <!-- bodycontainer_outer --><div id="footercontainer">
+    <div id="footer">
+        <table>
+            <tbody><tr>
+            <td valign="top" width="160">
+<h1><a href="http://asprise.com/royalty-free-library/ocr-api-for-java-csharp-vb.net.html">Asprise OCR</a></h1>
+                    <h2><a href="http://asprise.com/royalty-free-library/java-ocr-api-overview.html">Java OCR SDK Library</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/c%23-sharp.net-ocr-api-overview.html">C# .NET OCR SDK</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/vb.net-ocr-api-overview.html">VB .NET OCR SDK</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/c-c++-delphi-ocr-api-overview.html">C/C++/Python OCR SDK</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/java-ocr-for-windows-mac-linux-download.html">Commercial Royalty free OCR software</a><a></a></h2><a>
+            </a></td>
+                <td width="16"></td>
+            <td valign="top" width="270">
+                <h1><a href="http://asprise.com/royalty-free-library/java-ocr-source-code-examples-demos.html">Popular OCR Tips</a></h1>
+                    <h2><a href="http://asprise.com/royalty-free-library/c%23-sharp.net-ocr-source-code-examples-demos.html">Convert PDF to Word/Text with OCR</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/java-ocr-source-code-examples-demos.html#toc-title-3">Scanner to PDF and OCR PDF to editable Text</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/vb.net-ocr-read-text-from-images-pdf-resources.html">Scan documents and convert to searchable PDF</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/c-c++-delphi-ocr-read-text-from-images-pdf-resources.html">PDF to word converter - free online OCR</a></h2>
+                    <h2><a href="http://asprise.com/royalty-free-library/ocr-api-for-java-csharp-vb.net.html">JPEG, PNG, TIFF, PDF images to text (Java/.NET)</a></h2>
+            </td>
+
+                <td width="16"></td>
+
+                <td valign="top" width="330">
+                    <h1><a href="http://asprise.com/document-scanning-library/imaging-api-for-java.net.html">Asprise Scanning and Imaging</a></h1>
+                    <h2><a href="http://asprise.com/document-scanning-library/java-image-scanner-api-overview.html">Java Document image Scanners WIA/Mac OS X ICA</a></h2>
+                    <h2><a href="http://asprise.com/product/jtwain/index.php">JTwain: scanner access with Java on Windows</a></h2>
+                    <h2><a href="http://asprise.com/product/jsane/index.php">JSane: Java SANE scanner access on Linux/Unix</a></h2>
+                    <h2><a href="http://asprise.com/product/javatiff/index.php">Java TIFF library | Java PDF library (reduce file size)</a></h2>
+                    <h2><a href="http://asprise.com/document-scanning-library/imaging-api-for-java.net.html">.NET TIFF library | .net PDF library (image compression)</a></h2>
+                </td>
+
+                <td width="16"></td>
+
+                <td valign="top" width="">
+                    <p style="text-transform: uppercase;">© 2017 Asprise Software. All Rights Reserved. </p>
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/icon-google.png" style="width: 28px; height: 28px;" class="grayscale" height="28" width="28">
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/icon-facebook.png" style="width: 28px; height: 28px;" class="grayscale">
+                    <img src="Demos%20of%20Asprise%20Java%20OCR%20SDK%20-%20royalty-free%20API%20library%20with%20source%20code%20examples%20converting%20images%20to%20word%20or%20searchable%20PDF%20by%20extracting%20text_files/icon-youtube.png" style="width: 28px; height: 28px;" class="grayscale">
+                    <p><a href="http://asprise.com/ocr-document-scanning-java.net/privacy.html" target="_blank">Privacy Policy</a></p>
+                </td>
+            </tr>
+        </tbody></table>
+
+
+    </div>
+</div><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52215365-1', 'asprise.com');
+  ga('send', 'pageview');
+
+</script>            <div id="overlay" style="background:rgba(0,0,0,0.7); display:none; width:100%; height:100%; position:absolute; top:0; left:0; z-index:998;"></div>
+
+
+</body></html>

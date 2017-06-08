@@ -1,0 +1,20 @@
+change the parameter values and please test the query
+
+select * from crop_stress_forecast_data cf join farm_data cs join village_water_available_data vw on cf.crop_sown_data_id = cs.farm_data_id and cf.village_water_available_data_id = vw.village_water_available_data_id and cs.village_code = vw.village_code where cs.deleted = 0 and cs.expected_harvest_year >= 2017 and cs.source_of_irrigation = 'rain-fed' and cs.crop_name = 'GROUNDNUT' and cs.village_code = 30359 and cs.expected_harvest_date >= 20170320 and cf.model_date = 20170320 and vw.model_date = 20170320 and cf.deleted = 0 and vw.deleted = 0;
+
+
+1. Create index on village_code in village_water_available_data and run the query
+2. create index on village_code for farm_data and run the query
+
+3. with above indexes present, now move the cs.village_code = vw.village_code in where clause inside join ... on ... clause
+ 
+
+report the execution time for each
+
+
+
+1)4.48 sec
+
+2)3.89 sec
+
+3)

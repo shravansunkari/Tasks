@@ -1,0 +1,16 @@
+
+fd.farm_data_id, fd.village_code, fd.mandal_code, fd.district_code, fd.farmer_name, fd.father_name, fd.aadhar_no, 
+fd.mobile_no, fd.khata_no, fd.occupant_extent, fd.total_extent, fd.survey_no, fd.category_of_farmer, fd.crop_name, 
+fd.area_sown, fd.sowing_date, fed.source_of_irrigation, fd.latitude, fd.longitude, fd.expected_harvest_date, 
+fd.expected_harvest_year, fd.period_name, fd.monsoon_year, fd.crop_year, fd.insert_ts, fd.update_ts, fd.deleted, 
+fd.user_session_id, cf.crop_stress_forecast_data_id, cf.crop_sown_data_id, 
+cf.model_date, cf.crop_stage_id, cf.cumm_water_supplied, cf.optimal_water_req, cf.minimal_water_req, 
+cf.owr_stress_factor_1, cf.owr_stress_factor_2, cf.owr_stress_factor_3, cf.owr_stress_factor_4, cf.mwr_stress_factor_1, 
+cf.mwr_stress_factor_2, cf.mwr_stress_factor_3, cf.mwr_stress_factor_4, cf.owr_is_crop_under_stress, 
+cf.mwr_is_crop_under_stressm, cf.pest_names, cf.owr_next_7_days, 
+cf.mwr_next_7_days, cf.water_available_next_7_days, cf.last_n_days_computed_asm, cf.curr_actual_etc, 
+cf.curr_potential_etc, cf.cumm_actual_etc, cf.cumm_potential_etc, cf.estimated_yield, cf.soil_water_critical_level, 
+cf.crop_sown_data_source, vw.village_water_available_data_id, vw.soil_moisture, 
+vw.soil_moisture_date, vw.asm_in_mm_last_N_day, vw.curr_rainfall, vw.rf_forecast_1, vw.rf_forecast_2, vw.rf_forecast_3, 
+vw.rf_forecast_4, vw.rf_forecast_5, vw.rf_forecast_6, vw.rf_forecast_7, vw.rf_last_N_days, vw.potential_evapotranspiration, 
+vw.eto_last_N_days, vw.eto_forecast_N_days

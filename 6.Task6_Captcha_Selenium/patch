@@ -1,0 +1,405 @@
+diff --git a/prod/platform/kstorm/topology/src/main/java/com/vassarlabs/kstorm/topology/CreateTopology.java b/prod/platform/kstorm/topology/src/main/java/com/vassarlabs/kstorm/topology/CreateTopology.java
+index 4bd5ec5..b9277e4 100644
+--- a/prod/platform/kstorm/topology/src/main/java/com/vassarlabs/kstorm/topology/CreateTopology.java
++++ b/prod/platform/kstorm/topology/src/main/java/com/vassarlabs/kstorm/topology/CreateTopology.java
+@@ -3,6 +3,8 @@ package com.vassarlabs.kstorm.topology;
+ import java.util.ArrayList;
+ import java.util.List;
+ 
++import javax.management.RuntimeErrorException;
++
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.context.ApplicationContext;
+ import org.springframework.context.support.ClassPathXmlApplicationContext;
+@@ -21,7 +23,11 @@ import com.vassarlabs.ams.kstorm.bolt.AMSEventBolt;
+ import com.vassarlabs.bizevent.kstorm.bolt.DBBusinessEventBolt;
+ import com.vassarlabs.bizevent.kstorm.bolt.IDBBusinessEventBolt;
+ import com.vassarlabs.common.dsp.err.DSPException;
++import com.vassarlabs.common.init.err.AppInitializationException;
++import com.vassarlabs.common.init.service.RESTInitServiceImpl;
++import com.vassarlabs.common.init.service.api.IApplicationInitService;
+ import com.vassarlabs.config.service.api.IConfigPropertyRepoService;
++import com.vassarlabs.config.spring.AppContext;
+ import com.vassarlabs.email.kstorm.bolt.EmailEventBolt;
+ import com.vassarlabs.iwm.aggr.service.bolts.DataAggregatorBolt;
+ import com.vassarlabs.iwm.cleanup.kstorm.bolts.CleanUpEventBolt;
+@@ -39,6 +45,7 @@ import com.vassarlabs.platform.exms.kstorm.bolt.EXMSEventBolt;
+ import com.vassarlabs.rawdata.kstorm.bolt.DBRawDeviceDataBolt;
+ import com.vassarlabs.rawdata.kstorm.bolt.RawDeviceDataBolt;
+ import com.vassarlabs.scrapers.bolt.ScrapedDataEventBolt;
++import com.vassarlabs.scrapers.parsers.impl.RWSScraper;
+ import com.vassarlabs.sensor.system.kstorm.bolt.SensorDataEventBolt;
+ import com.vassarlabs.sms.kstorm.bolt.SMSEventBolt;
+ 
+@@ -683,7 +690,7 @@ public class CreateTopology {
+ 		System.out.println("Hello World!");
+ 		
+ 
+-	/*	try {
++		try {
+ 			IApplicationInitService applicationInitService = null;
+ 			applicationInitService = AppContext.getApplicationContext().getBean(RESTInitServiceImpl.class);
+ 			applicationInitService.initialize();
+@@ -692,21 +699,22 @@ public class CreateTopology {
+ 			System.out.println("Error initializing application : " + e.getMessage());
+ 			e.printStackTrace();
+ 			throw new RuntimeErrorException(new Error(e), "Error initializing application");
+-		}*/
++		}
+ 		
+ 		ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"spring/platform-application-context.xml", "spring/dsp-application-context.xml"});
+ 		
+ 	    CreateTopology createTopology = context.getBean(CreateTopology.class);
+ 	   
+-		createTopology.buildAndSubmitTopologies();
+-		//createTopology.test(context);
++		//createTopology.buildAndSubmitTopologies();
++		createTopology.test(context);
+ 		
+ 	}
+ 	
+ 	public void test(ApplicationContext context) throws DSPException{
+-		
+-		
+-		
++		System.out.println("Inside Ct Test");
++		RWSScraper rws = context.getBean(RWSScraper.class);
++		rws.getHistoryData();
++		System.out.println("Inside Ct Test = ended");
+ 		//System.out.println(waterStressService.getConsolidatedWaterStress());
+ //		String xml = "<rawDeviceDataList><rawDeviceData><metaData><rawDeviceDataUUID>"
+ //				+ "0078c820-c65a-11e5-b95a-0f90743dde97</rawDeviceDataUUID>"
+diff --git a/prod/platform/scrapers/processor/pom.xml b/prod/platform/scrapers/processor/pom.xml
+index cccc5e3..bac2ea6 100644
+--- a/prod/platform/scrapers/processor/pom.xml
++++ b/prod/platform/scrapers/processor/pom.xml
+@@ -15,6 +15,11 @@
+   </parent>
+   
+   <dependencies>
++  	<dependency>
++  	<groupId>com.vassarlabs.iwm.dss.stress.impl</groupId>
++	<artifactId>proj-iwm-dss-stress-impl</artifactId>
++	<version>0.0.1-SNAPSHOT</version>
++  	</dependency>
+     <dependency>
+       <groupId>com.vassarlabs.config.conf</groupId>
+       <artifactId>platform-config-conf</artifactId>
+diff --git a/prod/platform/scrapers/processor/src/main/java/com/vassarlabs/scrapers/parsers/impl/RWSScraper.java b/prod/platform/scrapers/processor/src/main/java/com/vassarlabs/scrapers/parsers/impl/RWSScraper.java
+new file mode 100644
+index 0000000..1bc4ea8
+--- /dev/null
++++ b/prod/platform/scrapers/processor/src/main/java/com/vassarlabs/scrapers/parsers/impl/RWSScraper.java
+@@ -0,0 +1,198 @@
++package com.vassarlabs.scrapers.parsers.impl;
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++
++import java.io.IOException;
++import java.text.ParseException;
++import java.util.ArrayList;
++import java.util.HashMap;
++import java.util.List;
++import java.util.Map;
++
++import org.jsoup.Jsoup;
++import org.jsoup.nodes.Document;
++import org.jsoup.nodes.Element;
++import org.jsoup.select.Elements;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Component;
++
++import com.vassarlabs.common.dsp.err.DSPException;
++import com.vassarlabs.common.dsp.utils.DSPConstants;
++import com.vassarlabs.common.utils.DateUtils;
++import com.vassarlabs.common.utils.UnitConstants;
++import com.vassarlabs.iwm.dss.stress.dsp.api.IWaterStressDSP;
++import com.vassarlabs.iwm.dss.stress.pojo.api.IWaterSupply;
++import com.vassarlabs.iwm.dss.stress.pojo.impl.WaterSupply;
++
++@Component
++public class RWSScraper {
++	
++	@Autowired
++	IWaterStressDSP waterStressDSP;
++
++	static final Map<String, String> districtCodeNameMap = new HashMap<>();
++
++	static {
++		districtCodeNameMap.put("01", "SRIKAKULAM");
++		districtCodeNameMap.put("02", "VIZIANAGARAM");
++		districtCodeNameMap.put("03", "VISAKHAPATNAM");
++		districtCodeNameMap.put("04", "EAST GODAVARI");
++		districtCodeNameMap.put("05", "WEST GODAVARI");
++		districtCodeNameMap.put("06", "KRISHNA");
++		districtCodeNameMap.put("07", "GUNTUR");
++		districtCodeNameMap.put("08", "PRAKASAM");
++		districtCodeNameMap.put("09", "NELLORE");
++		districtCodeNameMap.put("10", "CHITTOOR");
++		districtCodeNameMap.put("11", "KADAPA");
++		districtCodeNameMap.put("12", "ANANTAPUR");
++		districtCodeNameMap.put("13", "KURNOOL");
++	}
++	
++	public void getHistoryData(){
++		long refTs = System.currentTimeMillis();
++		refTs = DateUtils.getStartOfDay(refTs);
++		long startDay = 1325356200000l;
++		while(refTs >= startDay){
++			long t1 = System.currentTimeMillis();
++			String day = DateUtils.getDateInFormat("dd/MM/yyyy", refTs);
++			List<IWaterSupply> dataList = new ArrayList<>();
++			List<Long> inserted = null;
++			try{
++				dataList = getWaterSupplyDataList(day);
++//				System.out.println("ResultXX: "+day+"\n"+dataList);
++				inserted = waterStressDSP.insertWaterSupplyData(dataList);
++				
++			}catch(DSPException | IOException | ParseException e){
++				System.out.println("ERROR:: Exception while scraping rws data for day = "+day);
++			}
++			refTs -= 86400000;
++			System.out.println("records scraped = "+ dataList.size() + ", inserted = "+ inserted.size()+", time taken = "+(System.currentTimeMillis() - t1));
++		}
++	}
++
++	public static List<IWaterSupply> getWaterSupplyDataList(String dateText) throws IOException, ParseException {
++		List<IWaterSupply> dataList = new ArrayList<>();
++		System.err.println("Started scraping...for date = "+dateText);
++		String sessionId = "BFCDA1E47F039E40E5FBEF7E9BC78DF1.nodes1";
++		String baseURL = "http://rwss.ap.nic.in/pred/reports/rws_drought_daily_detailed_rpt.jsp?";
++		// TODO url encoding?
++		for (String districtCode : districtCodeNameMap.keySet()) {
++			try {
++				String finalURL = baseURL + "dcode=" + districtCode + "&" + "dname="
++						+ districtCodeNameMap.get(districtCode) + "&edate=" + dateText;
++				System.err.println("finalURL = " + finalURL);
++				Document doc = Jsoup.connect(finalURL).timeout(6000).cookie("JSESSIONID", sessionId)
++						.cookie("guest", "1").maxBodySize(0).get();
++
++				// System.out.println("practice.JSoupSample.main() : \n"+doc);
++				Elements forms = doc.getElementsByTag("form");
++				if (forms.size() < 1) {
++					System.out.println("ERROR:: No form found for " + districtCode + ", for date = " + dateText);
++					return dataList;
++				}
++				Element form = forms.get(0);
++				Element table = form.getElementsByTag("table").first();
++				if (table.getElementsByTag("tbody").size() < 2) {
++					System.out.println("ERROR:: No form found for " + districtCode + ", for date = " + dateText);
++					return dataList;
++				}
++				Element tbody = table.getElementsByTag("tbody").get(1);
++				System.out.println("tbody :" + tbody);// td:nth-child(1)
++				Elements rows = tbody
++						.select("tr:not(:first-child,:last-child,:nth-child(2),:nth-child(3),:nth-child(4))");
++//				System.out.println("rows :" + rows);
++				for(Element row: rows){
++					try{
++						IWaterSupply waterSupply = parseRow(row);
++						dataList.add(waterSupply);
++					}catch(Exception e){
++						e.printStackTrace();
++					}
++					
++				}
++				
++
++			} catch (IOException e) {
++				e.printStackTrace();
++			}
++
++		}
++		return dataList;
++	}
++	
++	public static WaterSupply parseRow(Element row){
++		
++		int locationMDId = 23;
++//	    String mandalName = row.select("td:nth-child(2)").first().text();
++	    String habitationCode = row.select("td:nth-child(3)").first().text();
++	    String habitationName = row.select("td:nth-child(4)").first().text();
++	    String date = row.select("td:nth-child(5)").first().text();
++	    
++	    String cellText;
++	    String rowText  = row.text();
++	    cellText = row.select("td:nth-child(6)").first().text();
++	    int populationServed = -1;
++	    try{
++	        populationServed = Integer.valueOf(cellText);
++	    }catch(NumberFormatException ne){
++	    	System.out.println("ERROR::NumberFormatException : "+ ne.getCause()+ ", for row = "+ rowText);
++	    }
++	    
++	    cellText = row.select("td:nth-child(7)").first().text();
++	    double tankerCapacity = DSPConstants.NO_DATA_ROUNDED;
++	    try{
++	        tankerCapacity = Double.valueOf(cellText);//Unit KL
++	    }catch(NumberFormatException ne){
++	    	System.out.println("ERROR::NumberFormatException : "+ ne.getCause()+ ", for row = "+ rowText);
++	    }
++	    
++	    cellText = row.select("td:nth-child(8)").first().text();
++	    double noOfTrips = DSPConstants.NO_DATA_ROUNDED;
++	    try{
++	        noOfTrips = Double.valueOf(cellText);
++	    }catch(NumberFormatException ne){
++	    	System.out.println("ERROR::NumberFormatException : "+ ne.getCause()+ ", for row = "+ rowText);
++	    }
++	    
++	    cellText = row.select("td:nth-child(9)").first().text();
++	    double quantity = DSPConstants.NO_DATA_ROUNDED;
++	    try{
++	    	quantity = Double.valueOf(cellText);//Unit KL
++	    }catch(NumberFormatException ne){
++	    	System.out.println("ERROR::NumberFormatException : "+ ne.getCause()+ ", for row = "+ rowText);
++	    }
++	    
++	    long eventGenTs = 0;
++	    try{
++	    	eventGenTs = DateUtils.getTimestamp(date, "dd/MM/yyyy");
++	    	eventGenTs+= 10*3600000;
++	    }catch(NumberFormatException ne){
++	    }
++	    	    
++	    int eventGenDay = 0;
++	    try{
++	    	eventGenDay = (int)(long)DateUtils.getYYYYMMdd(eventGenTs);
++	    }catch(NumberFormatException ne){
++	    	System.out.println("ERROR:: NumberFormatException : "+ ne.getCause()+ ", for row = "+ rowText);
++	    }
++	    WaterSupply waterSupply = new WaterSupply();
++	    waterSupply.setEventGenDay(eventGenDay);
++	    waterSupply.setEventGenTs(eventGenTs);
++	    waterSupply.setImpactedPopulation(populationServed);
++	    waterSupply.setLocationCode(habitationCode);
++	    waterSupply.setLocationName(habitationName);
++	    waterSupply.setLocationTypeMdID(locationMDId);
++	    waterSupply.setSource("RWSS");
++	    waterSupply.setSupplyBlockCapacity(tankerCapacity);
++	    waterSupply.setSupplyBlockCount(noOfTrips);
++	    waterSupply.setSupplyBlockMU(UnitConstants.KILO_LITRE_UNIT);
++	    waterSupply.setUserSessionID(0);
++	    waterSupply.setWaterQuantity(quantity);
++	    waterSupply.setWaterQuantityMU(UnitConstants.KILO_LITRE_UNIT);
++//	    System.out.println(rowText);
++	    return waterSupply;
++	}
++}
+\ No newline at end of file
+diff --git a/proj/iwm/dss/stress/api/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/api/IWaterStressDSP.java b/proj/iwm/dss/stress/api/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/api/IWaterStressDSP.java
+index c144e74..86d9f0b 100644
+--- a/proj/iwm/dss/stress/api/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/api/IWaterStressDSP.java
++++ b/proj/iwm/dss/stress/api/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/api/IWaterStressDSP.java
+@@ -42,4 +42,6 @@ public interface IWaterStressDSP {
+ 
+ 	void insertWaterStressMD(Map<String, IWaterStressMD> habitationStressMDMap)
+ 			throws DSPException;
++
++	List<Long> insertWaterSupplyData(List<IWaterSupply> waterSupplyDataList) throws DSPException;
+ }
+diff --git a/proj/iwm/dss/stress/impl/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/impl/WaterStressDspImpl.java b/proj/iwm/dss/stress/impl/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/impl/WaterStressDspImpl.java
+index 41ac9ea..35f4f62 100644
+--- a/proj/iwm/dss/stress/impl/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/impl/WaterStressDspImpl.java
++++ b/proj/iwm/dss/stress/impl/src/main/java/com/vassarlabs/iwm/dss/stress/dsp/impl/WaterStressDspImpl.java
+@@ -531,4 +531,96 @@ public class WaterStressDspImpl implements IWaterStressDSP{
+ 
+ 	}
+ 	
++	@Override
++	public List<Long> insertWaterSupplyData(List<IWaterSupply> waterSupplyDataList) throws DSPException{
++		String dataStoreOwnerKey = null;
++		PreparedStatement ps = null;
++		String transactionId = null;
++		boolean result = false;
++		ResultSet rs = null;		
++		List<Long> generatedIDs = new ArrayList<>();
++		try {
++			
++		    String sql = "insert into water_supply_data (event_gen_day, event_gen_ts, impacted_population, "
++		    		+ "insert_ts, location_code, location_name, location_type_md_id, source, supply_block_capacity, "
++		    		+ "supply_block_count, supply_block_mu, user_session_id, water_quantity, water_quantity_mu)"
++		    		+ " values(?, ?, ?,"
++		    		+ "?, ?, ?, ?, ?, ?,"
++		    		+ "?, ?, ?, ?, ?);";
++		    
++		    System.out.println("WaterStressDspImpl : Query used for current opertion is: " + sql);
++		    dataStoreOwnerKey = DataStoreContext.initReusableDataStoreContext(businessDataStore);
++		    transactionId = businessDataStore.beginTransaction();
++		    ps = businessDataStore.createPreparedStatement(sql, Statement.RETURN_GENERATED_KEYS);
++		    int count =0;
++			for(IWaterSupply waterSupply: waterSupplyDataList){
++				
++				ps.setInt(1, waterSupply.getEventGenDay());
++				ps.setLong(2, waterSupply.getEventGenTs());
++				ps.setInt(3, waterSupply.getImpactedPopulation());
++				ps.setLong(4, DataStoreContext.getCurrentTS());
++				ps.setString(5, waterSupply.getLocationCode());
++				ps.setString(6, waterSupply.getLocationName());
++				ps.setInt(7, waterSupply.getLocationTypeMdID());
++				ps.setString(8, waterSupply.getSource());
++				ps.setDouble(9, waterSupply.getSupplyBlockCapacity());
++				ps.setDouble(10, waterSupply.getSupplyBlockCount());
++				ps.setInt(11, waterSupply.getSupplyBlockMU());
++				ps.setLong(12, waterSupply.getUserSessionID());
++				ps.setDouble(13, waterSupply.getWaterQuantity());
++				ps.setInt(14, waterSupply.getWaterQuantityMU());
++				ps.addBatch();
++				
++				if((++count%1000)==0){
++					
++					ps.executeBatch();					
++					System.out.println("WaterStressDspImpl : insertWaterSupplyData - inserted a batch successfully ");
++				}
++				rs = ps.getGeneratedKeys();
++				while(rs.next()){
++					generatedIDs.add(rs.getLong(1));
++				}				
++			}
++			ps.executeBatch();
++
++			rs = ps.getGeneratedKeys();
++			while (rs.next()) {
++				generatedIDs.add(rs.getLong(1));
++			}
++			businessDataStore.commitTransaction(transactionId);
++			System.out.println("Info: Commit Transaction Is Completed");
++			result = true;
++			return generatedIDs;
++		} catch (SQLException se) {
++			se.printStackTrace();
++			System.out.println("WaterStressDspImpl: insertWaterSupplyData : Error inserting records");
++			throw new FetchingObjectException("WaterStressDspImpl: insertWaterSupplyData : Error inserting record from water_supply_data table");
++		} catch (DSPException e) {
++			System.out.println("WaterStressDspImpl: insertWaterSupplyData : inserting record");
++			throw e;
++		} finally {
++			if (!result) {
++				businessDataStore.rollbackTransaction(transactionId);
++			}
++			if (rs != null) {
++				try {
++					rs.close();
++				} catch (SQLException e) {
++					// Do Nothing
++				}
++				rs = null;
++			}
++			if (ps != null) {
++				try {
++					ps.close();
++				} catch (SQLException e) {
++					// Do Nothing
++				}
++				ps = null;
++			}
++			DataStoreContext.clearDataStoreContext(dataStoreOwnerKey);
++			System.out.println("Info: DataStored Cleared");
++		}
++	}
++	
+ }
+\ No newline at end of file

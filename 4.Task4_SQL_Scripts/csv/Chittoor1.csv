@@ -1,0 +1,70 @@
+name,code,population_served,Type,No,Mode_of_supply,Date,Quantity
+Govindapalli,,364,Borewell,1,At spot,14/04/2016,5.00
+Chinnasettipalli,,320,Borewell,1,At spot,01/11/2016,5.00
+settipalli cross,,405,Borewell,1,At spot,01/11/2016,5.00
+Athinatham,,650,Borewell,1,At spot,01/11/2016,5.00
+Anjanadripuram,,280,Borewell,1,At spot,01/11/2016,5.00
+Palleruganimitta,,250,Borewell,1,At spot,17/02/2017,5.00
+Narayanapuram,,102,Borewell,1,At spot,01/01/2017,5.00
+KAMASALAVANIKUNTA,,190,Borewell,1,At spot,01/01/2017,5.00
+yanamanasanapalli,,250,Borewell,1,At spot,01/01/2017,5.00
+VENKTASWARAKOTALU,,180,Borewell,1,At spot,01/01/2017,5.00
+Gorivimakulapalli,,609,Borewell,2,Connected to MPWS Schemes,14/04/2016,5.00
+Desinayanapalli,,408,Borewell,1,Connected to MPWS Schemes,14/04/2016,5.00
+KUPPIGARIPALLE  ,,287,Borewell,1,Connected to OHSR,01/04/2016,5.00
+Avulakuppam,,598,Borewell,1,Spot source in the Habitation.,01/04/2016,5.00
+KAVVAMPALLE,,232,Borewell,1,Spot source in the Habitation,15.11.2016,5.00
+MOTLAVANKA  ,,  115  ,Borewell,1,Spot source in the Habitation.,15.11.2016,5.00
+Muddanapalli,,1046,Borewell,2,Connected to OHSR,01/04/2016,5.00
+Pandyalamadugu SC Colony,,245,Borewell,1,Connected to OHSR,20.11.2016,5.00
+Shivajinagar Thanda,,117,Borewell,1,Connected to Cistern,1.01.2017,5.00
+K.P.mitta,962,962,Borewell,1,At spot,01/01/2016,5.00
+J.B.Kotturu,146,146,Borewell,1,Extension of pipeline,01/01/2016,5.00
+Kaliganuru,192,192,Borewell,1,Extension of pipeline,03/05/2016,5.00
+Karamutla,136,136,Borewell,1,At spot,1.11.2016,5.00
+Indira Colony,,165,Borewell,1,At spot,01/03/17,5
+Krishnapuram,,315,Borewell,1,At spot,01/03/17,5
+Vengamvaripalli,,1215,BW,1,Extension of pipeline,01.02.2017,10.00
+Gaddindlu,,385,BW,1,Extension of pipeline,01.02.2017,10.00
+Karvetinagaram,,48,BW,1,Extension of pipeline,01.03.2017,10.00
+Yerrakadirepalli HW,,287,BW,1,Extension of pipeline,02.03.2017,10.00
+Sanipalli,,195,BW,1,Extension of pipeline,01.02.2017,10.00
+Chinnepalle,,1293,BW,1,Extension of pipeline,12.06.2016,5.00
+Sompalli,,435,BW,1,Extension of pipeline,02.03.2017,10.00
+T.K.Palle,,183,BW,1,Extension of pipeline,23.06.2016,5.00
+V.A Kothuru,183,45,BW,1,Extension of pipeline,05.03.2017,10.00
+KAMMAPALLE HW, 1014056022032700,227,BW,1,Extension,2.01.2017,5.00
+Peddabharinepalle,,578,BW,1,Extension of pipeline,01.07.2016,10.00
+Mitturu(mangapuram),,371,BW,1,Extension of pipeline,01.03.2017,10.00
+Nellitippa,,252,BW,1,Extension of pipeline,01.03.2017,10.00
+Kothapalli,,250,BW,1,Extension of pipeline,01.07.2016,10.00
+Gowripuram, 1014157022073300,85,BW,1,At spot,01/03/17,5.00
+BRUNDAVANAM, 1014157025063900,155,BW,1,At spot,01/03/17,5.00
+THAMBUGANIPALLE (Kothaindlu), 1014157008011200,86,BW,1,At spot,01/03/17,5.00
+KUNTIALAKUNTA, 1014157022063300,79,BW,1,At spot,01/03/17,5.00
+Rachavaripalli,1014338003170300,133,BW,1,At spot,08.01.2016,5
+Kothapalle, 1014338007041000,295,BW,1,At spot,27.08.2016,5
+Ramaiahgattu, 1014338003050500,43,BW,1,At spot,04.01.2017,5
+Krishnapuram,1014337009021100,125,BW,1,At spot,08.01.2016,
+D K Palle,1014337003100400,44,BW,1,At spot,05.02.2016,5
+Gurikanivaripalle, 1014739010130900,492,BW,1,At spot,05.11.2016,5
+Gurikanivaripalle HW, 1014739010130900,55,BW,1,At spot,05.11.2016,5
+Gandhinagar HW, 1014739010050900,169,BW,1,At spot,6.3.2017,5
+Gattuvaripalle, 1014739010120900,317,BW,1,At spot,02.02.2017,5
+Nelakurivaripalle,1014739008100700,56,BW,1,At spot,18.04.2016,5
+DIGUVA BANDAMEDA PALLI,1014504011211100,62,BW,1,at spot,15.02.2017,5
+Thotavaripalli, 1014336013071600,66,BW,1,Extension of pipeline,01.02.2017,3
+Avulapalli,1014336013091600,370,BW,1,Extension of pipeline,3.02.2017,18
+Nallarajugaripalli,1014336009031100,147,BW,1,Extension of pipeline,3.02.2018,8
+Eguvavooru,1014336006110800,43,BW,1,Extension of pipeline,3.02.2019,2
+Ragimanugadda,1014336005020700,75,BW,1,At spot,01.03.2016,5
+Singamvaripalle, 1014336013071600,358,BW,1,At spot,22.03.2016,5
+Konduru,1014336013091600,285,BW,1,Extension of pipeline,04/05/2016,5
+Purandlapalli,1014336009031100,679,BW,1,Extension of pipeline,06.06.2016,5
+Ramapuram HW (Ram Nagaram),1014336006110800,120,BW,1,Extension of pipeline,09/01/2016,5
+Alchepalle, 1014336013071600,300,167,1,Extension of pipeline,06.02.2016,5
+R.kothuru,1014336009031100,404,BW,1,Extension of pipeline,06.12.2016,5
+Boggalavaripalli,1014710002220200,79,BW,1,Exten,01/02/2017,7.5
+Boggalavaripalli HW,1014710002330200,26,BW,1,Exten,01/02/2017,7.5
+Devaravandlapalli,1014710002340200,56,BW,1,Exten,01/02/2017,7.5
+Chinthalavaripalli,1014710002110200,125,BW,1,Exten,01/02/2017,7.5

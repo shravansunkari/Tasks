@@ -1,0 +1,10 @@
+DeathByCaptcha Service
+
+ReCaptcha
+
+SimpleCaptcha        url:http://simplecaptcha.sourceforge.net
+
+
+IMP    aspire.com   		http://asprise.com/royalty-free-library/java-ocr-for-windows-mac-linux-download.html
+
+Download link: http://asprise.com/ocr/files/downloads/latest/asprise-ocr-java-15.3.1-trial-linux.zip

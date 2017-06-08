@@ -1,0 +1,1652 @@
+GUNTUR.csv, Thulluru, Mandadam SC, ST & Minority Colonies
+GUNTUR.csv, Gurazala, JM Puram
+GUNTUR.csv, Gurazala, Budawadsa
+GUNTUR.csv, Machavaram, KG Padu
+GUNTUR.csv, Machavaram, SP Thanda
+GUNTUR.csv, Piduguralla, Chengalayapalem thanda
+GUNTUR.csv, Macherla, Ryavaram
+GUNTUR.csv, Macherla, Bhyravunipadu
+GUNTUR.csv, Durgi, Lakshmipuram thanda
+GUNTUR.csv, Durgi, Syamarajapuram
+GUNTUR.csv, Durgi, JM Padu
+GUNTUR.csv, Veldurthi, Bodilaveedu
+GUNTUR.csv, Veldurthi, Veldurthi (Bus stand center)
+GUNTUR.csv, Veldurthi, Kandlagunta
+GUNTUR.csv, Narasaraopet, Achammapalem
+GUNTUR.csv, P.V.Palem, Komali
+KRISHNA.csv, SRP Agraharam/Padamatipalem, Anjanapuram
+CHITTOOR.csv, Ramakuppam, Pamanaboyanapalli
+CHITTOOR.csv, , JR COLLEGE AND ZPHS
+CHITTOOR.csv, , KAYALAPALLE
+CHITTOOR.csv, , Reddivaripalli
+CHITTOOR.csv, SANTHIPURAM, VADEGUDISELU
+CHITTOOR.csv, VALMIKIPURAM, RANGAPALLE
+CHITTOOR.csv, Gurramkonda, Eguva Kuravapalle
+CHITTOOR.csv, Valmikipuram, Mekalavripalli
+CHITTOOR.csv, P.T.M, GONDIPALLE
+CHITTOOR.csv, Thamballapalle, , Chinnareddivaripalle
+CHITTOOR.csv, B.Kothakota, Pamurivari
+CHITTOOR.csv, B.Kothakota, Pamurivari
+CHITTOOR.csv, B.Kothakota, Bayappagaripalli
+CHITTOOR.csv, B.Kothakota, Bayappagaripalli H/W
+CHITTOOR.csv, B.Kothakota, Mogasalamarri
+CHITTOOR.csv, B.Kothakota, B.Kothakota-I, II, III
+CHITTOOR.csv, B.Kothakota, B.Kothakota-IV, V, VI
+CHITTOOR.csv, B.Kothakota, Modelschool bkk
+CHITTOOR.csv, Kurabalakota, Vinayaka chenethanagar
+CHITTOOR.csv, Kurabalakota, Chinthaiahgarikota
+CHITTOOR.csv, Kurabalakota, Gownivaripalle
+CHITTOOR.csv, Kurabalakota, Thungavaripalli
+CHITTOOR.csv, Kurabalakota, Pagadalavari palle
+CHITTOOR.csv, Kurabalakota, Pagadalavari palle sc colony
+CHITTOOR.csv, Kurabalakota, Bapanapalle
+CHITTOOR.csv, Kurabalakota, Yerrballi
+CHITTOOR.csv, Pulicherla, Goppanavaripalli
+CHITTOOR.csv, Pulicherla, D.Murthivaripalle
+CHITTOOR.csv, Pulicherla, Ellankivaripalle
+CHITTOOR.csv, Pulicherla, Pathapeta
+CHITTOOR.csv, Pulicherla, Chinnanagari
+CHITTOOR.csv, Pulicherla, Koonapalle
+CHITTOOR.csv, Pulicherla, VC Voddipalle
+CHITTOOR.csv, Pulicherla, D.Pokalavaripalle
+CHITTOOR.csv, Pulicherla, Yellampalle
+CHITTOOR.csv, Pulicherla, Nallapa Reddigari Palle(Vadlapalle)
+CHITTOOR.csv, Pulicherla, Sadubadivaripalii
+CHITTOOR.csv, Pulicherla, Posamvaripalli
+CHITTOOR.csv, Pulicherla, Gopalapuram
+CHITTOOR.csv, Pulicherla, Dinnepeta H/W
+CHITTOOR.csv, Pulicherla, Gottipativaripalli
+CHITTOOR.csv, Pulicherla, Thanikondavaripalle
+CHITTOOR.csv, Pulicherla, Kotharamapuram
+CHITTOOR.csv, Pulicherla, T.Voddipalle
+CHITTOOR.csv, Pulicherla, Ashok Nagar
+CHITTOOR.csv, Pulicherla, B.M.Kothur
+CHITTOOR.csv, Pulicherla, Puredivaripalle
+CHITTOOR.csv, Pulicherla, Santinagar
+CHITTOOR.csv, Pulicherla, Guttameeda HW
+CHITTOOR.csv, Pulicherla, Kallur
+CHITTOOR.csv, Pulicherla, Kallur
+CHITTOOR.csv, Pulicherla, Indira Colony
+CHITTOOR.csv, Pulicherla, Kummarapalle
+CHITTOOR.csv, Pulicherla, Kummarapalle HW
+CHITTOOR.csv, Pulicherla, Jallavaripalle
+CHITTOOR.csv, Pulicherla, Papireddigaripalle
+CHITTOOR.csv, Pulicherla, Bayyaredigaripalle
+CHITTOOR.csv, Pulicherla, Cherakuvaripalle
+CHITTOOR.csv, Pulicherla, Pedda HW
+CHITTOOR.csv, Pulicherla, Istharakulapalle
+CHITTOOR.csv, Pulicherla, Morava HW
+CHITTOOR.csv, Pulicherla, B.Vaddipalle
+CHITTOOR.csv, Pulicherla, R.Vaddipalle
+CHITTOOR.csv, Pulicherla, Gowrisettigaripalli
+CHITTOOR.csv, Pulicherla, Thotavaripalli
+CHITTOOR.csv, Pulicherla, Chokkavaripalli
+CHITTOOR.csv, Pulicherla, Dinne H/W
+CHITTOOR.csv, Pulicherla, Kuravapalle
+CHITTOOR.csv, Pulicherla, Pevandlapalle HW
+CHITTOOR.csv, Pulicherla, Turakapeta
+CHITTOOR.csv, Pulicherla, Vankamaddivaripalli
+CHITTOOR.csv, Pulicherla, Chichilivaripalle
+CHITTOOR.csv, Pulicherla, Reddivaripalli
+CHITTOOR.csv, Pulicherla, Gangammagudi
+CHITTOOR.csv, Pulicherla, Chinthalavaripalli
+CHITTOOR.csv, Pulicherla, Eramireddigaripalli
+CHITTOOR.csv, Pulicherla, Kodidhapalli
+CHITTOOR.csv, Pulicherla, Srinivasapuram
+CHITTOOR.csv, Pulicherla, Challavaripalli
+CHITTOOR.csv, Pulicherla, Challavaripalli HW
+CHITTOOR.csv, Pulicherla, Jyothinagar
+CHITTOOR.csv, Pulicherla, Peddabesthapalli
+CHITTOOR.csv, Pulicherla, Erramvandlapalle
+CHITTOOR.csv, Pulicherla, Mathukuvaripalle
+CHITTOOR.csv, Pulicherla, Mathukuvaripalle Voddipalle
+CHITTOOR.csv, Pulicherla, Bazar Street
+CHITTOOR.csv, Pulicherla, Pottisiddareddigaripali
+CHITTOOR.csv, Pulicherla, R.Kuravapalle
+CHITTOOR.csv, Pulicherla, R.Kummarapalle
+CHITTOOR.csv, Punganur, Bandlapalli
+CHITTOOR.csv, Punganur, Chinna Nalluripalli
+CHITTOOR.csv, Punganur, Bodinayunipalle
+CHITTOOR.csv, Punganur, Santhinagar
+CHITTOOR.csv, Punganur, M.Bheemaganipalle
+CHITTOOR.csv, Punganur, Bhemaganipalle
+CHITTOOR.csv, Punganur, Vulavaladenne
+CHITTOOR.csv, Punganur, Badigireddipalle
+CHITTOOR.csv, Punganur, Ganugalagadda
+CHITTOOR.csv, Punganur, Yellarubylu
+CHITTOOR.csv, Punganur, Rangoonmitta
+CHITTOOR.csv, Punganur, M.C.Palle
+CHITTOOR.csv, Punganur, Patrapalle
+CHITTOOR.csv, Punganur, Nallaguttla palle thanda
+CHITTOOR.csv, Punganur, Siddareddigaripalle
+CHITTOOR.csv, Punganur, Kummarakunta
+CHITTOOR.csv, Punganur, Tammarajulapalli
+CHITTOOR.csv, Punganur, V.Kothur
+CHITTOOR.csv, Punganur, Basavinayanipalle
+CHITTOOR.csv, Punganur, Mekanajamanapalle
+CHITTOOR.csv, Punganur, Vanamaladinne
+CHITTOOR.csv, Punganur, Pujaganipalle
+CHITTOOR.csv, Punganur, Vani Sugar Factory
+CHITTOOR.csv, Punganur, Nadimgadadesi
+CHITTOOR.csv, Punganur, Vepamakulapalle
+CHITTOOR.csv, Punganur, Kantapalle
+CHITTOOR.csv, Punganur, Nethigutlapalle
+CHITTOOR.csv, Punganur, Kudavapalle
+CHITTOOR.csv, Punganur, Appiganipalle
+CHITTOOR.csv, Punganur, Balaji Colony
+CHITTOOR.csv, Punganur, Patrapalle Thanda
+CHITTOOR.csv, Punganur, Harijana Wada (Kollaforam)
+CHITTOOR.csv, Rompicherla, Pichiguntlavaripalle
+CHITTOOR.csv, Rompicherla, Vaddevandlapalle HW
+CHITTOOR.csv, Rompicherla, Etukurivaripalle
+CHITTOOR.csv, Rompicherla, Nagari HW
+CHITTOOR.csv, Rompicherla, Gundlakadapalle
+CHITTOOR.csv, Rompicherla, Moravapalle
+CHITTOOR.csv, Rompicherla, Sakalapalle
+CHITTOOR.csv, Rompicherla, KNN Kuravapalle
+CHITTOOR.csv, Rompicherla, KNN Madigapalle
+CHITTOOR.csv, Rompicherla, Daddalavaripalle Voddipalle
+CHITTOOR.csv, Rompicherla, Gollapalle
+CHITTOOR.csv, Rompicherla, Matlollapalle
+CHITTOOR.csv, Rompicherla, Pendlikada Temple& Balanagireddigaripalle
+CHITTOOR.csv, Sodum, 79.A Chinthamakula palle
+CHITTOOR.csv, Sodum, Gurikanivaripalle
+CHITTOOR.csv, Sodum, Bonugu palle
+CHITTOOR.csv, Sodum, Ammagari palle
+CHITTOOR.csv, Sodum, Gundluruvari palle
+CHITTOOR.csv, Sodum, Chichilivaripalle
+CHITTOOR.csv, Sodum, Ambedkar Colony
+CHITTOOR.csv, Sodum, Nadigadda
+CHITTOOR.csv, Sodum, Venugopalapuram
+CHITTOOR.csv, Sodum, Sallavaripalle
+CHITTOOR.csv, Sodum, Rajivnagar
+CHITTOOR.csv, Sodum, Chinthalavari palle
+CHITTOOR.csv, Sodum, Rachavaripalli
+CHITTOOR.csv, Sodum, Punuguvaripalle
+CHITTOOR.csv, Sodum, Doddivaripalli
+CHITTOOR.csv, Sodum, Thimmanayanipalle
+CHITTOOR.csv, Sodum, Yerraguntlavaripalli
+CHITTOOR.csv, Sodum, Muthana HW
+CHITTOOR.csv, Sodum, Pedakantivaripalle
+CHITTOOR.csv, Sodum, Kuraparthivaripalle
+CHITTOOR.csv, Sodum, Marrimakulapalle
+CHITTOOR.csv, Sodum, Devadarumakulapalle
+CHITTOOR.csv, Sodum, Cheekalachenu
+CHITTOOR.csv, Sodum, Seethannagaripalle
+CHITTOOR.csv, Sodum, Gadevaripalle
+CHITTOOR.csv, Sodum, Pedduru
+CHITTOOR.csv, Sodum, Mittapalle HW
+CHITTOOR.csv, Sodum, Polikimakulapalle
+CHITTOOR.csv, Sodum, Reddivaripalli
+CHITTOOR.csv, Sodum, Ramapuram
+CHITTOOR.csv, Sodum, Bommireddigaripalle
+CHITTOOR.csv, Sodum, Bandameedamadigapalle
+CHITTOOR.csv, Sodum, Khambhamvaripalle
+CHITTOOR.csv, Sodum, Thummaguntapalle
+CHITTOOR.csv, Sodum, Puttavaripalle
+CHITTOOR.csv, Somala, P.Cherukuvaripalle
+CHITTOOR.csv, Somala, Thamminayanipalle hw
+CHITTOOR.csv, Somala, Erranagulavaripalle
+CHITTOOR.csv, Somala, Yemmevaripalle
+CHITTOOR.csv, Somala, Nayanivaripalle
+CHITTOOR.csv, Somala, Gallavaripalle
+CHITTOOR.csv, Somala, Kandur
+CHITTOOR.csv, Somala, Yanadiwada
+CHITTOOR.csv, Somala, Chinthalavaripalle
+CHITTOOR.csv, Somala, Nagarindlu
+CHITTOOR.csv, Somala, A.Vaddipalle
+CHITTOOR.csv, Somala, K.Gollapalle
+CHITTOOR.csv, Somala, Kotagundlapalle
+CHITTOOR.csv, Madanapalli, Ramapuram
+CHITTOOR.csv, Madanapalli, Ankisettipalle
+CHITTOOR.csv, Madanapalli, Kothareddipalli
+CHITTOOR.csv, Madanapalli, Gandhipuram
+CHITTOOR.csv, Madanapalli, B.C.Colony
+CHITTOOR.csv, Madanapalli, Nakkalakunta
+CHITTOOR.csv, Madanapalli, Gangamma gudi
+CHITTOOR.csv, Madanapalli, Gollavaripalle
+CHITTOOR.csv, Madanapalli, Mandabanda
+CHITTOOR.csv, Madanapalli, Sandireddigaripalli & Colony
+CHITTOOR.csv, Madanapalli, Maddurivandlapalli SC Colony
+CHITTOOR.csv, Madanapalli, Maddurivandlapalli
+CHITTOOR.csv, Madanapalli, Regantivaripalle
+CHITTOOR.csv, Madanapalli, Addagantivaripalle
+CHITTOOR.csv, Madanapalli, Dayalavaripalli
+CHITTOOR.csv, Madanapalli, Nallaguttapalli
+CHITTOOR.csv, Madanapalli, CTM
+CHITTOOR.csv, Madanapalli, Chinnanayanacheruvupalle
+CHITTOOR.csv, Madanapalli, kalinavaripalli
+CHITTOOR.csv, Madanapalli, Barlapalle
+CHITTOOR.csv, Madanapalli, Kollavaripalle
+CHITTOOR.csv, Madanapalli, Sasrulagadda
+CHITTOOR.csv, Madanapalli, Eguvapalli
+CHITTOOR.csv, Madanapalli, Sirigunthapalli
+CHITTOOR.csv, Madanapalli, Kollabailu
+CHITTOOR.csv, Madanapalli, Katlagantivaripalli
+CHITTOOR.csv, Madanapalli, Diguvamamidigunpalapalli
+CHITTOOR.csv, Madanapalli, Mittamarrivandlapalli & HW
+CHITTOOR.csv, Madanapalli, Eguvamamidiguntapalle
+CHITTOOR.csv, Madanapalli, IRRIVANDLA INDLU
+CHITTOOR.csv, Madanapalli, pakalavaripalle
+CHITTOOR.csv, Madanapalli, Bandakindapalle
+CHITTOOR.csv, Madanapalli, Adivollapalle
+CHITTOOR.csv, Madanapalli, Udumvari palle Thanda
+CHITTOOR.csv, Madanapalli, Udumvari palle
+CHITTOOR.csv, Madanapalli, Kotavarpalli Thanda
+CHITTOOR.csv, Madanapalli, Kollaform
+CHITTOOR.csv, Madanapalli, Eguvakasiraopeta
+CHITTOOR.csv, Madanapalli, Madditevaripalle
+CHITTOOR.csv, Madanapalli, Gowrappagaripalle
+CHITTOOR.csv, Madanapalli, R.C.Oddipalli&Bandakinda oddipalli
+CHITTOOR.csv, Madanapalli, Gowdasanipalli
+CHITTOOR.csv, Madanapalli, Gajjanagaripalli
+CHITTOOR.csv, Madanapalli, Reddiganipalli
+CHITTOOR.csv, Madanapalli, Palmkonda
+CHITTOOR.csv, Madanapalli, Obulareddigaripalle
+CHITTOOR.csv, Madanapalli, Mondemvaripalle
+CHITTOOR.csv, Madanapalli, Diguvakasiraopeta
+CHITTOOR.csv, Madanapalli, Gollapalli
+CHITTOOR.csv, Madanapalli, Enumulavari palle and colony
+CHITTOOR.csv, Madanapalli, R.R.Colony (Kotha indlu )
+CHITTOOR.csv, Madanapalli, Eswaramma Colony
+CHITTOOR.csv, Madanapalli, Buchipalle
+CHITTOOR.csv, Madanapalli, Bhoomakkavaripalle
+CHITTOOR.csv, Madanapalli, Upparapalle
+CHITTOOR.csv, Madanapalli, Santhi Nagar
+CHITTOOR.csv, Madanapalli, Kothapeta
+CHITTOOR.csv, Madanapalli, Kayyalavaripalli
+CHITTOOR.csv, Madanapalli, Peddachennaihgaripalli
+CHITTOOR.csv, Madanapalli, Palacenter at 5th Maile
+CHITTOOR.csv, Madanapalli, Konkivaripalli
+CHITTOOR.csv, Madanapalli, Chekkalavaripalli
+CHITTOOR.csv, Madanapalli, Pothapolu HW
+CHITTOOR.csv, Madanapalli, Kurapalli
+CHITTOOR.csv, Madanapalli, Gangavaram
+CHITTOOR.csv, Madanapalli, Appaiahgari palle
+CHITTOOR.csv, Madanapalli, 150th Mile
+CHITTOOR.csv, Madanapalli, Valasapalle
+CHITTOOR.csv, Madanapalli, Katlatapalle
+CHITTOOR.csv, Madanapalli, guttakindapalli
+CHITTOOR.csv, Madanapalli, Thotavaripalle
+CHITTOOR.csv, Madanapalli, Molakaladinne
+CHITTOOR.csv, Madanapalli, Thummalathanda
+CHITTOOR.csv, Madanapalli, Kondreddipalli
+CHITTOOR.csv, Madanapalli, Guttakindapalle
+CHITTOOR.csv, Madanapalli, Munagamakulapalle
+CHITTOOR.csv, Madanapalli, Bandakada Palli
+CHITTOOR.csv, Madanapalli, Jowkapalli
+CHITTOOR.csv, Madanapalli, Vempalli & B C Colony
+CHITTOOR.csv, Madanapalli, Penchupadu Kaspa
+CHITTOOR.csv, Madanapalli, Sivaripalli
+CHITTOOR.csv, Madanapalli, Pandivaripalli
+CHITTOOR.csv, Madanapalli, B.N.Reddy Colony
+CHITTOOR.csv, Madanapalli, Pasalamanda
+CHITTOOR.csv, Madanapalli, punganuvandlapalli
+CHITTOOR.csv, Madanapalli, Kondamarripalli
+CHITTOOR.csv, Madanapalli, Bestapalli
+CHITTOOR.csv, Madanapalli, Tattivaripalli
+CHITTOOR.csv, Madanapalli, Bangarupeta
+CHITTOOR.csv, Madanapalli, Kuravanka
+CHITTOOR.csv, Madanapalli, Motlapalli
+CHITTOOR.csv, Madanapalli, Ponnetipalem
+CHITTOOR.csv, Ramasamudram, Dasireddy palle
+CHITTOOR.csv, Ramasamudram, Cheemanapalle mitta
+CHITTOOR.csv, Ramasamudram, A.Kothuru
+CHITTOOR.csv, Ramasamudram, Ellampalli
+CHITTOOR.csv, Ramasamudram, Pathuru HW
+CHITTOOR.csv, Ramasamudram, Machuvaripalli
+CHITTOOR.csv, Ramasamudram, Cheerlapalli
+CHITTOOR.csv, Ramasamudram, Erraboyanapalle
+CHITTOOR.csv, Ramasamudram, KC Palle
+CHITTOOR.csv, Ramasamudram, Y.Kurapalle
+CHITTOOR.csv, Ramasamudram, Gunthayembadi
+CHITTOOR.csv, Ramasamudram, Mittayambadi
+CHITTOOR.csv, Ramasamudram, Errapasetty palli
+CHITTOOR.csv, Ramasamudram, Singemvari palle
+CHITTOOR.csv, Ramasamudram, yaddanapalli
+CHITTOOR.csv, Ramasamudram, M.Kothuru
+CHITTOOR.csv, Ramasamudram, Mannevaripalli
+CHITTOOR.csv, Ramasamudram, Ragimakula palli
+CHITTOOR.csv, Ramasamudram, sanipalli
+CHITTOOR.csv, Ramasamudram, R.Kothuru
+CHITTOOR.csv, Ramasamudram, Annappalli
+CHITTOOR.csv, Ramasamudram, Bairajupalli
+CHITTOOR.csv, Ramasamudram, Ajjimreddy palli
+CHITTOOR.csv, Ramasamudram, Bairajupalli HW
+CHITTOOR.csv, Ramasamudram, Ballavaripalli
+CHITTOOR.csv, Ramasamudram, Chimparapalli
+CHITTOOR.csv, Ramasamudram, Kanagani
+CHITTOOR.csv, Ramasamudram, Eguvanallappagaripalli
+CHITTOOR.csv, Ramasamudram, Sreeramula palli
+CHITTOOR.csv, Ramasamudram, Gajulanagaram
+CHITTOOR.csv, Ramasamudram, Boyaveedi
+CHITTOOR.csv, Ramasamudram, Besthaveedi
+CHITTOOR.csv, Ramasamudram, Vanaganipalli
+CHITTOOR.csv, Ramasamudram, Chembakuru
+CHITTOOR.csv, Ramasamudram, A.Kothuru
+CHITTOOR.csv, Nimmanapalle, Nimmanapalle 1
+CHITTOOR.csv, Nimmanapalle, Nimmanapalle 2
+CHITTOOR.csv, Nimmanapalle, Pedhamadigapalli
+CHITTOOR.csv, Nimmanapalle, Buchireddigaripalli
+CHITTOOR.csv, Nimmanapalle, Kommireddigari palle
+CHITTOOR.csv, nimmanapalle, Kondaiahgari palle
+CHITTOOR.csv, Nimmanapalle, Kollapharam
+CHITTOOR.csv, Nimmanapalle, Venkojigari palle
+CHITTOOR.csv, Nimmanapalle, Shivaji Nagar
+CHITTOOR.csv, Nimmanapalle, Dharavarapalle
+CHITTOOR.csv, Nimmanapalle, Mittamedamala palle
+CHITTOOR.csv, Nimmanapalle, Padamativari palle
+CHITTOOR.csv, Nimmanapalle, Kathrivaripalle
+CHITTOOR.csv, Nimmanapalle, Verrivari palle
+CHITTOOR.csv, Nimmanapalle, Saida Peta
+CHITTOOR.csv, Nimmanapalle, Pillagovulavaripalli
+CHITTOOR.csv, Nimmanapalle, Gandimalapalli,Nagamvaripalli
+CHITTOOR.csv, Nimmanapalle, Chinthaparthi palle
+CHITTOOR.csv, Nimmanapalle, Bandameeda malapalli
+CHITTOOR.csv, Nimmanapalle, Vaddipalle
+CHITTOOR.csv, Nimmanapalle, R.Madigapalle
+CHITTOOR.csv, Nimmanapalle, Bonthalavaripalli
+CHITTOOR.csv, Nimmanapalle, Gudlavaripalli,D.Madigapalli
+CHITTOOR.csv, Nimmanapalle, Diguva Machireddigari palle
+CHITTOOR.csv, Nimmanapalle, Eguva Machireddigari palle
+CHITTOOR.csv, Nimmanapalle, MG Kota
+CHITTOOR.csv, Nimmanapalle, Tarigondavaripalle
+CHITTOOR.csv, Nimmanapalle, Ch.Madigapalli
+CHITTOOR.csv, Nimmanapalle, Gownigaripalle + H/W
+CHITTOOR.csv, Nimmanapalle, Challavaripalli
+CHITTOOR.csv, Nimmanapalle, Untavaripalli
+CHITTOOR.csv, Nimmanapalle, Nallamvaripalli
+CHITTOOR.csv, Nimmanapalle, Sreerampuram
+CHITTOOR.csv, C.G.Gallu, Ayyppachettivaripalli
+CHITTOOR.csv, C.G.Gallu, Bollinenivaripalli
+CHITTOOR.csv, C.G.Gallu, Buggavandalapalli
+CHITTOOR.csv, C.G.Gallu, Chinnagottigallu
+CHITTOOR.csv, C.G.Gallu, Deendaralapalli
+CHITTOOR.csv, C.G.Gallu, Gajulavaripali
+CHITTOOR.csv, C.G.Gallu, Kommisettigaripalli
+CHITTOOR.csv, C.G.Gallu, Kummarapalle
+CHITTOOR.csv, C.G.Gallu, Mukkevandlapalli
+CHITTOOR.csv, C.G.Gallu, Piramalavandlapalle
+CHITTOOR.csv, C.G.Gallu, Pottiganithopu HW
+CHITTOOR.csv, C.G.Gallu, Rajuvaripalli
+CHITTOOR.csv, C.G.Gallu, Reddyvaripalli
+CHITTOOR.csv, C.G.Gallu, Santhinagar
+CHITTOOR.csv, C.G.Gallu, T.Kummarapalli
+CHITTOOR.csv, C.G.Gallu, Thippireddygaripalli
+CHITTOOR.csv, C.G.Gallu, Thogatapalli
+CHITTOOR.csv, C.G.Gallu, Vankamadivaripalli
+CHITTOOR.csv, C.G.Gallu, Yaddamvaripalli
+CHITTOOR.csv, C.G.Gallu, Yandapallivaripalli
+CHITTOOR.csv, Chandragiri, Mangapuram ST Colony
+CHITTOOR.csv, Chandragiri, Agarala Madigapalle
+CHITTOOR.csv, Chandragiri, Bodiguttavaripalle
+CHITTOOR.csv, Chandragiri, Irrivisettivaripalle
+CHITTOOR.csv, Chandragiri, Pakalavaripalle
+CHITTOOR.csv, Pakala, High School Gate
+CHITTOOR.csv, Pakala, Abbanaiduindlu&Medasaniindlu
+CHITTOOR.csv, Pakala, Achammaagraharam HW
+CHITTOOR.csv, Pakala, Adinepalle
+CHITTOOR.csv, Pakala, Azad Nagar
+CHITTOOR.csv, Pakala, Balireddigaripalle
+CHITTOOR.csv, Pakala, Bandakadapalle&Oddipalle
+CHITTOOR.csv, Pakala, Bandarlapalli Hw
+CHITTOOR.csv, Pakala, Barlikondabunglow
+CHITTOOR.csv, Pakala, Chitteminayanicheruvu
+CHITTOOR.csv, Pakala, Chitteminayanipalli Zogala indlu
+CHITTOOR.csv, Pakala, Dinnelapalyam ST Colony
+CHITTOOR.csv, Pakala, E.Palaguttapalle Diguva HW
+CHITTOOR.csv, Pakala, E.Palaguttapalle Eguva HW
+CHITTOOR.csv, Pakala, Enamavaripalle HW
+CHITTOOR.csv, Pakala, Ganumgattupalli
+CHITTOOR.csv, Pakala, Gerikinettu
+CHITTOOR.csv, Pakala, Gudivaripalle
+CHITTOOR.csv, Pakala, Jangalapalle HW
+CHITTOOR.csv, Pakala, Kakarlavaripalle & HW
+CHITTOOR.csv, Pakala, Kamachenupalle HW & Tellagundlapalle
+CHITTOOR.csv, Pakala, Kesava HW
+CHITTOOR.csv, Pakala, Kommepalli Hw
+CHITTOOR.csv, Pakala, Koneboyani Indlu
+CHITTOOR.csv, Pakala, Kothavoddepalle
+CHITTOOR.csv, Pakala, Krishna puram & HW
+CHITTOOR.csv, Pakala, Kukkalapalle HW
+CHITTOOR.csv, Pakala, Kunapalle & HW
+CHITTOOR.csv, Pakala, Lakshmipuram & E.Palaguttapalle
+CHITTOOR.csv, Pakala, Linganapalle HW
+CHITTOOR.csv, Pakala, Mallelacheruvu
+CHITTOOR.csv, Pakala, Mallelacheruvu HW
+CHITTOOR.csv, Pakala, Manginayanipalle and Jogalaindlu
+CHITTOOR.csv, Pakala, Mangonagar
+CHITTOOR.csv, Pakala, Mogarala & Reddiveripalle
+CHITTOOR.csv, Pakala, Moravapalli HW & MW
+CHITTOOR.csv, Pakala, Nadimpalle & HW
+CHITTOOR.csv, Pakala, Neldanipalle
+CHITTOOR.csv, Pakala, O.C.Palle
+CHITTOOR.csv, Pakala, Pachipalapalle & HW
+CHITTOOR.csv, Pakala, Pachipalapalle HW
+CHITTOOR.csv, Pakala, Pakala(Balajicolony&Guttakindaindlu)
+CHITTOOR.csv, Pakala, Pakala(Bhartham mitta)
+CHITTOOR.csv, Pakala, Pathipativaripalli & Gandlapalle
+CHITTOOR.csv, Pakala, Pathipativaripalli HW
+CHITTOOR.csv, Pakala, Pedda HW
+CHITTOOR.csv, Pakala, Pedda HW
+CHITTOOR.csv, Pakala, peddagorpadu HW
+CHITTOOR.csv, Pakala, Peddaramapuram HW
+CHITTOOR.csv, Pakala, Perasanipalle & Kothapalle
+CHITTOOR.csv, Pakala, Perumallagudipalle &HW
+CHITTOOR.csv, Pakala, Polavarapu indlu
+CHITTOOR.csv, Pakala, Polisettipalli
+CHITTOOR.csv, Pakala, Ramaiahgaripalle HW
+CHITTOOR.csv, Pakala, Rounaq Nagar(Turakapalle)
+CHITTOOR.csv, Pakala, Seshapuram ST Colony
+CHITTOOR.csv, Pakala, Sriharipuram
+CHITTOOR.csv, Pakala, T.T.Palle
+CHITTOOR.csv, Pakala, Thalarivaripalle
+CHITTOOR.csv, Pakala, Thuvvasenuoddepalle
+CHITTOOR.csv, Pakala, Turakapalle
+CHITTOOR.csv, Pakala, Varadappa Naidupet
+CHITTOOR.csv, Pakala, Veerisettipalle
+CHITTOOR.csv, Pakala, Chennugaripalle & MW
+CHITTOOR.csv, Pakala, Pakala(Gandinagar&Kharamtullabad
+CHITTOOR.csv, Pakala, Chigarapalle & HW
+CHITTOOR.csv, Pakala, Billaiahgaripalle HW
+CHITTOOR.csv, Pakala, Diguvagollaalle & HW
+CHITTOOR.csv, R.C.Puram, Anuppalli
+CHITTOOR.csv, R.C.Puram, Anuppalli HW
+CHITTOOR.csv, R.C.Puram, Nemallaguntapalli
+CHITTOOR.csv, R.C.Puram, Nuthuguntapalli HW
+CHITTOOR.csv, Tirupati Rural, Andhrabank Colony
+CHITTOOR.csv, Tirupati Rural, Avilala
+CHITTOOR.csv, Tirupati Rural, Cherlo Indlu (BC Colony)
+CHITTOOR.csv, Tirupati Rural, Cherlopalle HW
+CHITTOOR.csv, Tirupati Rural, Rickshaw Pullars Colony
+CHITTOOR.csv, Tirupati Rural, Sanappakalva HW
+CHITTOOR.csv, Tirupati Rural, Venkatapathi Nagar
+CHITTOOR.csv, Tirupati Rural, Vinayakanagar Colony
+CHITTOOR.csv, Tirupati Rural, Thummalagunta
+CHITTOOR.csv, Tirupati Rural, Thummalagunta HW
+CHITTOOR.csv, Tirupati Rural, Upparapalle HW & MW
+CHITTOOR.csv, Tirupati Rural, Ramanujapalle HW
+CHITTOOR.csv, Y.V.Palem, Avulaiahgaripalli(Part)
+CHITTOOR.csv, Y.V.Palem, Balijapalli
+CHITTOOR.csv, Y.V.Palem, Boggalavaripalli
+CHITTOOR.csv, Y.V.Palem, Boggalavaripalli HW
+CHITTOOR.csv, Y.V.Palem, Chinthalavaripalli
+CHITTOOR.csv, Y.V.Palem, Devaravandlapalli
+CHITTOOR.csv, Y.V.Palem, Eguva Madigapalli
+CHITTOOR.csv, Y.V.Palem, Gollapalli
+CHITTOOR.csv, Y.V.Palem, Guttakindapalli
+CHITTOOR.csv, Y.V.Palem, Guttakindapalli Madigapalli
+CHITTOOR.csv, Y.V.Palem, Harizanawada
+CHITTOOR.csv, Y.V.Palem, Karnamvaripalli
+CHITTOOR.csv, Y.V.Palem, Kurparthivaripalli
+CHITTOOR.csv, Y.V.Palem, Malevandlapalli
+CHITTOOR.csv, Y.V.Palem, Mangalapalli
+CHITTOOR.csv, Y.V.Palem, Reddivaripalli
+CHITTOOR.csv, Y.V.Palem, Reddivaripalli
+CHITTOOR.csv, Y.V.Palem, Siddalavandlapalli
+CHITTOOR.csv, Y.V.Palem, Thurpupalli
+CHITTOOR.csv, Y.V.Palem, Ustikayalapenta cross
+CHITTOOR.csv, Y.V.Palem, Voddipalli(Part)
+CHITTOOR.csv, Kuppam, Kullayappa kottalu
+CHITTOOR.csv, Kuppam, Gevigutta chenu
+CHITTOOR.csv, Kuppam, Sapanikunta
+CHITTOOR.csv, Kuppam, M.K nuru st colony, Munaswamy kottalu and nerlakottalu
+CHITTOOR.csv, Kuppam, Uppakottalu and Muddulappa kottalu
+CHITTOOR.csv, Kuppam, Bayanuru
+CHITTOOR.csv, Kuppam, Durgasamudram amd Parthichenu
+CHITTOOR.csv, Kuppam, Nadimurukottalu and H.Kottalu
+CHITTOOR.csv, Kuppam, Chinna Obba ZPHS School and T.Sadumuru
+CHITTOOR.csv, Kuppam, Bodeppakottalu and Veeraswamy kottalu
+CHITTOOR.csv, Kuppam, Mangammavuru and Kokkanuru
+CHITTOOR.csv, Kuppam, Adivikottalu and Peddannakottalu
+CHITTOOR.csv, Kuppam, Peddagopanapalli Village and School
+CHITTOOR.csv, Kuppam, Vepuru And Thimmapuram
+CHITTOOR.csv, Kuppam, Rallachenu and N.G.chenu
+CHITTOOR.csv, Kuppam, Zitarimadugu
+CHITTOOR.csv, Kuppam, N.Kothapalli
+CHITTOOR.csv, Kuppam, Paipalyam B C Colony
+CHITTOOR.csv, Kuppam, Gariga chinnepalli ZPH school
+CHITTOOR.csv, Kuppam, Gattu And balayya kottalu
+CHITTOOR.csv, Kuppam, Sampangi nagar and Near Goutham school
+CHITTOOR.csv, Kuppam, Bairuganipalli and S c Colony
+CHITTOOR.csv, Kuppam, Vinayaka veedhi and Cheelepalli road
+CHITTOOR.csv, Kuppam, H.P Road and Near Sai baba gudi
+CHITTOOR.csv, Kuppam, Athuru
+CHITTOOR.csv, Kuppam, Noolukunta B C Colony
+CHITTOOR.csv, Kuppam, V.Mittapalli
+CHITTOOR.csv, Kuppam, Katanuru Kottalu
+CHITTOOR.csv, Kuppam, Chinnanna kottalu
+CHITTOOR.csv, Kuppam, Kunjeganuru
+CHITTOOR.csv, Ramakuppam, Krishnapuram Dinne
+CHITTOOR.csv, Ramakuppam, Yanadi colony
+CHITTOOR.csv, Ramakuppam, APSWR (BOYS) Model School
+CHITTOOR.csv, Santhipuram, Krishnapuram
+CHITTOOR.csv, Santhipuram, Kareganuru
+CHITTOOR.csv, Santhipuram, Kuthadegani palli
+CHITTOOR.csv, Santhipuram, Bellakogila S c Colony
+CHITTOOR.csv, Santhipuram, Nallapareddivuru
+CHITTOOR.csv, Santhipuram, Thumsi
+CHITTOOR.csv, Santhipuram, Model school
+CHITTOOR.csv, Santhipuram, Sonneganipalle
+CHITTOOR.csv, Santhipuram, Kasthuriba School
+CHITTOOR.csv, Santhipuram, Chillimanupalli
+CHITTOOR.csv, Palamaner, APSWRSC
+CHITTOOR.csv, Peddapanjani, Muthukuru
+CHITTOOR.csv, V.Kota, Nernipalle
+CHITTOOR.csv, V.Kota, Devarajapuram
+CHITTOOR.csv, V.Kota, C.Ellagaram
+CHITTOOR.csv, Ramasamudram, K.C.Palle
+CHITTOOR.csv, Ramasamudram, Y.kurrappalle
+CHITTOOR.csv, Ramasamudram, A.Kothuru
+CHITTOOR.csv, Ramasamudram, Dasarlapalli
+CHITTOOR.csv, Ramasamudram, B.Kurappalle
+CHITTOOR.csv, Ramasamudram, chembakuru
+CHITTOOR.csv, Somala, Budidetivaripalle
+CHITTOOR.csv, Punganur, Bodinayunipalle
+CHITTOOR.csv, Punganur, Santhinagar
+CHITTOOR.csv, Punganur, Siddareddigaripalle
+PRAKASAM.csv, B.Peta, B.Peta
+PRAKASAM.csv, Donakonda, Bhumanapalli
+PRAKASAM.csv, Donakonda, Kattakindapalli
+PRAKASAM.csv, Dornala, Bodenaikthanda
+PRAKASAM.csv, Dornala, Dornala masheed centre
+PRAKASAM.csv, Dornala, Dornala of OC colony
+PRAKASAM.csv, Dornala, Dornala SC palem
+PRAKASAM.csv, Dornala, Eklavya Model Residential School for Girls (ST) APTWD
+PRAKASAM.csv, Dornala, Government High School
+PRAKASAM.csv, Dornala, Inamukkala darasi colony
+PRAKASAM.csv, Dornala, Inamukkala West
+PRAKASAM.csv, Dornala, Indiranagar
+PRAKASAM.csv, Dornala, Kasturi high School for Girls
+PRAKASAM.csv, Dornala, Kummaricolony
+PRAKASAM.csv, Dornala, Malapalem of Inamukkala
+PRAKASAM.csv, Dornala, ST-2 and BC hostels Dornala
+PRAKASAM.csv, Dornala, Urdu Govt.School
+PRAKASAM.csv, GIDDALUR, Podalakunta palli
+PRAKASAM.csv, GIDDALUR, Sanjeevarayunipeta
+PRAKASAM.csv, GIDDALUR, Tirupathipalli
+PRAKASAM.csv, Gudluru, Chimidithipadu
+PRAKASAM.csv, H.M.Padu, Hazzepuram
+PRAKASAM.csv, H.M.Padu, Dasara Palli
+PRAKASAM.csv, H.M.Padu, Thimareddy Palli
+PRAKASAM.csv, K.K.Mitta, Marripalem
+PRAKASAM.csv, Markapur, Kasthuribha Gandhi Gurukula Patasala/B.C.Girls Hostel, Social Welfare Hostal
+PRAKASAM.csv, Markapur, Kolabheemuni padu
+PRAKASAM.csv, Markapur, Mittameedipalli
+PRAKASAM.csv, Markapur, Mittameedipalli Model school
+PRAKASAM.csv, Peddaraveedu, Chatlamitta
+PRAKASAM.csv, Peddaraveedu, Dornala Masjid 2
+PRAKASAM.csv, Peddaraveedu, Maallavaram
+PRAKASAM.csv, Peddaraveedu, Obulakkalapalli
+PRAKASAM.csv, Peddaraveedu, P.Cpalli
+PRAKASAM.csv, Peddaraveedu, Peddaraveedu
+PRAKASAM.csv, Peddaraveedu, Putchakayalapalli
+PRAKASAM.csv, Peddaraveedu, Rajampalli
+PRAKASAM.csv, Peddaraveedu, Regulapalli
+PRAKASAM.csv, Peddaraveedu, Sanikavaram Madigapalli
+PRAKASAM.csv, Peddaraveedu, Tangiralapalli
+PRAKASAM.csv, Peddaraveedu, Thammadapalli
+PRAKASAM.csv, Peddaraveedu, Thokapalli
+PRAKASAM.csv, Podili, Prakash nagar & Islampet
+PRAKASAM.csv, Podili, Ramnagar&Kamsalacolony
+PRAKASAM.csv, Podili, Sudhanagunta
+PRAKASAM.csv, Pullalacheruvu, Tellagatla SC&ST Colony
+PRAKASAM.csv, Pullalacheruvu, Akkapalem
+PRAKASAM.csv, Pullalacheruvu, Ayyagaripalli
+PRAKASAM.csv, Pullalacheruvu, Beernenipalli SC Colony
+PRAKASAM.csv, Pullalacheruvu, Chinna PRC Thanda
+PRAKASAM.csv, Pullalacheruvu, Endrapalli
+PRAKASAM.csv, Pullalacheruvu, Errabalem
+PRAKASAM.csv, Pullalacheruvu, Jangamvaripalli
+PRAKASAM.csv, Pullalacheruvu, Kammapalli
+PRAKASAM.csv, Pullalacheruvu, M.Errabalem (Marrivemula hab)
+PRAKASAM.csv, Pullalacheruvu, Manepalli
+PRAKASAM.csv, Pullalacheruvu, Mutukala
+PRAKASAM.csv, Pullalacheruvu, Mutukula Christianpalem
+PRAKASAM.csv, Pullalacheruvu, PRC Thanda
+PRAKASAM.csv, Pullalacheruvu, Rentapalli
+PRAKASAM.csv, Pullalacheruvu, Vadampalli
+PRAKASAM.csv, Racherla, Anumalapalli
+PRAKASAM.csv, Tarlupadu, Meerjapeta
+PRAKASAM.csv, Tarlupadu, Thandivaripalli
+PRAKASAM.csv, Tripuranthakam, Kesenenipalli
+PRAKASAM.csv, Tripuranthakam, Ramasamudram Sccolony
+PRAKASAM.csv, Ulavapadu, Indira nagar Yanadi Sangam
+PRAKASAM.csv, V.V.Palem, Nukavaram
+PRAKASAM.csv, Y.Palem, Amanigudipadu
+PRAKASAM.csv, Y.Palem, ambedkarnagar
+PRAKASAM.csv, Y.Palem, Asif nagar (Y.palem)
+PRAKASAM.csv, Y.Palem, Brahmam gari street
+PRAKASAM.csv, Y.Palem, Chaintanyanagar (Y.Palem hab)
+PRAKASAM.csv, Y.Palem, Gandivadipalli
+PRAKASAM.csv, Y.Palem, Gangapalem
+PRAKASAM.csv, Y.Palem, Gurrapusala
+PRAKASAM.csv, Y.Palem, Indiranagarcolony
+PRAKASAM.csv, Y.Palem, Isreyelpeta (Y.Palem)
+PRAKASAM.csv, Y.Palem, Mainbazar
+PRAKASAM.csv, Y.Palem, NGO Colony
+PRAKASAM.csv, Y.Palem, Old telephoneexchange street
+PRAKASAM.csv, Y.Palem, Ongolevaristreet
+PRAKASAM.csv, Y.Palem, P.Kolukula
+PRAKASAM.csv, Y.Palem, Pillikuntathanda&Nagaraju thanda
+PRAKASAM.csv, Y.Palem, Pothurajugadda (Y.Palem)
+PRAKASAM.csv, Y.Palem, Pothurajupenta&BuddiniColony
+PRAKASAM.csv, Y.Palem, Saravayapalem
+PRAKASAM.csv, Y.Palem, Statebank Bazar
+PRAKASAM.csv, Y.Palem, Thammadipalli
+PRAKASAM.csv, Y.Palem, Utlabazar
+PRAKASAM.csv, Y.Palem, Vadampalli
+PRAKASAM.csv, Y.Palem, Vaddebazar
+PRAKASAM.csv, Y.Palem, Veerrayapalem
+PRAKASAM.csv, Y.Palem, Venkatadiripalem
+PRAKASAM.csv, Y.Palem, Y.Kothapalli
+PRAKASAM.csv, Y.Palem, Yellareddypalli
+PRAKASAM.csv, Yerragondapalem, KGBV Hostel of Y.Palem village
+Ananthapuram.csv, Mandal, Habitation_name
+Ananthapuram.csv, Singanamala, C.Bandameedapalli
+Ananthapuram.csv, Singanamala, sodanapalli
+Ananthapuram.csv, Singanamala, P.Matlagondi
+Ananthapuram.csv, Singanamala, Singanamala Main Village
+Ananthapuram.csv, Singanamala, Singanamala BC.Colony
+Ananthapuram.csv, Singanamala, Sodanapalli bc colony
+Ananthapuram.csv, BK.Samudram, Danduvaripalli
+Ananthapuram.csv, BK.Samudram, Pasaluru
+Ananthapuram.csv, BK.Samudram, B.Kothapalli
+Ananthapuram.csv, BK.Samudram, Govindampalli
+Ananthapuram.csv, BK.Samudram, Siddarmpuram
+Ananthapuram.csv, Narpala, Bandlapalli(BC & SC Colony)
+Ananthapuram.csv, Narpala, Durgam
+Ananthapuram.csv, Narpala, Gaddam Nage palli
+Ananthapuram.csv, Narpala, Kesepalli
+Ananthapuram.csv, Narpala, Kesepalli(BC & SC Colony)
+Ananthapuram.csv, Narpala, PULUSUNUTHALA
+Ananthapuram.csv, Narpala, Neluvurai
+Ananthapuram.csv, Putlur, Arakata Vemula
+Ananthapuram.csv, Putlur, Balapuram
+Ananthapuram.csv, Putlur, C.Venganapalli Main
+Ananthapuram.csv, Putlur, Goparajupalli
+Ananthapuram.csv, Putlur, Cherlopalli
+Ananthapuram.csv, Putlur, Kadavakallu Main
+Ananthapuram.csv, Putlur, Komatikuntla SC & BC
+Ananthapuram.csv, Putlur, Kondapuram
+Ananthapuram.csv, Putlur, Kondugarikunta
+Ananthapuram.csv, Putlur, Nagireddipalli
+Ananthapuram.csv, Putlur, Gollapalli
+Ananthapuram.csv, Putlur, Rangam nayunipalli
+Ananthapuram.csv, Putlur, Dosaledu
+Ananthapuram.csv, Putlur, Garuguchinthalapalli
+Ananthapuram.csv, Yellanur, 85 Nittor
+Ananthapuram.csv, Yellanur, Chilamakuru
+Ananthapuram.csv, Yellanur, Bukkapuram
+Ananthapuram.csv, Yellanur, Chilamakuru
+Ananthapuram.csv, Yellanur, Chintakayamanda
+Ananthapuram.csv, Yellanur, Goddumarri
+Ananthapuram.csv, Yellanur, Kuchivaripalli
+Ananthapuram.csv, Yellanur, Neerajampalli
+Ananthapuram.csv, Yellanur, Pathapalli
+Ananthapuram.csv, Yellanur, Pedda Mallepalli
+Ananthapuram.csv, Yellanur, S.Thirumalapuram
+Ananthapuram.csv, Yellanur, Yellanur
+Ananthapuram.csv, Yellanur, Medikurthy
+Ananthapuram.csv, Yellanur, Vasapuram
+Ananthapuram.csv, Yellanur, Venkatam Palii
+Ananthapuram.csv, Yellanur, Chinthakayamanda
+Ananthapuram.csv, Anantapur(rural), Chinnakunta
+Ananthapuram.csv, Anantapur(rural), Prabhakar Chowdary Colony
+Ananthapuram.csv, Anantapur(rural), Cheyedu
+Ananthapuram.csv, Anantapur(rural), Pulakunta
+Ananthapuram.csv, Rapthadu, M.B.Palli
+Ananthapuram.csv, Kanaganapalli, Mamillapalli
+Ananthapuram.csv, Kanaganapalli, Chandracherla
+Ananthapuram.csv, Kanaganapalli, kurlapalli thanda
+Ananthapuram.csv, Kanaganapalli, Tallimadugula
+Ananthapuram.csv, Kanaganapalli, vepakunta
+Ananthapuram.csv, Kanaganapalli, Daduluru
+Ananthapuram.csv, C.K.Palli, C.K.Palli
+Ananthapuram.csv, C.K.Palli, Yerraginnanagaripalli
+Ananthapuram.csv, C.K.Palli, Pylaboyilapalli
+Ananthapuram.csv, C.K.Palli, Ganginepalli
+Ananthapuram.csv, C.K.Palli, Basinepalli
+Ananthapuram.csv, C.K.Palli, Bramhanapalli
+Ananthapuram.csv, C.K.Palli, Pallenagaripalli
+Ananthapuram.csv, C.K.Palli, Obulampalli
+Ananthapuram.csv, C.K.Palli, Venkatampalli
+Ananthapuram.csv, Vajrakarur, Konakondla
+Ananthapuram.csv, Dharmavaram, Malagundlapalli
+Ananthapuram.csv, Singanamala, Nagulaguddam thanda
+Ananthapuram.csv, Singanamala, Nagulaguddam
+Ananthapuram.csv, Singanamala, Pothurajukaluva
+Ananthapuram.csv, Tanakal, Nandigani palli & Beri palli H/o T.Sadum
+Ananthapuram.csv, Tanakal, Pedda kadapala vari palli & Dudekula Colony (Kunta Marava palli)
+Ananthapuram.csv, Tanakal, Bonthala palli & H.W.
+Ananthapuram.csv, N.P.Kunta, Vaddi palli, Srirama puram H/o W.Nadimi palli
+Ananthapuram.csv, Kadiri, Veerachinnaiahgari palli Colony & Kummarolla palli H/o K.Brahmana palli
+Ananthapuram.csv, Amadagur, Kassamudram (Main village) & H.W.
+Ananthapuram.csv, Amadagur, Cherlo palli
+Ananthapuram.csv, Amadagur, Kanchanagari palli
+Ananthapuram.csv, Amadagur, Kokkantivari palli
+Ananthapuram.csv, Amadagur, Niluvurathi palli
+Ananthapuram.csv, Amadagur, Kancharavandlapalli
+Ananthapuram.csv, Amadagur, Karimi reddy palli
+Ananthapuram.csv, Amadagur, Amadagur Balance part
+Ananthapuram.csv, Amadagur, Talamarlavandla palli
+Ananthapuram.csv, Amadagur, Kottuvari palli
+Ananthapuram.csv, Amadagur, Vaddi palli
+Ananthapuram.csv, Amadagur, Jowkala
+Ananthapuram.csv, Amadagur, Sangeetham palli & HW
+Ananthapuram.csv, Amadagur, Tholla palli
+Ananthapuram.csv, Amadagur, Malakavari palli RDT Colony
+Ananthapuram.csv, Amadagur, Cheekirevula palli
+Ananthapuram.csv, Amadagur, Amadagur part of village
+Ananthapuram.csv, Amadagur, Solukuntla
+Ananthapuram.csv, Amadagur, Mamidimakula palli
+Ananthapuram.csv, Amadagur, Mohammadabad H.W.
+Ananthapuram.csv, Amadagur, Kandukurivandla palli & HW
+Ananthapuram.csv, Amadagur, J.K.palli (Main Village)
+Ananthapuram.csv, Amadagur, B.Kotha palli
+Ananthapuram.csv, Amadagur, Kotha peta H/o Thummala
+Ananthapuram.csv, Amadagur, Dudara gutta
+Ananthapuram.csv, Amadagur, Puttagosula palli (Haripuram)
+Ananthapuram.csv, Amadagur, Thummala
+Ananthapuram.csv, Amadagur, Balappagari palli
+Ananthapuram.csv, Amadagur, Sanevari palli
+Ananthapuram.csv, Amadagur, Golla palli
+Ananthapuram.csv, Amadagur, Etigadda Thanda
+Ananthapuram.csv, Amadagur, Guvulapalli
+Ananthapuram.csv, Amadagur, Gangireddy palli
+Ananthapuram.csv, O.D.Cheruvu, Thippe palli & H.W.Thippe palli Thanda
+Ananthapuram.csv, O.D.Cheruvu, O.D.Cheruvu Town
+Ananthapuram.csv, O.D.Cheruvu, T.Kuntla palli
+Ananthapuram.csv, O.D.Cheruvu, Thangedukunta & HW & BC Colony
+Ananthapuram.csv, O.D.Cheruvu, Marevandla palli
+Ananthapuram.csv, O.D.Cheruvu, A.Yarra balli
+Ananthapuram.csv, O.D.Cheruvu, M.B.Cross
+Ananthapuram.csv, O.D.Cheruvu, Vanchireddy palli & BC Col
+Ananthapuram.csv, O.D.Cheruvu, Mallimallolla palli
+Ananthapuram.csv, O.D.Cheruvu, Mamillakuntla palli
+Ananthapuram.csv, O.D.Cheruvu, Uggireddy palli & S.C.Colony
+Ananthapuram.csv, O.D.Cheruvu, Nallagutla palli
+Ananthapuram.csv, O.D.Cheruvu, Chowdam palli
+Ananthapuram.csv, O.D.Cheruvu, Bhogani palli
+Ananthapuram.csv, O.D.Cheruvu, Mallemvandla palli
+Ananthapuram.csv, O.D.Cheruvu, Jerrikunta palli
+Ananthapuram.csv, O.D.Cheruvu, Malla palli
+Ananthapuram.csv, O.D.Cheruvu, Bommireddy cheruvu
+Ananthapuram.csv, O.D.Cheruvu, Lingalavari palli H/o Alla palli
+Ananthapuram.csv, O.D.Cheruvu, Akuthota palli
+Ananthapuram.csv, O.D.Cheruvu, Polevandla kotha palli & Bodigundla palli
+Ananthapuram.csv, O.D.Cheruvu, Balappagaripalli H/o Alla palli
+Ananthapuram.csv, O.D.Cheruvu, Chalalvandla palli H/o Alla palli
+Ananthapuram.csv, O.D.Cheruvu, Mitta palli H/o Mitta palli
+Ananthapuram.csv, O.D.Cheruvu, Diguva palli H/o Daburuvari palli
+Ananthapuram.csv, O.D.Cheruvu, Gowra puram
+Ananthapuram.csv, O.D.Cheruvu, Narappagari palli & H.W.H/o Venkatapuram
+Ananthapuram.csv, O.D.Cheruvu, Malakavaripalli
+Ananthapuram.csv, Nallamada, Donnikota BC & SC Colonies (2126 / 2)
+Ananthapuram.csv, Nallamada, Donnikota Main village
+Ananthapuram.csv, Nallamada, Appaiahgari palli
+Ananthapuram.csv, Nallamada, Boggula palli Colony
+Ananthapuram.csv, Nallamada, Nallamada (PI)
+Ananthapuram.csv, Nallamada, N.Enumulavari palli H/o P.B.palli
+Ananthapuram.csv, Nallamada, Tholetivari palli H/o P.B.Palli
+Ananthapuram.csv, Nallamada, Pullagurla palli & Basireddy palli H/o P.B.Palli
+Ananthapuram.csv, Nallamada, Somagutta palli H/o Nallamada
+Ananthapuram.csv, Nallamada, Basamvari palli (Part of the village) H/o Nallamada
+Ananthapuram.csv, Nallamada, Gopepalli main village &S.Ccolony
+Ananthapuram.csv, Nallamada, Nallamada S.C Colony
+Ananthapuram.csv, Nallamada, Nallamada (Rama Swamy Temple & Maruthi Colony)
+Ananthapuram.csv, Nallamada, Kutala palli H/o Nallamada
+Ananthapuram.csv, Nallamada, Nallamada (PII)
+Ananthapuram.csv, Nallamada, Boggitivari palli
+Ananthapuram.csv, Nallamada, Yerracheruvu palli
+Ananthapuram.csv, Nallamada, Vellamaddi SC Colony
+Ananthapuram.csv, Nallamada, Nallamada (Akkamma gari Temple & BSNL Tower Area)
+Ananthapuram.csv, Nallamada, Yeddulavari palli
+Ananthapuram.csv, AGALI, AGALI
+Ananthapuram.csv, ROLLA, K.P THANDA
+Ananthapuram.csv, ROLLA, BAJJARIAHPALEM
+Ananthapuram.csv, ROLLA, RATHANAGIRI GOLLAHATTI
+Ananthapuram.csv, ROLLA, UJJAINIPURAM
+Ananthapuram.csv, Chilamathur, Kothasamulapalli
+Ananthapuram.csv, Chilamathur, Roddamvaripalli
+Ananthapuram.csv, Parigi, Vittapalli
+Ananthapuram.csv, Parigi, Bandarlapalli
+Ananthapuram.csv, Parigi, Ganapathipalli
+Ananthapuram.csv, Gorantla, Thatimekalapalli
+Ananthapuram.csv, Gorantla, Nallanapalli
+Ananthapuram.csv, Gorantla, Seenappalli
+Ananthapuram.csv, Kld, Polavoi
+Ananthapuram.csv, Gummagatta, Konapuram
+Ananthapuram.csv, Gummagatta, Thallakera (S.C Colony)
+Ananthapuram.csv, Gummagatta, Y.Gundlapalli
+Ananthapuram.csv, Gummagatta, Pulakunta
+Ananthapuram.csv, Dharmavaram, R.Yerraguntapalli
+Ananthapuram.csv, Dharmavaram, Obulanayanipalli
+Ananthapuram.csv, Dharmavaram, Nelakota Thanda
+Ananthapuram.csv, Dharmavaram, Nadimigaddapalli
+Ananthapuram.csv, Dharmavaram, BALIJAMADI THANDA, EAST THANDA & SC COLONY H/o NADIMIGADDAPALLI
+Ananthapuram.csv, Dharmavaram, Darsinamala
+Ananthapuram.csv, Dharmavaram, Venkatahitmmapuram
+Ananthapuram.csv, Dharmavaram, Malagundlapalli
+Ananthapuram.csv, Dharmavaram, R.C.Thanda {Ravula Cheruvu Thanda}
+Ananthapuram.csv, Dharmavaram, Billubommaiahpalli
+Ananthapuram.csv, Dharmavaram, Nelakota
+Ananthapuram.csv, Dharmavaram, Elakuntla
+Ananthapuram.csv, Dharmavaram, C.Bathalapalli
+Ananthapuram.csv, Bathalapalli, Muddanapalli
+Ananthapuram.csv, Bathalapalli, Katamkunta
+Ananthapuram.csv, Bathalapalli, Ramapuram
+Ananthapuram.csv, Bathalapalli, Gariselapalli
+Ananthapuram.csv, Bathalapalli, Kodekandla
+Ananthapuram.csv, Bathalapalli, Jalalapuram
+Ananthapuram.csv, Bathalapalli, Church Colony to Indiramma Colony h/o Bathalapalli Village
+Ananthapuram.csv, Tadimarri, Marrimakulapalli
+Ananthapuram.csv, Tadimarri, Ekapadampalli
+Ananthapuram.csv, Mudigubba, Guddampalli Thanda
+Ananthapuram.csv, Mudigubba, Nakkalapalli
+Ananthapuram.csv, Mudigubba, Adavi Brahmanapalli
+Ananthapuram.csv, Mudigubba, Adavi Brahmanapalli Harijanawada
+Ananthapuram.csv, Mudigubba, Guttakindapalli
+Ananthapuram.csv, Mudigubba, Diguvapalli
+Ananthapuram.csv, Mudigubba, Irikireddypalli
+Ananthapuram.csv, Mudigubba, Sirigaripalli S.T.Colony
+Ananthapuram.csv, Mudigubba, Sankepalli
+Ananthapuram.csv, Mudigubba, Mukthapuram
+Ananthapuram.csv, Mudigubba, Mukthapuram Thanda
+Ananthapuram.csv, Mudigubba, Nallcherlopalli SC & ST Colony
+Ananthapuram.csv, Mudigubba, Raghavampalli
+Ananthapuram.csv, Mudigubba, Yerraguntapalli Colony H/o Mudigubba
+Ananthapuram.csv, Mudigubba, Nayibrahmana Colony H/o Mudigubba
+Ananthapuram.csv, Mudigubba, Chelimibhavi Colony H/o Mudigubba
+Ananthapuram.csv, Mudigubba, Tower Street H/o Mudigubba
+Ananthapuram.csv, Mudigubba, Dorigallu Road back side H/o Mudigubba
+KURNOOL.csv, Peapully, Seethammathanda
+SRIKAKULAM.csv, Ichapuram, Balarampuram
+SRIKAKULAM.csv, Kotabommali, Balarampuram
+SRIKAKULAM.csv, Mandasa, Bathupuram
+SRIKAKULAM.csv, Sompeta, Battigalluru
+SRIKAKULAM.csv, Seethampeta, Cheedimanuguda
+SRIKAKULAM.csv, Kanchili, Chilakalametta
+SRIKAKULAM.csv, Santhabommali, Chinnakesinaidupeta
+SRIKAKULAM.csv, Ichapuram, ChinnaLaxmipuram
+SRIKAKULAM.csv, Kotabommali, Chuttugundam
+SRIKAKULAM.csv, Vajrapukotturu, D.Cheepurupalli
+SRIKAKULAM.csv, Sompeta, Damodarapuram
+SRIKAKULAM.csv, Palasa, Danagora
+SRIKAKULAM.csv, Santhabommali, Dandugopalapuram
+SRIKAKULAM.csv, Santhabommali, DG.Puram Colony
+SRIKAKULAM.csv, Ichapuram, Donkuru
+SRIKAKULAM.csv, Ichapuram, Edupuram
+SRIKAKULAM.csv, Seethampeta, Eguvamamidiguda
+SRIKAKULAM.csv, Sompeta, Eguvuru
+SRIKAKULAM.csv, Mandasa, Gandrugam
+SRIKAKULAM.csv, Vajrapukotturu, Geddalavanipeta
+SRIKAKULAM.csv, Seethampeta, GUDDIMEEDAGUDA
+SRIKAKULAM.csv, Palasa, Himagiri
+SRIKAKULAM.csv, Ichapuram, Innesupeta
+SRIKAKULAM.csv, Polaki, Jilleduvalasa
+SRIKAKULAM.csv, Santhabommali, Kasipuram
+SRIKAKULAM.csv, Santhabommali, Kotapadu
+SRIKAKULAM.csv, Santhabommali, Kothalingudu
+SRIKAKULAM.csv, Kotabommali, Kottapeta
+SRIKAKULAM.csv, Santhabommali, Kotturu
+SRIKAKULAM.csv, Palasa, Lothuru
+SRIKAKULAM.csv, Kanchili, M.S.Palli
+SRIKAKULAM.csv, Polaki, Makivalasa
+SRIKAKULAM.csv, Mandasa, Mandasa
+SRIKAKULAM.csv, Sompeta, Mulapalem
+SRIKAKULAM.csv, Kotabommali, Narayanapuram
+SRIKAKULAM.csv, Santhabommali, Navabpeta
+SRIKAKULAM.csv, Santhabommali, Pathalingudu
+SRIKAKULAM.csv, Santhabommali, Peddakoviripeta
+SRIKAKULAM.csv, Ichapuram, PeddaLaxmipuram
+SRIKAKULAM.csv, Tekkali, Peddarokalapalli
+SRIKAKULAM.csv, Santhabommali, R.Sunnapalli
+SRIKAKULAM.csv, Santhabommali, Rajapuram
+SRIKAKULAM.csv, Santhabommali, Seetharampuram
+SRIKAKULAM.csv, Palasa, Siripuram
+SRIKAKULAM.csv, Tekkali, Tekkali
+SRIKAKULAM.csv, Mandasa, Thobagam
+SRIKAKULAM.csv, Santhabommali, Umilada
+SRIKAKULAM.csv, Vajrapukotturu, Undrukudiya
+SRIKAKULAM.csv, Santhabommali, Unkilivanipeta
+SRIKAKULAM.csv, Kanchili, Upparipeta
+SRIKAKULAM.csv, Kotabommali, Yelamanchili
+NELLURU.csv, DV Satram, Velukadu
+NELLURU.csv, DV Satram, Velukadu H.W
+NELLURU.csv, DV Satram, Naganeri
+KADAPA.csv, Atloor, Eguva thanballapalle
+KADAPA.csv, Atloor, Gangaiahpalli
+KADAPA.csv, Atloor, Kothakota BC Colony
+KADAPA.csv, Atloor, Lingareddypalli
+KADAPA.csv, Atloor, Porumamilla
+KADAPA.csv, Atloor, Pullareddipalle
+KADAPA.csv, Atloor, Reddypalli
+KADAPA.csv, Atloor, Tekurupeta
+KADAPA.csv, B.Mattam, Girinagar
+KADAPA.csv, B.Mattam, Puliveedu
+KADAPA.csv, B.Mattam, Venkatapuram
+KADAPA.csv, C.K.Dinne, Adi Andhra Palem
+KADAPA.csv, C.K.Dinne, Akkalreddipalli
+KADAPA.csv, C.K.Dinne, Challagirigella
+KADAPA.csv, C.K.Dinne, Damanapalli
+KADAPA.csv, C.K.Dinne, Gollapalli
+KADAPA.csv, C.K.Dinne, Jillela
+KADAPA.csv, C.K.Dinne, Kammavaripalli
+KADAPA.csv, C.K.Dinne, Korapatupalli
+KADAPA.csv, C.K.Dinne, Kothakrishnampalli
+KADAPA.csv, C.K.Dinne, Kothathiruvengalapur
+KADAPA.csv, C.K.Dinne, Krishnampalli
+KADAPA.csv, C.K.Dinne, Krupanagar
+KADAPA.csv, C.K.Dinne, Manganapalli
+KADAPA.csv, C.K.Dinne, Musalreddipalli
+KADAPA.csv, C.K.Dinne, Narsingapalli
+KADAPA.csv, C.K.Dinne, Peddyellapalli
+KADAPA.csv, C.K.Dinne, Rajasahepeta
+KADAPA.csv, C.K.Dinne, Rangasamudram
+KADAPA.csv, C.K.Dinne, Vasudevapuram
+KADAPA.csv, C.K.Dinne, Venkatapuram
+KADAPA.csv, C.K.Dinne, Yellapalli
+KADAPA.csv, Chakrayapet, Akulagaripalli
+KADAPA.csv, Chakrayapet, Balathimaiahgaripalli
+KADAPA.csv, Chakrayapet, Bodigundupalli
+KADAPA.csv, Chakrayapet, Chinayapalli
+KADAPA.csv, Chakrayapet, Chowtapalem
+KADAPA.csv, Chakrayapet, Devathapuram
+KADAPA.csv, Chakrayapet, Gaddamvaripalli
+KADAPA.csv, Chakrayapet, Gajulapeta
+KADAPA.csv, Chakrayapet, Jangamreddipalli
+KADAPA.csv, Chakrayapet, Komanuthala
+KADAPA.csv, Chakrayapet, Komatipeta
+KADAPA.csv, Chakrayapet, Kuppagantipalli
+KADAPA.csv, Chakrayapet, Mahaboob Nagar
+KADAPA.csv, Chakrayapet, Peddakundala
+KADAPA.csv, Chakrayapet, Reddivaripalli
+KADAPA.csv, Chakrayapet, Siddanakithayapalli
+KADAPA.csv, Chakrayapet, Siddvaram
+KADAPA.csv, Chakrayapet, Sunkesulapalli
+KADAPA.csv, Chakrayapet, Thelike
+KADAPA.csv, Chinnamandem, Badameedipalli
+KADAPA.csv, Chinnamandem, Bakkireddygaripalli
+KADAPA.csv, Chinnamandem, Chennareddipalli
+KADAPA.csv, Chinnamandem, Damanapalli
+KADAPA.csv, Chinnamandem, Diguva Kancharlapalli
+KADAPA.csv, Chinnamandem, Duvvur
+KADAPA.csv, Chinnamandem, Girinagar
+KADAPA.csv, Chinnamandem, Gorlamudiveedu
+KADAPA.csv, Chinnamandem, Guntikadapalli
+KADAPA.csv, Chinnamandem, Indiranagar
+KADAPA.csv, Chinnamandem, K.Thiruvengalapuram
+KADAPA.csv, Chinnamandem, Kavalakuntla
+KADAPA.csv, Chinnamandem, Kavalakuntla AW
+KADAPA.csv, Chinnamandem, Korrapatipalli
+KADAPA.csv, Chinnamandem, Kotha Kottala
+KADAPA.csv, Chinnamandem, Maderepalli
+KADAPA.csv, Chinnamandem, Mahaboob Nagar
+KADAPA.csv, Chinnamandem, Mallemvandlapalli
+KADAPA.csv, Chinnamandem, Mudireddypalli SC Colony
+KADAPA.csv, Chinnamandem, Nagoorivandlapalli
+KADAPA.csv, Chinnamandem, Nakkalavandlapalli
+KADAPA.csv, Chinnamandem, Nelatur
+KADAPA.csv, Chinnamandem, Polerammatemple
+KADAPA.csv, Chinnamandem, Porumamilla 1,13,14,17,18 Wards
+KADAPA.csv, Chinnamandem, Porumamilla 2, 12 Wards
+KADAPA.csv, Chinnamandem, Reddypalli
+KADAPA.csv, Chinnamandem, Santhinagaram
+KADAPA.csv, Chinnamandem, Venkatapuram
+KADAPA.csv, Chinnamandem, Yadava Street
+KADAPA.csv, Chinnamandem, Yandapalli
+KADAPA.csv, Chinnamandem, Yellapalli
+KADAPA.csv, Chitvel, Azad Nagar
+KADAPA.csv, Chitvel, Beeramkhampalli
+KADAPA.csv, Chitvel, Buchampalli
+KADAPA.csv, Chitvel, Chowdeswar Nagar
+KADAPA.csv, Chitvel, Gudavandlapalli
+KADAPA.csv, Chitvel, Gudavandlapalli H.W
+KADAPA.csv, Chitvel, J.Kothapalli
+KADAPA.csv, Chitvel, J.Narayanapuram
+KADAPA.csv, Chitvel, Kolumulapalli, G.P. Lakkireddipalli
+KADAPA.csv, Chitvel, Manganapalli
+KADAPA.csv, Chitvel, Moolavanka
+KADAPA.csv, Chitvel, Peddakampalli
+KADAPA.csv, Chitvel, R.T Palli
+KADAPA.csv, Chitvel, Vepamana sathram
+KADAPA.csv, Duvvur, G.P.GGS thanda (Top of the Hill)
+KADAPA.csv, Duvvur, Near NTPC
+KADAPA.csv, Duvvur, Papashabpeta
+KADAPA.csv, Duvvur, Pathanarasannapalli
+KADAPA.csv, Duvvur, Venkatarampalli (Yanadi Colony)
+KADAPA.csv, Duvvur, Vepamanusatram
+KADAPA.csv, Galiveedu, Amurivandlapalli
+KADAPA.csv, Galiveedu, Applarajugaripalli
+KADAPA.csv, Galiveedu, Awsthagaripalli
+KADAPA.csv, Galiveedu, B.C Colony
+KADAPA.csv, Galiveedu, B.Rachapalli
+KADAPA.csv, Galiveedu, Bajawada H.W
+KADAPA.csv, Galiveedu, Bali Reddygaripalli
+KADAPA.csv, Galiveedu, Basireddigaripalli
+KADAPA.csv, Galiveedu, Batameedapalli
+KADAPA.csv, Galiveedu, Bayareddygaripali
+KADAPA.csv, Galiveedu, Bulding Madigapalli H/o Madiravula
+KADAPA.csv, Galiveedu, C.Veddapalli
+KADAPA.csv, Galiveedu, Chamarthivandlapalli
+KADAPA.csv, Galiveedu, Cheekativandlapalli
+KADAPA.csv, Galiveedu, Chenikkayalapalli
+KADAPA.csv, Galiveedu, Cheruvumundarapalli
+KADAPA.csv, Galiveedu, Chilakapativandlapalli
+KADAPA.csv, Galiveedu, Chintalavandlapalli
+KADAPA.csv, Galiveedu, Chitrajugaripalli
+KADAPA.csv, Galiveedu, Chowatavanka H.W
+KADAPA.csv, Galiveedu, Chowthapalli
+KADAPA.csv, Galiveedu, D.Madigapalli
+KADAPA.csv, Galiveedu, Dayalavandlapalli
+KADAPA.csv, Galiveedu, Diguvakovvuruvandlapalli
+KADAPA.csv, Galiveedu, E.Madigapalli
+KADAPA.csv, Galiveedu, Eduva Madigapali
+KADAPA.csv, Galiveedu, Eguvabathinavandlapalli
+KADAPA.csv, Galiveedu, Eguvagollapalli
+KADAPA.csv, Galiveedu, Ekilapalli
+KADAPA.csv, Galiveedu, Elekhachellapalli & Malapalli
+KADAPA.csv, Galiveedu, Ganganeru B.C.Colony
+KADAPA.csv, Galiveedu, Ganganeru H.W
+KADAPA.csv, Galiveedu, Ganganeru Islampeta
+KADAPA.csv, Galiveedu, Gollapalli H.W
+KADAPA.csv, Galiveedu, Gopagudipalli
+KADAPA.csv, Galiveedu, Hasnapuram Hasnapuram
+KADAPA.csv, Galiveedu, K.Obulam Palli
+KADAPA.csv, Galiveedu, K.P Chrruvu
+KADAPA.csv, Galiveedu, Kalavavandlapalli
+KADAPA.csv, Galiveedu, Karnapuvandlapalli
+KADAPA.csv, Galiveedu, Kavaligadda HW
+KADAPA.csv, Galiveedu, KGBV School
+KADAPA.csv, Galiveedu, kk malapalli
+KADAPA.csv, Galiveedu, Komatipalli
+KADAPA.csv, Galiveedu, Kondavandlapalli
+KADAPA.csv, Galiveedu, Kotha Madigapalli
+KADAPA.csv, Galiveedu, Kothapeta
+KADAPA.csv, Galiveedu, Krishnapuram
+KADAPA.csv, Galiveedu, Kuravapalli
+KADAPA.csv, Galiveedu, L.R.Palli Town
+KADAPA.csv, Galiveedu, Madigapalli Ananthapuram
+KADAPA.csv, Galiveedu, Manneruvandlapalli
+KADAPA.csv, Galiveedu, Nallakatavapalli
+KADAPA.csv, Galiveedu, Nallaparvataiahgaripalli
+KADAPA.csv, Galiveedu, Obulareddygaripalli
+KADAPA.csv, Galiveedu, Pedduru kasba
+KADAPA.csv, Galiveedu, Polimerapalli
+KADAPA.csv, Galiveedu, Ragavareddypalli
+KADAPA.csv, Galiveedu, Ramapuram
+KADAPA.csv, Galiveedu, Reddivaripalli HW
+KADAPA.csv, Galiveedu, Reddyvaripalli
+KADAPA.csv, Galiveedu, Seethampeta
+KADAPA.csv, Galiveedu, Surakavandlapalli
+KADAPA.csv, Galiveedu, Vayalarajugaripalli
+KADAPA.csv, Galiveedu, Veddapalli
+KADAPA.csv, Galiveedu, Veeraballi
+KADAPA.csv, Galiveedu, Vongipuram H.W
+KADAPA.csv, Galiveedu, Yedaballi
+KADAPA.csv, Galiveedu, Yeerrapapireddygaripalli
+KADAPA.csv, Galiveedu, Yerrangivandlapali
+KADAPA.csv, Galiveedu, Yerrangivandlapali H.WH/o Hanapuram
+KADAPA.csv, Galiveedu, Yerrappagaripalli
+KADAPA.csv, Kalasapadu, Gandevandlapalli H/o Sangamvandlapalli
+KADAPA.csv, Kalasapadu, Gutta Thurupu
+KADAPA.csv, Kalasapadu, Guttapadamati H.W
+KADAPA.csv, Kalasapadu, Mangalapalli
+KADAPA.csv, Kalasapadu, Nayunivaripalli
+KADAPA.csv, Kalasapadu, Neelavandlapalli H/o Sangamvandlapalli
+KADAPA.csv, Kalasapadu, Papireddigaripalli
+KADAPA.csv, Kalasapadu, Pitchiguntapalli
+KADAPA.csv, Kalasapadu, Ragimanudinnepalli
+KADAPA.csv, Kalasapadu, Reddyvaripalli
+KADAPA.csv, Kalasapadu, Reddyvaripalli H.W
+KADAPA.csv, Kalasapadu, Sangamvandlapalli
+KADAPA.csv, Kamalapuram, Peraiahgaripalli
+KADAPA.csv, Khajipeta, C.T.K.Malapalli
+KADAPA.csv, Kondapuram, Maddela Malapalli
+KADAPA.csv, Kondapuram, Madigapalli
+KADAPA.csv, Kondapuram, Madirajugaripalli
+KADAPA.csv, Kondapuram, Ramanavandlapalli H/o Vongimalla
+KADAPA.csv, Kondapuram, Tenkayachetlapalli
+KADAPA.csv, Kondapuram, ZP High School
+KADAPA.csv, L.R.Palli, Asivandlapalli
+KADAPA.csv, L.R.Palli, Balasanivandlaplli
+KADAPA.csv, L.R.Palli, Batamadigapalli
+KADAPA.csv, L.R.Palli, Battupalli
+KADAPA.csv, L.R.Palli, BC Hostel & Chowta H.W
+KADAPA.csv, L.R.Palli, Bongavandlapalli
+KADAPA.csv, L.R.Palli, Edigapalli
+KADAPA.csv, L.R.Palli, Gadikota Kasba
+KADAPA.csv, L.R.Palli, Goddinenivandlapalli
+KADAPA.csv, L.R.Palli, Kasturba
+KADAPA.csv, L.R.Palli, Maddivarikunta HW
+KADAPA.csv, L.R.Palli, Madigapalli H/o Veeraballi
+KADAPA.csv, L.R.Palli, Matli Kasba
+KADAPA.csv, L.R.Palli, Moravavaddepalli
+KADAPA.csv, L.R.Palli, Muppalavandlapalli
+KADAPA.csv, L.R.Palli, Nayunivaripalli H/o Veeraballi
+KADAPA.csv, L.R.Palli, Polimerapalli
+KADAPA.csv, L.R.Palli, Settivandlpalli
+KADAPA.csv, L.R.Palli, T.Poluvandlapalli
+KADAPA.csv, L.R.Palli, Thogatapalli
+KADAPA.csv, L.R.Palli, Thoti H.W
+KADAPA.csv, L.R.Palli, Vaddepalli
+KADAPA.csv, L.R.Palli, Vaddepalli
+KADAPA.csv, L.R.Palli, Velicherlavandlapalli
+KADAPA.csv, L.R.Palli, Yellampalli
+KADAPA.csv, Lingala, Anumpalli(Krotha)
+KADAPA.csv, Lingala, Balijapalli
+KADAPA.csv, Lingala, Botlacheruvu
+KADAPA.csv, Lingala, Cherlopalli & Thavatapalli
+KADAPA.csv, Lingala, Gorlamudiveedu
+KADAPA.csv, Lingala, Gorlamudiveedu HW
+KADAPA.csv, Lingala, Guttakindapalli
+KADAPA.csv, Lingala, Guvvala HW
+KADAPA.csv, Lingala, Kuravapalli
+KADAPA.csv, Lingala, Nagirimaduguvandlapalli
+KADAPA.csv, Lingala, Peyalavandlapalli H/o Madhavaram
+KADAPA.csv, Lingala, Polireddygaripalli
+KADAPA.csv, Lingala, Sibyala HW
+KADAPA.csv, Muddanur, Anumpalli(Patha)
+KADAPA.csv, Muddanur, jangampalli & B.C.Colony
+KADAPA.csv, Muddanur, Kancharlapalli colony
+KADAPA.csv, Muddanur, Madigapalli(HW)
+KADAPA.csv, Muddanur, Nagireddygaripalli
+KADAPA.csv, Muddanur, Papireddigaripalli
+KADAPA.csv, Muddanur, Ramireddygaripalli H/O Madhavaram
+KADAPA.csv, Muddanur, Tamtamvandlapalli
+KADAPA.csv, Mydukur, Chinnramireddygaripalli
+KADAPA.csv, Mydukur, Kalvavandlapalli
+KADAPA.csv, Mylavaram, Venkatapuram
+KADAPA.csv, Penagalur, Ammagaripalli
+KADAPA.csv, Penagalur, Annamrajugaripalli
+KADAPA.csv, Penagalur, Aravandlapalli H/o Gorlamudiveedu
+KADAPA.csv, Penagalur, Avulavandlapalli
+KADAPA.csv, Penagalur, Avulsettygaripalli
+KADAPA.csv, Penagalur, Bandameedapalli
+KADAPA.csv, Penagalur, Boyapalli
+KADAPA.csv, Penagalur, Boyapalli
+KADAPA.csv, Penagalur, C.C.palli reddyvaripalli
+KADAPA.csv, Penagalur, Dasari Colony
+KADAPA.csv, Penagalur, Dasarivandlapalli
+KADAPA.csv, Penagalur, Devara Palli
+KADAPA.csv, Penagalur, Diguva K.Vandalpalli H/o Madhavaram
+KADAPA.csv, Penagalur, Dinnemedapalli
+KADAPA.csv, Penagalur, Epilavanka Madigapalli
+KADAPA.csv, Penagalur, Etotivandlapalli
+KADAPA.csv, Penagalur, Galiveedu(Dasaripeta,Gandla bazar,Peeru saheb street)
+KADAPA.csv, Penagalur, Gatukadapa Palli
+KADAPA.csv, Penagalur, Gollapalli
+KADAPA.csv, Penagalur, Gundla Cheruvu Kasba
+KADAPA.csv, Penagalur, Gundlcheruvu H.W
+KADAPA.csv, Penagalur, Guntikadapalli
+KADAPA.csv, Penagalur, Gurikanivandlapalli
+KADAPA.csv, Penagalur, Gurralamitta ST Colony
+KADAPA.csv, Penagalur, Jurukuvandlapalli
+KADAPA.csv, Penagalur, Karnamvandlakothapalli
+KADAPA.csv, Penagalur, Katinenivandlapalli
+KADAPA.csv, Penagalur, Kondakindapalli
+KADAPA.csv, Penagalur, Koppalavandlapalli
+KADAPA.csv, Penagalur, Kummarapalli
+KADAPA.csv, Penagalur, Kurmaiah garipalli
+KADAPA.csv, Penagalur, Kurmaiahgaripalli B.C Colony
+KADAPA.csv, Penagalur, Kuruvapalli H/o Yandapalli
+KADAPA.csv, Penagalur, Lakkamvaripalli
+KADAPA.csv, Penagalur, Maddelavandlapalli
+KADAPA.csv, Penagalur, Malapalli H/o Yandapalli
+KADAPA.csv, Penagalur, Mallemvandlapalli
+KADAPA.csv, Penagalur, Moolapalli
+KADAPA.csv, Penagalur, Morawavandlapalli H/o Yandapalli
+KADAPA.csv, Penagalur, Nakkalavandlapalli
+KADAPA.csv, Penagalur, Pathasykamvandlapalli
+KADAPA.csv, Penagalur, Pedakalvapalli
+KADAPA.csv, Penagalur, Peddireddygaripalli
+KADAPA.csv, Penagalur, Ramireddygaripalli
+KADAPA.csv, Penagalur, Ramulapalli
+KADAPA.csv, Penagalur, Reddyvaripalli
+KADAPA.csv, Penagalur, settyvaripalli
+KADAPA.csv, Penagalur, Singamvaripalli
+KADAPA.csv, Penagalur, Sugalithand
+KADAPA.csv, Penagalur, Thotti Kada H.W
+KADAPA.csv, Penagalur, Uyyalavandlapalli
+KADAPA.csv, Penagalur, Vadisalavankapalli
+KADAPA.csv, Penagalur, Vadisalavankapalli Sc Colony
+KADAPA.csv, Penagalur, Vijay nagar colony
+KADAPA.csv, Penagalur, Yeguva Madigapalli H/o Yandapalli
+KADAPA.csv, Penagalur, Yerravandlapalli
+KADAPA.csv, Pendlimarry, C.C.palli peddapalli H/O C.C.Palli
+KADAPA.csv, Pendlimarry, Eguvamoola H/O Thumukunta
+KADAPA.csv, Pendlimarry, K.Peddapalli
+KADAPA.csv, Pendlimarry, Mangal colony
+KADAPA.csv, Pendlimarry, Saladivandla -HW
+KADAPA.csv, Pendlimarry, Santa -HW
+KADAPA.csv, Pendlimarry, Yerradoddipalli
+KADAPA.csv, Porumamilla, Avulavandlapalli
+KADAPA.csv, Porumamilla, Avulreddygaripalli
+KADAPA.csv, Porumamilla, B.K.Rajupalli
+KADAPA.csv, Porumamilla, Bodasanivandlapalli
+KADAPA.csv, Porumamilla, Bukkapatnamvaripalli
+KADAPA.csv, Porumamilla, Chinna Dasaripalli
+KADAPA.csv, Porumamilla, Chinnapapireddygaripalli
+KADAPA.csv, Porumamilla, Devalampeta
+KADAPA.csv, Porumamilla, Devapatla H/O Devapatla
+KADAPA.csv, Porumamilla, Diguva Boyapalli
+KADAPA.csv, Porumamilla, Diguva Rajugaripalli
+KADAPA.csv, Porumamilla, Diguvanallaguttapalli Entrance
+KADAPA.csv, Porumamilla, Diguvanallaguttapalli Temple H/O S.Somavaram
+KADAPA.csv, Porumamilla, Dinnemedipalli-hw
+KADAPA.csv, Porumamilla, Dinnemeedipalli
+KADAPA.csv, Porumamilla, Doreddulavandlapalli
+KADAPA.csv, Porumamilla, Eguva Boyapalli
+KADAPA.csv, Porumamilla, Eguvanallaguttapalli Temple
+KADAPA.csv, Porumamilla, Gudiyavandlapalli
+KADAPA.csv, Porumamilla, Gurrala Chintapalli
+KADAPA.csv, Porumamilla, Guttapalli R.K.Nagar
+KADAPA.csv, Porumamilla, Jallavandlapalli
+KADAPA.csv, Porumamilla, K.V Palli Madigapalli
+KADAPA.csv, Porumamilla, Kasireddygaripalli
+KADAPA.csv, Porumamilla, Koravandlapalli
+KADAPA.csv, Porumamilla, Kotakadepalli
+KADAPA.csv, Porumamilla, Kummarapalli
+KADAPA.csv, Porumamilla, Madigapalli Entrence
+KADAPA.csv, Porumamilla, Madigapalli Temple
+KADAPA.csv, Porumamilla, Malasanivaripalli
+KADAPA.csv, Porumamilla, Masid Area
+KADAPA.csv, Porumamilla, Mennaiagaripalli
+KADAPA.csv, Porumamilla, Nadimpalli
+KADAPA.csv, Porumamilla, Nadipirajupalli
+KADAPA.csv, Porumamilla, Nagoorivandlapalli-s.c.colony
+KADAPA.csv, Porumamilla, Nayunivaripalli H/o Korlakunta
+KADAPA.csv, Porumamilla, Pagadalapalli
+KADAPA.csv, Porumamilla, Pakkireddygaripalli
+KADAPA.csv, Porumamilla, pedda harijanawada
+KADAPA.csv, Porumamilla, Reddyvaripalli
+KADAPA.csv, Porumamilla, Roaddu
+KADAPA.csv, Porumamilla, Rodlopalli
+KADAPA.csv, Porumamilla, s.c colony
+KADAPA.csv, Porumamilla, S.C Hostel
+KADAPA.csv, Porumamilla, S.T colony
+KADAPA.csv, Porumamilla, Tamtamvaripalli
+KADAPA.csv, Porumamilla, Utopalem
+KADAPA.csv, Porumamilla, Veligallu kasba
+KADAPA.csv, Pulivendula, B.C Hostel
+KADAPA.csv, Pullampet, Barulakadapalli Colony
+KADAPA.csv, Pullampet, Barulakadapalli M.V
+KADAPA.csv, Pullampet, Battavandlapalli H/O Guttapalli
+KADAPA.csv, Pullampet, Choutupalli
+KADAPA.csv, Pullampet, Jandigaripalli
+KADAPA.csv, Pullampet, Kuntakindapalli
+KADAPA.csv, Pullampet, Regadiguntapalli
+KADAPA.csv, Pullampet, Roaddu Mitta H/O Guttapalli
+KADAPA.csv, Pullampet, S.Somavaram Entrance
+KADAPA.csv, Pullampet, S.Somavaram OHSR
+KADAPA.csv, Pullampet, Uragayagutta H/O Dudyala
+KADAPA.csv, Pullampet, Vaddevandlaplli
+KADAPA.csv, Rajampet, A.Obayapalli
+KADAPA.csv, Rajampet, BAYANENIVANDLAPALLI
+KADAPA.csv, Rajampet, Boggulavandlaplli
+KADAPA.csv, Rajampet, Chinnabidiki
+KADAPA.csv, Rajampet, D.Pothuvandlapalli
+KADAPA.csv, Rajampet, DINNEMIDAPALLI
+KADAPA.csv, Rajampet, Gaddamvaripalli
+KADAPA.csv, Rajampet, KONDAVANDLAPALLI
+KADAPA.csv, Rajampet, MADAMVANDLAPALLI
+KADAPA.csv, Rajampet, Madigapalli (Sc Colony)
+KADAPA.csv, Rajampet, MALLURUVANDLAPALLI
+KADAPA.csv, Rajampet, Marripalli
+KADAPA.csv, Rajampet, Mittameedapalli
+KADAPA.csv, Rajampet, N.R.G.PALLI COLONY
+KADAPA.csv, Rajampet, NARAYANAREDDIGARIPALLI
+KADAPA.csv, Rajampet, PALEMGADDA H.W
+KADAPA.csv, Rajampet, Papireddygaripalli
+KADAPA.csv, Rajampet, POLIMERIVANDLAPALLI (Vaddepalli )
+KADAPA.csv, Rajampet, POOJARIVANDLAPALLI
+KADAPA.csv, Rajampet, R.VADDEPALLI MITTA
+KADAPA.csv, Rajampet, Rangasipuram
+KADAPA.csv, Rajampet, Reddyvaripalli (D Palle)
+KADAPA.csv, Rajampet, Reddyvaripalli BC Colony
+KADAPA.csv, Rajampet, ROADUVARI KOTHAPALLI
+KADAPA.csv, Rajampet, Sambepalli
+KADAPA.csv, Rajampet, THATIKUNTAPALLI H.W
+KADAPA.csv, Rajupalem, Moilacheruvu
+KADAPA.csv, Ramapuram, Nooliveedu
+KADAPA.csv, Ramapuram, Veddapalli
+KADAPA.csv, Ramapuram, Adavicherlopalli
+KADAPA.csv, Ramapuram, Bakireddygaripalli
+KADAPA.csv, Ramapuram, Bathinavandlapalli& Diguvamoola
+KADAPA.csv, Ramapuram, Batinavandlapalli
+KADAPA.csv, Ramapuram, Chavadepalli
+KADAPA.csv, Ramapuram, chilakaluripeta
+KADAPA.csv, Ramapuram, Chukamalapalli
+KADAPA.csv, Ramapuram, Dakshinagadda H.W
+KADAPA.csv, Ramapuram, Eguva MadigaPalli
+KADAPA.csv, Ramapuram, I.Kothapalli
+KADAPA.csv, Ramapuram, Indukuru
+KADAPA.csv, Ramapuram, jangampalli
+KADAPA.csv, Ramapuram, Kaladevandlapalli
+KADAPA.csv, Ramapuram, Kalibanda
+KADAPA.csv, Ramapuram, Kokantivandlapalli
+KADAPA.csv, Ramapuram, Kollavandlapalli
+KADAPA.csv, Ramapuram, Kothaveddapalli
+KADAPA.csv, Ramapuram, Madigapalli SC Colony
+KADAPA.csv, Ramapuram, Mallur Cross
+KADAPA.csv, Ramapuram, Moolapalli
+KADAPA.csv, Ramapuram, Mundlavarikota
+KADAPA.csv, Ramapuram, Nage Reddygaripalli &Mavillavarepalli
+KADAPA.csv, Ramapuram, NarishamaRajugaripalli
+KADAPA.csv, Ramapuram, Nelathimmayapalli
+KADAPA.csv, Ramapuram, Pathavattamvandlapalli
+KADAPA.csv, Ramapuram, Pathurevandla Harizanawada
+KADAPA.csv, Ramapuram, Pedduru kasba
+KADAPA.csv, Ramapuram, Ravendra Nager (Near Marrichatu)
+KADAPA.csv, Ramapuram, Sainagar Colony
+KADAPA.csv, Ramapuram, Somulavandlapalli
+KADAPA.csv, Ramapuram, Sreeramanagar Colony
+KADAPA.csv, Ramapuram, Thumukunta
+KADAPA.csv, Ramapuram, U.Rajupalem
+KADAPA.csv, Ramapuram, Varadannavaripalli
+KADAPA.csv, Rayachoti, Ambabathinavandlapalli
+KADAPA.csv, Rayachoti, Devalampeta
+KADAPA.csv, Rayachoti, Gangireddygariapalli
+KADAPA.csv, Rayachoti, KodidhaPalli
+KADAPA.csv, Rayachoty, Ankampalli H/o
+KADAPA.csv, Rayachoty, Ayyalavandlapalli
+KADAPA.csv, Rayachoty, Balireddigaripalli
+KADAPA.csv, Rayachoty, Bandakaa Edigapalli
+KADAPA.csv, Rayachoty, Bapanapalli
+KADAPA.csv, Rayachoty, Chakalipalli
+KADAPA.csv, Rayachoty, Chinna Bidiki
+KADAPA.csv, Rayachoty, Chinnamandam (Darga Colony) & (Anjaneyaswami temple Street)
+KADAPA.csv, Rayachoty, Devagudi (RajeevColony)
+KADAPA.csv, Rayachoty, Devandlapalli
+KADAPA.csv, Rayachoty, Devandlapalli H.W
+KADAPA.csv, Rayachoty, Devaravandlapalli
+KADAPA.csv, Rayachoty, Diguva Jangampalli
+KADAPA.csv, Rayachoty, Diguva Madiga Palli
+KADAPA.csv, Rayachoty, DiguvaGundlavandlapalli
+KADAPA.csv, Rayachoty, Dinnemeedapalli
+KADAPA.csv, Rayachoty, Eguva Balijapalli
+KADAPA.csv, Rayachoty, Eguvajangampalli
+KADAPA.csv, Rayachoty, G.K.Rachapalli
+KADAPA.csv, Rayachoty, Jallavandlapalli
+KADAPA.csv, Rayachoty, Kammapalli
+KADAPA.csv, Rayachoty, Kanakantivandlapalli
+KADAPA.csv, Rayachoty, Kanchipati Vandlapalli H/O T.Sundupalli
+KADAPA.csv, Rayachoty, Katarumudupu
+KADAPA.csv, Rayachoty, Kothapalli
+KADAPA.csv, Rayachoty, Kummarapalli
+KADAPA.csv, Rayachoty, Kuravapalli H/o.T Sakibanda
+KADAPA.csv, Rayachoty, Kurvapalli
+KADAPA.csv, Rayachoty, Machireddygaripalli
+KADAPA.csv, Rayachoty, Madithativandlapalli
+KADAPA.csv, Rayachoty, Malapalli
+KADAPA.csv, Rayachoty, Mannemvaripalli
+KADAPA.csv, Rayachoty, Nagiripalam
+KADAPA.csv, Rayachoty, Nallaguttapalli
+KADAPA.csv, Rayachoty, Nayunivaripalli
+KADAPA.csv, Rayachoty, P.Kona
+KADAPA.csv, Rayachoty, Rachapalli Madigapalli
+KADAPA.csv, Rayachoty, Rajacolony
+KADAPA.csv, Rayachoty, Reddannagaripalli
+KADAPA.csv, Rayachoty, Sagalivandlapalli
+KADAPA.csv, Rayachoty, Sathupalli
+KADAPA.csv, Rayachoty, Thottikadamadigapalli
+KADAPA.csv, Rayachoty, Vanka Bidiki & Pedda Bidiki
+KADAPA.csv, Rayachoty, Vavillavaddibidiki
+KADAPA.csv, Rayachoty, Yanadi Colony
+KADAPA.csv, Sambepalli, B.Reddyvaripalli
+KADAPA.csv, Sambepalli, Balaji colony
+KADAPA.csv, Sambepalli, Bandakada Ediigapalli
+KADAPA.csv, Sambepalli, Bestapalli
+KADAPA.csv, Sambepalli, Bingivandlapalli
+KADAPA.csv, Sambepalli, Bodeppagaripalli (Kekaladoddipalli)
+KADAPA.csv, Sambepalli, Bolluvandlapalli
+KADAPA.csv, Sambepalli, Buddetivandlapalli
+KADAPA.csv, Sambepalli, Buraladinne
+KADAPA.csv, Sambepalli, Buraladinne H.W
+KADAPA.csv, Sambepalli, Byravagutta
+KADAPA.csv, Sambepalli, Chendrajugaripalli
+KADAPA.csv, Sambepalli, Chennamsettypalli
+KADAPA.csv, Sambepalli, Cheruvukindapalli
+KADAPA.csv, Sambepalli, Cheruvukindapalli HW
+KADAPA.csv, Sambepalli, Erukalabidaru
+KADAPA.csv, Sambepalli, Etigadda rachapalli
+KADAPA.csv, Sambepalli, G.Reddyvaripalli
+KADAPA.csv, Sambepalli, Gangireddygaripalli
+KADAPA.csv, Sambepalli, Gundlapalli
+KADAPA.csv, Sambepalli, Kamireddycheruvu
+KADAPA.csv, Sambepalli, Kammaguttapalli
+KADAPA.csv, Sambepalli, Kethireddygaripalli
+KADAPA.csv, Sambepalli, Kolimi HW
+KADAPA.csv, Sambepalli, Konankivaripalli
+KADAPA.csv, Sambepalli, Konankivaripalli
+KADAPA.csv, Sambepalli, Konankivaripalli HW
+KADAPA.csv, Sambepalli, Koneruvandlapalli
+KADAPA.csv, Sambepalli, Kothavaddepalli
+KADAPA.csv, Sambepalli, Kuravapalli
+KADAPA.csv, Sambepalli, Kuruvapalli
+KADAPA.csv, Sambepalli, Madithadu kaspa
+KADAPA.csv, Sambepalli, Madithativamdlapalli
+KADAPA.csv, Sambepalli, Mannemvaripalli
+KADAPA.csv, Sambepalli, Mathamma HW
+KADAPA.csv, Sambepalli, Mitta Bidiki & Mitta Bidiki Colony
+KADAPA.csv, Sambepalli, Nagarajugari palli
+KADAPA.csv, Sambepalli, Nallagutta Thurakapalli
+KADAPA.csv, Sambepalli, Nallappagaripalli
+KADAPA.csv, Sambepalli, Nallappagaripalli HW
+KADAPA.csv, Sambepalli, Neelamvandlapalli
+KADAPA.csv, Sambepalli, Paparajugaripalli
+KADAPA.csv, Sambepalli, Peddagollapalli
+KADAPA.csv, Sambepalli, Peddamadigapalli
+KADAPA.csv, Sambepalli, Peddapalli
+KADAPA.csv, Sambepalli, Peddapalli
+KADAPA.csv, Sambepalli, Rachapalli
+KADAPA.csv, Sambepalli, Ragimanubidiki i
+KADAPA.csv, Sambepalli, Reddyvaripalli
+KADAPA.csv, Sambepalli, Sareddygaripalli
+KADAPA.csv, Sambepalli, Siddareddygaripalli
+KADAPA.csv, Sambepalli, Sivarampuram ST Colony
+KADAPA.csv, Sambepalli, Sriramnagar Colony
+KADAPA.csv, Sambepalli, Vadlathurakapalli
+KADAPA.csv, Sambepalli, vanrachapalli
+KADAPA.csv, Sambepalli, Vengamrajugaripalli
+KADAPA.csv, Sidhout, Madigapalli (Mudumpadu cross)
+KADAPA.csv, Sidhout, Mudumpadu Kaspa
+KADAPA.csv, Sidhout, Reddymulluvandlapalli
+KADAPA.csv, Sidhout, Uramadigapalli
+KADAPA.csv, Sidhout, Yellampalli
+KADAPA.csv, Simhadripuram, Chinnagollapalli
+KADAPA.csv, Simhadripuram, Enugondavandlapalli
+KADAPA.csv, Simhadripuram, Guntharachapaali
+KADAPA.csv, Simhadripuram, kamathamvaripalli
+KADAPA.csv, Simhadripuram, Satram
+KADAPA.csv, T.Sundupalli, Ananthampalli
+KADAPA.csv, T.Sundupalli, Ananthampalli
+KADAPA.csv, T.Sundupalli, Ananthampalli HW
+KADAPA.csv, T.Sundupalli, Ananthampalli HW
+KADAPA.csv, T.Sundupalli, Atloor BC colony
+KADAPA.csv, T.Sundupalli, Atloor HW
+KADAPA.csv, T.Sundupalli, Atloor Main village
+KADAPA.csv, T.Sundupalli, Atloor X road
+KADAPA.csv, T.Sundupalli, Bheemunipadu
+KADAPA.csv, T.Sundupalli, Bramhanapalli AW
+KADAPA.csv, T.Sundupalli, Chakrampet
+KADAPA.csv, T.Sundupalli, Chakrampet High school
+KADAPA.csv, T.Sundupalli, Chavanavaripalli AW
+KADAPA.csv, T.Sundupalli, Chavanavaripalli HW
+KADAPA.csv, T.Sundupalli, Chavanavaripalli main village
+KADAPA.csv, T.Sundupalli, Diguva Siddavaram
+KADAPA.csv, T.Sundupalli, Diguva Siddavaram HW
+KADAPA.csv, T.Sundupalli, Gollavaripalli HW
+KADAPA.csv, T.Sundupalli, Gopamambapuram & Upparapalli Malapalli
+KADAPA.csv, T.Sundupalli, Harjanawada (Kondreddygari HW)
+KADAPA.csv, T.Sundupalli, I.Bayanapalli
+KADAPA.csv, T.Sundupalli, Kadherapet
+KADAPA.csv, T.Sundupalli, Kadiyamvaripalli
+KADAPA.csv, T.Sundupalli, Kadiyamvaripalli HW
+KADAPA.csv, T.Sundupalli, Kakaralavaripalli
+KADAPA.csv, T.Sundupalli, Kambalapalli
+KADAPA.csv, T.Sundupalli, Kataripalli
+KADAPA.csv, T.Sundupalli, Kavalakuntla
+KADAPA.csv, T.Sundupalli, Kavalakuntla HW
+KADAPA.csv, T.Sundupalli, KGBV School
+KADAPA.csv, T.Sundupalli, Kollavaripalli
+KADAPA.csv, T.Sundupalli, Kollavaripalli AW
+KADAPA.csv, T.Sundupalli, Kommanavaripalli
+KADAPA.csv, T.Sundupalli, Komminenivaripalli AW
+KADAPA.csv, T.Sundupalli, Kommivaripalli AW
+KADAPA.csv, T.Sundupalli, Kondur BC colcony
+KADAPA.csv, T.Sundupalli, Kondur SC colcony
+KADAPA.csv, T.Sundupalli, Kondur ST colcony
+KADAPA.csv, T.Sundupalli, Lakhsumpalli
+KADAPA.csv, T.Sundupalli, Lakhsumpalli HW
+KADAPA.csv, T.Sundupalli, Lakshmipuram ST colony
+KADAPA.csv, T.Sundupalli, Lingala Dinnepalli
+KADAPA.csv, T.Sundupalli, Mekavaripalli
+KADAPA.csv, T.Sundupalli, Mekavaripalli HW
+KADAPA.csv, T.Sundupalli, Mittameedapalli
+KADAPA.csv, T.Sundupalli, Mudireddipalle and SCColony
+KADAPA.csv, T.Sundupalli, Mudrapalli AW
+KADAPA.csv, T.Sundupalli, Mudrapalli eguva HW
+KADAPA.csv, T.Sundupalli, Mudrapalli Main Village
+KADAPA.csv, T.Sundupalli, Mudrapalli ST colony
+KADAPA.csv, T.Sundupalli, Mundlavaripalli HW
+KADAPA.csv, T.Sundupalli, Muslim Colony
+KADAPA.csv, T.Sundupalli, Nabiyebad
+KADAPA.csv, T.Sundupalli, Nadimpalli
+KADAPA.csv, T.Sundupalli, Nadimpalli
+KADAPA.csv, T.Sundupalli, Naiduvaripalli
+KADAPA.csv, T.Sundupalli, Nallapureddypalli HW
+KADAPA.csv, T.Sundupalli, Nasereddypalli
+KADAPA.csv, T.Sundupalli, Nelatur
+KADAPA.csv, T.Sundupalli, Nirmalagiri Colony
+KADAPA.csv, T.Sundupalli, Padmaiahgaripalli HW
+KADAPA.csv, T.Sundupalli, Pathapalli AW
+KADAPA.csv, T.Sundupalli, Peramvaaripalli
+KADAPA.csv, T.Sundupalli, Peramvaaripalli HW
+KADAPA.csv, T.Sundupalli, Peramvaaripalli HW
+KADAPA.csv, T.Sundupalli, Pondalur BC colony
+KADAPA.csv, T.Sundupalli, Poolathota HW
+KADAPA.csv, T.Sundupalli, Pulla Reddygaripalli
+KADAPA.csv, T.Sundupalli, Pullampeta & Pullampeta HW
+KADAPA.csv, T.Sundupalli, Rajupalem
+KADAPA.csv, T.Sundupalli, Ramakkapalli HW
+KADAPA.csv, T.Sundupalli, Reddyvaripalli
+KADAPA.csv, T.Sundupalli, Sainagar
+KADAPA.csv, T.Sundupalli, SC Colony
+KADAPA.csv, T.Sundupalli, Siddavaram Malawada
+KADAPA.csv, T.Sundupalli, Singanavaripalli
+KADAPA.csv, T.Sundupalli, Singanavaripalli HW
+KADAPA.csv, T.Sundupalli, Srinivasapuram
+KADAPA.csv, T.Sundupalli, ST Colony
+KADAPA.csv, T.Sundupalli, Suddagaddarachapalli
+KADAPA.csv, T.Sundupalli, T.Balijapalli
+KADAPA.csv, T.Sundupalli, T.Balijapalli AW
+KADAPA.csv, T.Sundupalli, T.Ramapuram
+KADAPA.csv, T.Sundupalli, Thammireddypalli and HW
+KADAPA.csv, T.Sundupalli, Thotlapalli
+KADAPA.csv, T.Sundupalli, Udumvaripalli AW
+KADAPA.csv, T.Sundupalli, Udumvaripalli HW
+KADAPA.csv, T.Sundupalli, Upparapalli
+KADAPA.csv, T.Sundupalli, Upparapalli
+KADAPA.csv, T.Sundupalli, Utukur HW
+KADAPA.csv, T.Sundupalli, Utukur Rachapalem
+KADAPA.csv, T.Sundupalli, Vadde colony
+KADAPA.csv, T.Sundupalli, Venkata Rajampet
+KADAPA.csv, T.Sundupalli, Venkatampalli AW
+KADAPA.csv, T.Sundupalli, Venkatampalli AW
+KADAPA.csv, T.Sundupalli, Venkatanarayanapalli
+KADAPA.csv, T.Sundupalli, Venkatanarayanapalli
+KADAPA.csv, T.Sundupalli, Yapativaripalli
+KADAPA.csv, T.Sundupalli, Yapativaripalli
+KADAPA.csv, T.Sundupalli, Yemmanur
+KADAPA.csv, Thondur, Mudrapalli AW
+KADAPA.csv, Thondur, Mudrapalli eguva HW
+KADAPA.csv, Thondur, Pathapalli AW
+KADAPA.csv, Thondur, Peramvaaripalli
+KADAPA.csv, Thondur, Rajupalem
+KADAPA.csv, V.N Palli, Chakrampet
+KADAPA.csv, V.N Palli, Chakrampet High school
+KADAPA.csv, V.N Palli, Diguva Siddavaram
+KADAPA.csv, V.N Palli, Diguva Siddavaram HW
+KADAPA.csv, V.N Palli, Kadiyamvaripalli
+KADAPA.csv, V.N Palli, Kakaralavaripalli
+KADAPA.csv, V.N Palli, Lakshmipuram ST colony
+KADAPA.csv, V.N Palli, Mudrapalli Main Village
+KADAPA.csv, V.N Palli, Mudrapalli ST colony
+KADAPA.csv, Veeraballi, Ambakapalli
+KADAPA.csv, Veeraballi, Ammaiahgaripalli
+KADAPA.csv, Veeraballi, B.Kothapalli
+KADAPA.csv, Veeraballi, B.T.Palli
+KADAPA.csv, Veeraballi, Bandlaiahgaripalli
+KADAPA.csv, Veeraballi, Batchaiahgaripalli
+KADAPA.csv, Veeraballi, Bodigundupalli
+KADAPA.csv, Veeraballi, Bodivaripalli
+KADAPA.csv, Veeraballi, Bonala
+KADAPA.csv, Veeraballi, Buchupalli
+KADAPA.csv, Veeraballi, Chinnakudala
+KADAPA.csv, Veeraballi, Chitvel H.W
+KADAPA.csv, Veeraballi, Devathapuram
+KADAPA.csv, Veeraballi, Duddekunta
+KADAPA.csv, Veeraballi, Eguvapalli
+KADAPA.csv, Veeraballi, Gandluru R & R Centre
+KADAPA.csv, Veeraballi, Ganganapalli
+KADAPA.csv, Veeraballi, Gargupalli
+KADAPA.csv, Veeraballi, Gondhipalli
+KADAPA.csv, Veeraballi, Gotlamitta
+KADAPA.csv, Veeraballi, GunakanapalliH/o.Gunakanapalli
+KADAPA.csv, Veeraballi, Hirozipuram
+KADAPA.csv, Veeraballi, Intiobaiahpalli
+KADAPA.csv, Veeraballi, Joropalli H.W
+KADAPA.csv, Veeraballi, K.S.Agraharam
+KADAPA.csv, Veeraballi, Kadiyamvaripalli HW
+KADAPA.csv, Veeraballi, Kandlopalli
+KADAPA.csv, Veeraballi, Kasturivaripalli
+KADAPA.csv, Veeraballi, Kasturivaripalli H.W
+KADAPA.csv, Veeraballi, Kolavali
+KADAPA.csv, Veeraballi, Kuppakuttapalli
+KADAPA.csv, Veeraballi, Lakshmipuram
+KADAPA.csv, Veeraballi, M.M.Gollapalli
+KADAPA.csv, Veeraballi, Mahaboob nagar
+KADAPA.csv, Veeraballi, Mallikavandlapalli
+KADAPA.csv, Veeraballi, Mundlavaripalli HW
+KADAPA.csv, Veeraballi, Murarichinthala
+KADAPA.csv, Veeraballi, Mylapalli A.W
+KADAPA.csv, Veeraballi, Mylapalli Vaddipalli
+KADAPA.csv, Veeraballi, Nadimpalli
+KADAPA.csv, Veeraballi, Naiduvaripalli
+KADAPA.csv, Veeraballi, Naiduvaripalli HW
+KADAPA.csv, Veeraballi, Nakkalapalli
+KADAPA.csv, Veeraballi, Narapareddipalli
+KADAPA.csv, Veeraballi, Padmaiahgaripalli HW
+KADAPA.csv, Veeraballi, Paluru
+KADAPA.csv, Veeraballi, payalopalli
+KADAPA.csv, Veeraballi, Pondalur BC colony
+KADAPA.csv, Veeraballi, Poolathota HW
+KADAPA.csv, Veeraballi, Pothulapalli
+KADAPA.csv, Veeraballi, Rachakuntapalli
+KADAPA.csv, Veeraballi, Ramanuthalapalli
+KADAPA.csv, Veeraballi, Rayalapuram
+KADAPA.csv, Veeraballi, Reddivaripalli
+KADAPA.csv, Veeraballi, S.Thimmapuram
+KADAPA.csv, Veeraballi, Saidapuram
+KADAPA.csv, Veeraballi, Sangadevpalli
+KADAPA.csv, Veeraballi, Sangadevpalli H.W
+KADAPA.csv, Veeraballi, Thathireddypalli
+KADAPA.csv, Veeraballi, Thernampalli
+KADAPA.csv, Veeraballi, Ustikayalapalli
+KADAPA.csv, Veeraballi, utukuruvandlaplli
+KADAPA.csv, Veeraballi, V.Kothapalli
+KADAPA.csv, Veeraballi, Vadde colony
+KADAPA.csv, Veeraballi, varikuntlaplli
+KADAPA.csv, Veeraballi, Velpula
+KADAPA.csv, Veeraballi, Vemula
+KADAPA.csv, Veeraballi, Yanamalachinthala
+KADAPA.csv, Veeraballi, Yeddulayeni
+KADAPA.csv, Vemula, Akothotapalli Sc colony
+KADAPA.csv, Vemula, Aravetipalli
+KADAPA.csv, Vemula, Baduguvaripalli
+KADAPA.csv, Vemula, Konapuram
+KADAPA.csv, Vemula, Korrapadu
+KADAPA.csv, Vemula, Sompalli
+KADAPA.csv, Vemula, Uppaluru

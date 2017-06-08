@@ -1,0 +1,3 @@
+http://iwm.vassarlabs.com:9000/api/crop/stress/district/SRIKAKULAM/mandal/PONDURU/village/DHARMAPURAM/crop/GROUNDNUT
+
+calling public Result getFarmStressData(String district, String mandal, String village, String cropName) on line 1988
