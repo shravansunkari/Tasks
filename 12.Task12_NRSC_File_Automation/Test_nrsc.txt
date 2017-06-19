@@ -1,0 +1,3 @@
+select model_date, count(*) from soil_moisture_nrsc_data group by model_date;
+
+Please test these scripts locally and double check if there is data for all the days between 20160101 and 20170702. If not let me know. Use database name explicity while running them. Notify Kalai, once they are tested locally.
